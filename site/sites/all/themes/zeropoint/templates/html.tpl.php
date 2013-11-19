@@ -1,3 +1,6 @@
+<?php
+	global $base_url;
+?> 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language; ?>" version="XHTML+RDFa 1.0" dir="<?php print $language->dir; ?>"
   <?php print $rdf_namespaces ?>>
@@ -9,9 +12,13 @@
 <?php print $head ?>
 <?php print $styles ?>
 <?php print $scripts ?>
+<link href="<?php print $base_url; ?>/sites/all/themes/zeropoint/bootstrap/less/bootstrap.css" rel="stylesheet" type="text/css" media="all"></link>
 </head>
 
 <body id="<?php print $body_id; ?>" class="<?php print $classes; ?>" <?php print $attributes;?>>
+
+<?php print $base_url; ?> XXX
+
 <div id="skip-nav"><a href="#main"><?php print t('Jump to Navigation'); ?></a></div>
   <?php print $page_top; ?>
   <?php print $page; ?>
