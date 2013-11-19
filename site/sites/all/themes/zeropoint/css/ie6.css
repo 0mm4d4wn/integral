@@ -13,6 +13,7 @@ body.two-sidebars .outer a, body.sidebar-first .outer a, body.sidebar-second .ou
 }
 .navright {
 	float: left;
+	background-color: red;
 }
 #middlecontainer {
 	word-wrap: break-word;
