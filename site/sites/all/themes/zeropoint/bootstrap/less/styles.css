@@ -1,0 +1,30 @@
+.brand {
+  background: url(../img/integral_logo.png) no-repeat 13px 8px;
+  height: 64px;
+  width: 200px;
+  padding: 0;
+}
+.idioma {
+  margin-top: 10px;
+}
+.content {
+  border: 1px solid red;
+}
+.content .foto {
+  width: 100%;
+}
+.content .foto img {
+  border: 1px solid aqua;
+}
+.content .texto {
+  color: orange;
+}
+.content .texto ul li {
+  color: blue;
+}
+.content .texto ul li:first-child {
+  color: aqua;
+}
+.content .texto ul li:hover {
+  color: red;
+}

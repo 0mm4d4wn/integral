@@ -1,120 +1,131 @@
-@hpBlue: #007DBA;
-@hpBlueDark: #005580;
-@hpBlueLight: #4b82ac;
-@font: 'HPSimplified-Bold';
-
-body{
-	background: url(../../templates/images/header.png) repeat-x top center @white;
-	padding: 0px;
-	margin: 0px;
-	text-align: center;
+/* modification for 5 columns */
+@media (min-width: 768px){
+    .fivecolumns .col-2, .fivecolumns .col-sm-2, .fivecolumns .col-lg-2  {
+        width: 20%;
+        *width: 20%;
+    }
 }
-a{
-	&:hover{
-		text-decoration: none;
+@media (min-width: 1200px) {
+    .fivecolumns .col-2, .fivecolumns .col-sm-2, .fivecolumns .col-lg-2 {
+        width: 20%;
+        *width: 20%;
+    }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    .fivecolumns .col-2, .fivecolumns .col-sm-2, .fivecolumns .col-lg-2 {
+        width: 20%;
+        *width: 20%;
+    }
+}
+/* 60% column */
+
+@media (min-width: 768px){
+    .fivecolumns .col-5, .fivecolumns .col-sm-5, .fivecolumns .col-lg-5  {
+        width: 60%;
+        *width: 60%;
+    }
+}
+@media (min-width: 1200px) {
+    .fivecolumns .col-5, .fivecolumns .col-sm-5, .fivecolumns .col-lg-5 {
+        width: 60%;
+        *width: 60%;
+    }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    .fivecolumns .col-5, .fivecolumns .col-sm-5, .fivecolumns .col-lg-5 {
+        width: 60%;
+        *width: 60%;
+    }
+}
+
+/* end modification for 5 columns */
+body {
+	font-family: 'AdelleSans-Light';
+}
+header {
+	background-color: #fff;
+	background: url(../img/noise-bg.png);
+}
+.bg-header {
+	background: rgba(185,211,242,0.3);
+}
+.menu {
+	border-bottom: 5px solid #FFFFFF;
+	background: rgba(163,193,229,0.3);
+}
+.brand {
+	position: absolute;
+	top: 20px;
+	left: 0px;
+}
+
+.language {
+	background: url(../img/world-map-1.png) no-repeat;
+	font-size: 11px;
+	margin: 10px 0 10px 0px;
+	padding-left: 38px;
+	.btn-default {
+		color: #999;
 	}
 }
-a,
-h1{
-	color: @hpBlue;
-}
-h1{
-	color: @hpBlue;
-	font-family:@font;
-	font-size: 26px;
-	text-transform: capitalize;
-}
-h2{
-	color: @hpBlue;
-	font-family:@font;
-	font-size: 22px;
-	text-transform: capitalize;
-}
-input[type="submit"] {
-	background:@hpBlue;
-	padding:5px 20px;
-	color:@white;
-	font-family:@font;
-	font-size:14px;
-	border: none;
-	.border-radius(40px);
-	.transition(all, 0.2s, ease-in);
-	&:hover{
-		background:@hpBlueDark;
-	};
-}
-input[type="radio"],
-input[type="checkbox"]{
-	position: relative;
-	top: -4px;
-	margin-right: 5px;
-}
-.h1, h1,  h2{
-	display: block;
-	padding-bottom: 10px;
-	margin-bottom: 20px;
-	border-bottom: 1px solid @grayLighter; 
-}
-.home-title{
-	position: relative;
-	top: 0px;
-}
-#page{
-	width: 980px;
-	padding: 0px 50px;
-	margin: 0 auto; 
-	text-align: left;
-	#header{
-		height: 222px;
-		position: relative;
-		#logo {
-			position: absolute;
-			top: 50px;
-			left: 20px;
-		}
-		#buscar{
-			position: absolute;
-			top: 70px;
-			right: 20px;
-			.form-text{
-				position: relative;
-				top: 5px;
-				font-size: 12px;
-				font-style: italic;
-			}
-			.btn{
-				position: relative;
-				top: 0px;
-			}
-		}
-		#menu-top{
-			position: absolute;
-			top: 10px;
-			right: 20px;
-			color: @white;
-			a{
-				color: @white;
-				&:hover{
-					color: @hpBlueLight;
-				}
-			}
-		}
-		#main-menu{
-			font-family: @font;
-			font-size: 16px;
-			position: absolute;
-			top: 152px;
-			border-bottom: none;
-			&.nav-tabs{
-				a{
-					color: @white;
-					text-transform: capitalize;
-					&.active,
-					&:hover{
-						color: @hpBlue;
-						background-color: #eeeeee; 
+.texto-nav {
+	font-family: 'AltoProExCon-ExtraLight';
+	.text-shadow(#FFF, 0px, 1px, 1px); 
+	ul {
+		li {
+			padding: 0;
+			margin: 0;
+			a {
+				.border-radius(0px);
+				font-size: 18px;
+				height: 38px;
+				padding: 6px 30px;
+				color: #005a84;
+				&:hover {
+					background: rgba(255,255,255,0.2);
+					color: #428bca;
+					.arrw {
+						padding:0 0 7px 0;
+						display: block;
+						background: url(../img/menu-arrow-hover.png) no-repeat bottom center;
 					}
 				}
+				&.active {
+					color: #999;
+					.arrw {
+						padding:0 0 7px 0;
+						display: block;
+						background: url(../img/menu-arrow.png) no-repeat center bottom;
+					}
+				}
+			}
+		}
+	}
+}
+.bg-menu {
+	#gradient > .vertical(#EAEDF3, #D3DDED, 0%, 100%);
+	border-bottom: 1px solid #B8C9DD;
+}
+.slider {
+		width: 100%;
+		background-color: #FFF;
+		margin-bottom: 15px;
+	}
+.content {
+	font-size: 12px;
+	.sidebar{
+		background: rgba(168,168,168,0.5);
+		.border-radius(7px);
+		color: #fff;
+		font-family: 'AltoPro-Thin';
+		font-size: 14px;
+		height: 659px;
+		margin-top: -35%;
+		position: relative;
+		top: 140px;
+		z-index: 9;
+		ul {
+			li{
 			}
 			ul{
 				li{
@@ -123,47 +134,42 @@ input[type="checkbox"]{
 				}
 			}
 		}
-		#user-info{
+	}
+	.box {
+		overflow: hidden;
+		padding: 0;
+		.title-box{
+			background :rgba(0,0,0,0.3);
+			color: #fff;
+			font-family: 'AltoProExCon-ThinItalic';
+			font-size: 14px;
+			margin: 0;
+			padding: 10px;
+			position: relative;
+			z-index: 10;
+		}
+		.title-box-bottom {
+			text-align: right;
 			position: absolute;
-			left: 10px;
-			top: 198px;
-			font-size: 12px;
-
+			bottom: 0;
+			right: 0;
+		}
+		img {
+			position: absolute;
+			top: 0;
 		}
 	}
-	#main-content{
-		margin:0px 0;
-		padding: 20px 40px; 
-		border: solid @grayLighter;
-		border-width: 0 1px 0 1px;
-		.box-shadow(0px, 10px, 60px, @grayLighter, inset); 
+	.propiedades {
+		height: 200px;
 	}
-	.boton{
-		display: inline-block;
-		margin: 20px 10px;
-		&:hover{
-			text-decoration: none;
-		}
+	.property-1 {
+		height: 400px;
 	}
-	#footer{
-		padding: 20px 0;
-		margin: 20px 0;
-		font-size: 12px;
-		color: @gray;
-		border-top: 1px solid @hpBlueLight;
-		a{
-			color: @hpBlueDark;
-		}
-		.hp-min{
-			display: inline-block;
-			padding: 3px 0 3px 28px;
-			margin: 0 5px;
-			font-style: italic;
-			background: url(../../templates/images/hp-logo-min.png) no-repeat 0 0;
-		}
+	.espacio-opcional {
+		height: 100px;
 	}
-
+	.contactos-paises {
+		height: 140px
+	}
 }
-
-
 
