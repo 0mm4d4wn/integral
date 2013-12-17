@@ -110,19 +110,19 @@
 
 		</div><!--sidebar-->
 
+		<div class="contenedor">
 		<a href="#">
 			<div class="col-md-3 propiedades box property-1">
-				<div class="">
-					<div class="title-box">Propiedad 1</div>
-				</div>
-				<img src="vito-property.jpg" alt="...">
-				<div class="title-box title-box-bottom">Característica de propiedad 1</div>
+					<div class="bg-title-box"></div>
+					<div class="piedefoto title-box">Propiedad 1</div>
+					<img src="vito-property.jpg" alt="...">
+				<div class="piedefoto title-box-bottom">Característica de propiedad 1</div>
 			</div>
 		</a>
 		<a href="#">
 			<div class="col-md-3 propiedades box">
 				<div class="">
-					<div class="title-box">Propiedad 2</div>
+					<div class="piedefoto title-box">Propiedad 2</div>
 				</div>
 				<img src="vito-property2.jpg" alt="...">
 			</div>
@@ -130,7 +130,7 @@
 		<a href="#">
 			<div class="col-md-3 propiedades box">
 				<div class="">
-					<div class="title-box">Propiedad 3</div>
+					<div class="piedefoto title-box">Propiedad 3</div>
 				</div>
 				<img src="vito-property3.jpg" alt="...">
 			</div>
@@ -138,7 +138,7 @@
 		<a href="#">
 			<div class="col-md-3 propiedades box">
 				<div class="">
-					<div class="title-box">Propiedad 4</div>
+					<div class="piedefoto title-box">Propiedad 4</div>
 				</div>
 				<img src="vito-property4.jpg" alt="...">
 			</div>
@@ -146,11 +146,12 @@
 		<a href="#">
 			<div class="col-md-3 propiedades box">
 				<div class="">
-					<div class="title-box">Propiedad 5</div>
+					<div class="piedefoto title-box">Propiedad 5</div>
 				</div>
 				<img src="vito-property5.jpg" alt="...">
 			</div>
 		</a>
+	</div>
 	</div>
 	<div class="container content">
 		<div class="col-md-12 box espacio-opcional">
