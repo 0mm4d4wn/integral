@@ -17,7 +17,6 @@
 
 <body id="<?php print $body_id; ?>" class="<?php print $classes; ?>" <?php print $attributes;?>>
 
-<?php print $base_url; ?> XXX
 
 <div id="skip-nav"><a href="#main"><?php print t('Jump to Navigation'); ?></a></div>
   <?php print $page_top; ?>
