@@ -6006,36 +6006,46 @@ body {
 }
 header {
   background-color: #fff;
-  background: url(../img/noise-bg.png);
-}
-.bg-header {
-  background: rgba(185, 211, 242, 0.3);
-}
-.menu {
-  border-bottom: 5px solid #FFFFFF;
-  background: rgba(163, 193, 229, 0.3);
+  background: url(../img/bg-header2.svg) repeat-x 0 top;
 }
 .brand {
   position: absolute;
-  top: 20px;
+  top: 0px;
   left: 0px;
 }
 .language {
   background: url(../img/world-map-1.png) no-repeat;
   font-size: 11px;
-  margin: 10px 0 10px 0px;
+  margin: 40px 0 10px 0px;
   padding-left: 38px;
 }
 .language .btn-default {
   color: #999;
 }
-.texto-nav {
+.container-bg-menu {
+  border-bottom: 1px solid #d6dce7;
+}
+ul#menu {
   font-family: 'AltoProExCon-ExtraLight';
-  -webkit-text-shadow: 0px 1px 1px #ffffff;
-  -moz-text-shadow: 0px 1px 1px #ffffff;
-  -ms-text-shadow: 0px 1px 1px #ffffff;
-  -o-text-shadow: 0px 1px 1px #ffffff;
-  text-shadow: 0px 1px 1px #ffffff;
+}
+ul#menu li {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  display: inline-block;
+  padding: 0;
+  border: none;
+}
+ul#menu li a {
+  background: url(../img/dot.png) no-repeat center left;
+  display: block;
+  font-size: 18px;
+  padding: 6px 20px;
+  color: #005a84;
+}
+ul#menu li a:hover {
+  color: #0066FF;
+  text-decoration: none;
 }
 .texto-nav ul li {
   padding: 0;
@@ -6076,7 +6086,7 @@ header {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffeaedf3', endColorstr='#ffd3dded', GradientType=0);
   border-bottom: 1px solid #B8C9DD;
 }
-.slider {
+#slider {
   width: 100%;
   background-color: #FFF;
   margin-bottom: 15px;
@@ -6158,11 +6168,6 @@ header {
 .content .contactos-paises {
   height: 140px;
   border: 1px solid black;
-}
-#main-container {
-  width: 100%;
-  margin: auto;
-  border: 1px solid aqua;
 }
 /* modification for 5 columns */
 @media (min-width: 768px) {

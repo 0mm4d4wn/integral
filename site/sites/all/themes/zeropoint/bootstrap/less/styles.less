@@ -4,33 +4,48 @@ body {
 }
 header {
 	background-color: #fff;
-	background: url(../img/noise-bg.png);
+	background: url(../img/bg-header2.svg) repeat-x 0 top;
 }
 .bg-header {
-	background: rgba(185,211,242,0.3);
-}
-.menu {
-	border-bottom: 5px solid #FFFFFF;
-	background: rgba(163,193,229,0.3);
 }
 .brand {
 	position: absolute;
-	top: 20px;
+	top: 0px;
 	left: 0px;
 }
-
 .language {
 	background: url(../img/world-map-1.png) no-repeat;
 	font-size: 11px;
-	margin: 10px 0 10px 0px;
+	margin: 40px 0 10px 0px;
 	padding-left: 38px;
 	.btn-default {
 		color: #999;
 	}
 }
-.texto-nav {
+.container-bg-menu {
+	border-bottom: 1px solid #d6dce7;
+}
+ul#menu {
 	font-family: @font1;
-	.text-shadow(#FFF, 0px, 1px, 1px); 
+	li {
+		.border-radius(0px);
+		display: inline-block;
+		padding: 0;
+		border: none;
+		a {
+			background: url(../img/dot.png) no-repeat center left;
+			display: block;
+			font-size: 18px;
+			padding: 6px 20px;
+			color: #005a84;
+			&:hover {
+				color: #0066FF;
+				text-decoration: none;
+			}
+		}
+	}
+}
+.texto-nav {
 	ul {
 		li {
 			padding: 0;
@@ -66,7 +81,7 @@ header {
 	#gradient > .vertical(#EAEDF3, #D3DDED, 0%, 100%);
 	border-bottom: 1px solid #B8C9DD;
 }
-.slider {
+#slider {
 		width: 100%;
 		background-color: #FFF;
 		margin-bottom: 15px;
@@ -159,8 +174,5 @@ header {
 	
 }
 #main-container {
-	width: 100%;
-	margin: auto;
-	border: 1px solid aqua;
 }
 

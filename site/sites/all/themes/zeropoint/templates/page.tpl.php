@@ -8,7 +8,6 @@
 			</div><!-- logo -->
 			<div class="col-md-9">
 				<div class="btn-group language pull-right">
-            <div id="user_links"><?php print zeropoint_login() ?></div>
 	  			<button class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
 					Idiomas
 					<span class="caret"></span>
@@ -21,62 +20,30 @@
 				    	<a href="#">idioma 2</a>
 				    </li>
 				  </ul>
+				  <!--<div id="user_links"><?php print zeropoint_login() ?></div>-->
 				</div>
 			</div><!-- language -->	
 		</div>
 	</div>
-	<div class="container-fluid menu">
+	<div class="container-fluid container-bg-menu">
 		<div class="container">
-
       <?php if ($main_menu || $page['dropdown']): ?>
-          <div id="navlinks" class="<?php print menupos() ?> pull-right">
+          <div id="" class="<?php print menupos() ?> pull-right">
           <?php if (!empty($page['dropdown'])) { ?><?php print render($page['dropdown']); ?><?php } ?>
           <?php if (empty($page['dropdown'])) { ?>
           <?php print theme('links__system_main_menu', array(
                     'links' => $main_menu,
                     'attributes' => array(
-                      'id' => 'navlist',
-                      'class' => array('links', 'clearfix'),
+                      'id' => 'menu',
+                      'class' => array('links',	 'clearfix'),
                     ),
-                    'heading' => array(
+                    /*'heading' => array(
                       'text' => t('Main menu'),
                       'level' => 'h2',
                       'class' => array('element-invisible'),
-                    ),)); ?><?php } ?>
+                    ),*/)); ?><?php } ?>
           </div>
         <?php endif;  ?>
-
-		<!--
-      <nav id="navigation" class="texto-nav pull-right">
-				<ul class="list-inline nav nav-pills">
-					<li>
-						<a class="active" href="#">
-							<div class="arrw">Integral</div>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<div class="arrw">Proyectos</div>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<div class="arrw">Propiedades</div>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<div class="arrw">Servicios</div>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<div class="arrw">Contacto</div>
-						</a>
-					</li>
-				</ul>
-			</nav>
-    -->
 
 		</div>
 	</div>
