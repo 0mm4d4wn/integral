@@ -3,13 +3,13 @@
   global $base_url;
   $ruta = "/sites/all/themes/zeropoint/images/";
 ?> 
-<header id="header">
-	<div class="container-fluid bg-header">
-		<div class="container">
-			<div class="col-md-3">
+<div class="contenedor">
+  <header id="header" class="contenedor2">
+		<div class="">
+			<div class="">
 				<a href="#"><img class="brand" src="<?php echo $base_url.$ruta; ?>integral_logo.png" alt="..."></a>
 			</div><!-- logo -->
-			<div class="col-md-9">
+			<div class="">
 				<div class="btn-group language pull-right">
 	  			<button class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
 					Idiomas
@@ -27,31 +27,31 @@
 				</div>
 			</div><!-- language -->	
 		</div>
-	</div>
-	<div class="container-fluid container-bg-menu">
-		<div class="container">
-      <?php if ($main_menu || $page['dropdown']): ?>
-          <div id="" class="<?php print menupos() ?> pull-right">
-          <?php if (!empty($page['dropdown'])) { ?><?php print render($page['dropdown']); ?><?php } ?>
-          <?php if (empty($page['dropdown'])) { ?>
-          <?php print theme('links__system_main_menu', array(
-                    'links' => $main_menu,
-                    'attributes' => array(
-                      'id' => 'menu',
-                      'class' => array('links',	 'clearfix'),
-                    ),
-                    /*'heading' => array(
-                      'text' => t('Main menu'),
-                      'level' => 'h2',
-                      'class' => array('element-invisible'),
-                    ),*/)); ?><?php } ?>
-          </div>
-        <?php endif;  ?>
 
-		</div>
-	</div>
-</header>
+  	<div class="container-bg-menu">
+  		<div class="">
+        <?php if ($main_menu || $page['dropdown']): ?>
+            <div id="" class="<?php print menupos() ?> pull-right">
+            <?php if (!empty($page['dropdown'])) { ?><?php print render($page['dropdown']); ?><?php } ?>
+            <?php if (empty($page['dropdown'])) { ?>
+            <?php print theme('links__system_main_menu', array(
+                      'links' => $main_menu,
+                      'attributes' => array(
+                        'id' => 'menu',
+                        'class' => array('links',	 'clearfix'),
+                      ),
+                      /*'heading' => array(
+                        'text' => t('Main menu'),
+                        'level' => 'h2',
+                        'class' => array('element-invisible'),
+                      ),*/)); ?><?php } ?>
+            </div>
+          <?php endif;  ?>
 
+  		</div>
+  	</div>
+  </header>
+</div>
 <div id="main-container">
   <?php if ($page['highlighted']): ?><div id="mission"><?php print render ($page['highlighted']); ?></div><?php endif; ?>
   <?php print render($title_prefix); ?>

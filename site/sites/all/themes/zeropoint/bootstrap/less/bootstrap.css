@@ -6004,14 +6004,17 @@ td.visible-print {
 body {
   font-family: 'AdelleSans-Light';
 }
+contenedor {
+  text-align: center;
+}
+contenedor2 {
+  margin: auto;
+  text-align: left;
+  width: 1024px;
+}
 header {
   background-color: #fff;
-  background: url(../img/bg-header2.svg) repeat-x 0 top;
-}
-.brand {
-  position: absolute;
-  top: 0px;
-  left: 0px;
+  height: 120px;
 }
 .language {
   background: url(../img/world-map-1.png) no-repeat;
@@ -6021,6 +6024,9 @@ header {
 }
 .language .btn-default {
   color: #999;
+}
+#main-container {
+  width: 1000px !important;
 }
 .container-bg-menu {
   border-bottom: 1px solid #d6dce7;
@@ -6046,36 +6052,6 @@ ul#menu li a {
 ul#menu li a:hover {
   color: #0066FF;
   text-decoration: none;
-}
-.texto-nav ul li {
-  padding: 0;
-  margin: 0;
-}
-.texto-nav ul li a {
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  border-radius: 0px;
-  font-size: 18px;
-  height: 38px;
-  padding: 6px 30px;
-  color: #005a84;
-}
-.texto-nav ul li a:hover {
-  background: rgba(255, 255, 255, 0.2);
-  color: #428bca;
-}
-.texto-nav ul li a:hover .arrw {
-  padding: 0 0 7px 0;
-  display: block;
-  background: url(../img/menu-arrow-hover.png) no-repeat bottom center;
-}
-.texto-nav ul li a.active {
-  color: #999;
-}
-.texto-nav ul li a.active .arrw {
-  padding: 0 0 7px 0;
-  display: block;
-  background: url(../img/menu-arrow.png) no-repeat center bottom;
 }
 .bg-menu {
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#eaedf3), to(#d3dded));
