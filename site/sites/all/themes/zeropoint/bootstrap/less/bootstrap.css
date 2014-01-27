@@ -6169,6 +6169,19 @@ ul#menu li a:hover {
   height: 140px;
   border: 1px solid black;
 }
+#main-container {
+  width: 67%;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #e2e2e2;
+}
+.pane-views-ultimos-proyectos-block-1 .views-row {
+  float: left;
+  margin: 10px;
+}
+.pane-views-ultimos-proyectos-block-1 .views-row .views-field-title {
+  color: red;
+}
 /* modification for 5 columns */
 @media (min-width: 768px) {
   .fivecolumns .col-2,

@@ -1,10 +1,13 @@
 
-
+<?php
+  global $base_url;
+  $ruta = "/sites/all/themes/zeropoint/images/";
+?> 
 <header id="header">
 	<div class="container-fluid bg-header">
 		<div class="container">
 			<div class="col-md-3">
-				<a href="#"><img class="brand" src="integral_logo.png" alt="..."></a>
+				<a href="#"><img class="brand" src="<?php echo $base_url.$ruta; ?>integral_logo.png" alt="..."></a>
 			</div><!-- logo -->
 			<div class="col-md-9">
 				<div class="btn-group language pull-right">
