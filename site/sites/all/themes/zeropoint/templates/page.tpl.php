@@ -4,11 +4,11 @@
   $ruta = "/sites/all/themes/zeropoint/images/";
 ?> 
 <div class="contenedor">
-  <header id="header" class="contenedor2">
-		<div class="">
-			<div class="">
+  <div id="head" class="contenedor2">
+		<div class="lang-brand">
+			<div class="brand">
 				<a href="#"><img class="brand" src="<?php echo $base_url.$ruta; ?>integral_logo.png" alt="..."></a>
-			</div><!-- logo -->
+			</div><!-- brand -->
 			<div class="">
 				<div class="btn-group language pull-right">
 	  			<button class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
@@ -25,9 +25,9 @@
 				  </ul>
 				  <!--<div id="user_links"><?php print zeropoint_login() ?></div>-->
 				</div>
-			</div><!-- language -->	
-		</div>
-
+			</div>	
+		</div><!-- language -->
+    <!-- menu -->
   	<div class="container-bg-menu">
   		<div class="">
         <?php if ($main_menu || $page['dropdown']): ?>
@@ -47,11 +47,10 @@
                       ),*/)); ?><?php } ?>
             </div>
           <?php endif;  ?>
-
   		</div>
-  	</div>
-  </header>
-</div>
+  	</div><!-- menu -->
+  </div><!-- header -->
+</div><!-- contenedor -->
 <div id="main-container">
   <?php if ($page['highlighted']): ?><div id="mission"><?php print render ($page['highlighted']); ?></div><?php endif; ?>
   <?php print render($title_prefix); ?>
