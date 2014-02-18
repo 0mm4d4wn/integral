@@ -1,14 +1,14 @@
-/* end modification for 5 columns */
+
 body {
-	font-family: 'AdelleSans-Light';
+	font-family: @font1;
 }
 .contenedor {
 	text-align: center;
 	.contenedor2 {
-	margin: auto;
-	text-align: left;
-	width: 1024px;
-	position: relative;
+		margin: auto;
+		text-align: left;
+		width: 1024px;
+		position: relative;
 	}
 }
 #head {
@@ -41,9 +41,8 @@ body {
 .container-bg-menu {
 
 }
-ul#menu {
-	font-family: @font1;
-	width: 483px;
+#menu {
+	font-family: @font2;
 	height: 39px;
 	position: absolute;
 		right: 0;
@@ -66,6 +65,61 @@ ul#menu {
 		}
 	}
 }
+#contact-countries {
+	height: 160px;
+	padding: 0;
+	margin: 20px 0;
+	text-align: center;
+	display: block;
+	.cnt-menu {
+		float: left;
+		width: 202px;
+		padding: 5px 10px 5px;
+		margin-right: 2px;
+		.country-icon {
+			float: left;
+			padding: 3px;
+			img {
+				margin: 5px;
+			}
+		}
+		.country-text {
+			float: left;
+			padding: 3px;
+			h5 {
+				color: @blue4;
+				font-family: @font3;
+			}
+			p {
+				color: @gray2;
+				font-family: @font2;
+			}
+		}
+	}
+}
+
+#footer {
+	#gradient > .vertical(#D3DDED, #FFF, 0%, 100%);
+	padding: 0;
+	.social-icons {
+		display: inline-block;
+		width: 202px;
+		height: 120px;
+		}
+	.copyright {
+		display: inline-block;
+		width: 612px;
+		height: 120px;
+		}
+	.nota-legal {
+		display: inline-block;
+		width: 202px;
+		height: 120px;
+		}
+	}
+
+
+
 .bg-menu {
 	#gradient > .vertical(#EAEDF3, #D3DDED, 0%, 100%);
 	border-bottom: 1px solid #B8C9DD;
@@ -176,5 +230,7 @@ ul#menu {
 		}
 	}
 }
+
+
 
 /* test */

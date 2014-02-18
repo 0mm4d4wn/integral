@@ -63,3 +63,64 @@
   <?php if ($page['content']) : ?><?php print render ($page['content']); ?><?php endif; ?>
   <?php print $feed_icons; ?>
 </div>
+<div id="contact-countries" class="contenedor">
+  <div class="contenedor2">
+    <!--contactos en paises-->
+    <div class="cnt-menu">
+      <div class="country-icon">
+        <img src="<?php echo $base_url.$ruta; ?>pnm-flag.png" alt="...">
+      </div>
+      <div class="country-text">
+        <h5>Panamá</h5>
+        <p>Ciudad de Panamá Calle 73 Edificio Rosely Ofc. PB 1A San Francisco cel: (507) 6612-7847</p>
+      </div>
+    </div>
+    <div class="cnt-menu">
+      <div class="country-icon">
+        <img src="<?php echo $base_url.$ruta; ?>vnz-flag.png" alt="...">
+      </div>
+      <div class="country-text">
+        <h5>Venezuela</h5>
+        <p>Caracas Calle 73 Edificio Rosely Ofc. PB 1A San Francisco cel: (507) 6612-7847</p>
+      </div>
+    </div>
+    <div class="cnt-menu">
+      <div class="country-icon">
+        <img src="<?php echo $base_url.$ruta; ?>col-flag.png" alt="...">
+      </div>
+      <div class="country-text">
+        <h5>Colombia</h5>
+        <p>Bogotá Calle 73 Edificio Rosely Ofc. PB 1A San Francisco cel: (507) 6612-7847</p>
+      </div>
+    </div>
+    <div class="cnt-menu">
+      <div class="country-icon">
+        <img src="<?php echo $base_url.$ruta; ?>usa-flag.png" alt="...">
+      </div>
+      <div class="country-text">
+        <h5>Estados Unidos</h5>
+        <p>Miami Calle 73 Edificio Rosely Ofc. PB 1A San Francisco cel: (507) 6612-7847</p>
+      </div>
+    </div>
+    <div class="cnt-menu">
+      <div class="country-icon">
+        <img src="<?php echo $base_url.$ruta; ?>eur-flag.png" alt="...">
+      </div>
+      <div class="country-text">
+        <h5>Unión Europea</h5>
+        <p>Ciudad de Panamá Calle 73 Edificio Rosely Ofc. PB 1A San Francisco cel: (507) 6612-7847</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="footer" class="contenedor">
+  <div class="contenedor2">
+    <!--redes sociales, créditos y nota legal-->
+    <div class="social-icons">
+    </div>
+    <div class="copyright">
+    </div>
+    <div class="nota-legal">
+    </div>
+  </div>
+</div>

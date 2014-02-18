@@ -6000,7 +6000,6 @@ td.visible-print {
     display: none !important;
   }
 }
-/* end modification for 5 columns */
 body {
   font-family: 'AdelleSans-Light';
 }
@@ -6039,15 +6038,14 @@ body {
 #main-container {
   width: 1024px !important;
 }
-ul#menu {
+#menu {
   font-family: 'AltoProExCon-ExtraLight';
-  width: 483px;
   height: 39px;
   position: absolute;
   right: 0;
   bottom: 0;
 }
-ul#menu li {
+#menu li {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
@@ -6055,16 +6053,72 @@ ul#menu li {
   padding: 0;
   border: none;
 }
-ul#menu li a {
+#menu li a {
   background: url(../img/dot.png) no-repeat center left;
   display: block;
   font-size: 18px;
   padding: 6px 20px;
   color: #005a84;
 }
-ul#menu li a:hover {
+#menu li a:hover {
   color: #0066FF;
   text-decoration: none;
+}
+#contact-countries {
+  height: 160px;
+  padding: 0;
+  margin: 20px 0;
+  text-align: center;
+  display: block;
+}
+#contact-countries .cnt-menu {
+  float: left;
+  width: 202px;
+  padding: 5px 10px 5px;
+  margin-right: 2px;
+}
+#contact-countries .cnt-menu .country-icon {
+  float: left;
+  padding: 3px;
+}
+#contact-countries .cnt-menu .country-icon img {
+  margin: 5px;
+}
+#contact-countries .cnt-menu .country-text {
+  float: left;
+  padding: 3px;
+}
+#contact-countries .cnt-menu .country-text h5 {
+  color: #0d6ba0;
+  font-family: 'AltoPro-Thin';
+}
+#contact-countries .cnt-menu .country-text p {
+  color: #6b8187;
+  font-family: 'AltoProExCon-ExtraLight';
+}
+#footer {
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#d3dded), to(#ffffff));
+  background-image: -webkit-linear-gradient(top, #d3dded, 0%, #ffffff, 100%);
+  background-image: -moz-linear-gradient(top, #d3dded 0%, #ffffff 100%);
+  background-image: linear-gradient(to bottom, #d3dded 0%, #ffffff 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd3dded', endColorstr='#ffffffff', GradientType=0);
+  padding: 0;
+}
+#footer .social-icons {
+  display: inline-block;
+  width: 202px;
+  height: 120px;
+}
+#footer .copyright {
+  display: inline-block;
+  width: 612px;
+  height: 120px;
+}
+#footer .nota-legal {
+  display: inline-block;
+  width: 202px;
+  height: 120px;
 }
 .bg-menu {
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#eaedf3), to(#d3dded));
@@ -6089,7 +6143,7 @@ ul#menu li a:hover {
   -moz-border-radius: 7px;
   border-radius: 7px;
   color: #fff;
-  font-family: 'AltoPro-Thin';
+  font-family: 'AltoProExCon-ExtraLight';
   font-size: 14px;
   height: 659px;
   margin-top: -35%;
@@ -6118,7 +6172,7 @@ ul#menu li a:hover {
 .content .box .piedefoto {
   background: rgba(0, 0, 0, 0.3);
   color: #fff;
-  font-family: 'AltoProExCon-ThinItalic';
+  font-family: 'AltoPro-Thin';
   font-size: 14px;
   margin: 0;
   padding: 10px;
@@ -6168,6 +6222,7 @@ ul#menu li a:hover {
 .pane-views-ultimos-proyectos-block-1 .views-row .views-field-title {
   color: red;
 }
+/* test */
 /* modification for 5 columns */
 @media (min-width: 768px) {
   .fivecolumns .col-2,
