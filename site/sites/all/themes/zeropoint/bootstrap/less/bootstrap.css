@@ -6233,23 +6233,22 @@ body {
   padding: 10px;
   border: 1px solid #e2e2e2;
 }
-.pane-views-ultimos-proyectos-block-1 .views-row {
-  background: #c4c4c4;
+.view-ultimos-proyectos .views-row {
+  background: #CCC;
   margin: 10px 0;
 }
-.pane-views-ultimos-proyectos-block-1 .views-row .views-field-title a {
+.view-ultimos-proyectos .views-row .views-field-title a {
   color: #d3dded;
   margin-bottom: 10px;
 }
-.pane-views-ultimos-proyectos-block-1 .views-row .views-field-body {
+.view-ultimos-proyectos .views-row .views-field-body {
   color: white;
 }
-.pane-views-ultimos-proyectos-block-1 .views-row .views-field-view-node {
+.view-ultimos-proyectos .views-row .views-field-view-node {
   float: left;
 }
-.pane-views-ultimos-proyectos-block-1 .views-row .views-field-field-imagen-pro {
+.view-ultimos-proyectos .views-row .views-field-field-imagen-pro {
   background: #e8e8e8;
-  height: 220px;
 }
 /* test */
 /* modification for 5 columns */
