@@ -54,7 +54,7 @@
 <div id="main-container">
   <?php if ($page['highlighted']): ?><div id="mission"><?php print render ($page['highlighted']); ?></div><?php endif; ?>
   <?php print render($title_prefix); ?>
-  <?php if ($title): if ($is_front){ print '<h2 class="title">'. $title .'</h2>'; } else { print '<h1 class="title">'. $title .'</h1>'; } endif; ?>
+  <?php //if ($title): if ($is_front){ print '<h2 class="title">'. $title .'</h2>'; } else { print '<h1 class="title">'. $title .'</h1>'; } endif; ?>
   <?php print render($title_suffix); ?>
   <div class="tabs"><?php print render($tabs); ?></div>
   <?php print render($page['help']); ?>
@@ -66,61 +66,50 @@
 <div id="contact-countries" class="contenedor">
   <div class="contenedor2">
     <!--contactos en paises-->
-    <div class="cnt-menu">
-      <div class="country-icon">
-        <img src="<?php echo $base_url.$ruta; ?>pnm-flag.png" alt="...">
-      </div>
+    <div class="cnt-menu pnm-icon">
       <div class="country-text">
-        <h5>Panamá</h5>
+        <div class="myh5">Panamá</div>
         <p>Ciudad de Panamá Calle 73 Edificio Rosely Ofc. PB 1A San Francisco cel: (507) 6612-7847</p>
       </div>
     </div>
-    <div class="cnt-menu">
-      <div class="country-icon">
-        <img src="<?php echo $base_url.$ruta; ?>vnz-flag.png" alt="...">
-      </div>
+    <div class="cnt-menu vnz-icon">
       <div class="country-text">
-        <h5>Venezuela</h5>
+        <div class="myh5">Venezuela</div>
         <p>Caracas Calle 73 Edificio Rosely Ofc. PB 1A San Francisco cel: (507) 6612-7847</p>
       </div>
     </div>
-    <div class="cnt-menu">
-      <div class="country-icon">
-        <img src="<?php echo $base_url.$ruta; ?>col-flag.png" alt="...">
-      </div>
+    <div class="cnt-menu col-icon">
       <div class="country-text">
-        <h5>Colombia</h5>
+        <div class="myh5">Colombia</div>
         <p>Bogotá Calle 73 Edificio Rosely Ofc. PB 1A San Francisco cel: (507) 6612-7847</p>
       </div>
     </div>
-    <div class="cnt-menu">
-      <div class="country-icon">
-        <img src="<?php echo $base_url.$ruta; ?>usa-flag.png" alt="...">
-      </div>
+    <div class="cnt-menu usa-icon">
       <div class="country-text">
-        <h5>Estados Unidos</h5>
+        <div class="myh5">Estados Unidos</div>
         <p>Miami Calle 73 Edificio Rosely Ofc. PB 1A San Francisco cel: (507) 6612-7847</p>
       </div>
     </div>
-    <div class="cnt-menu">
-      <div class="country-icon">
-        <img src="<?php echo $base_url.$ruta; ?>eur-flag.png" alt="...">
-      </div>
+    <div class="cnt-menu eur-icon">
       <div class="country-text">
-        <h5>Unión Europea</h5>
+        <div class="myh5">Unión Europea</div>
         <p>Ciudad de Panamá Calle 73 Edificio Rosely Ofc. PB 1A San Francisco cel: (507) 6612-7847</p>
       </div>
     </div>
   </div>
 </div>
-<div id="footer" class="contenedor">
-  <div class="contenedor2">
-    <!--redes sociales, créditos y nota legal-->
-    <div class="social-icons">
-    </div>
-    <div class="copyright">
-    </div>
-    <div class="nota-legal">
+<div class="gradient">
+  <div class="degrade-right">
+    <div id="footer" class="contenedor">
+      <div class="contenedor2">
+        <!--redes sociales, créditos y nota legal-->
+        <div class="social-icons">
+        </div>
+        <div class="copyright">
+        </div>
+        <div class="nota-legal">
+        </div>
+      </div>
     </div>
   </div>
 </div>
