@@ -54,7 +54,7 @@
 <div id="main-container">
   <?php if ($page['highlighted']): ?><div id="mission"><?php print render ($page['highlighted']); ?></div><?php endif; ?>
   <?php print render($title_prefix); ?>
-  <?php //if ($title): if ($is_front){ print '<h2 class="title">'. $title .'</h2>'; } else { print '<h1 class="title">'. $title .'</h1>'; } endif; ?>
+  <?php if ($title): if ($is_front){ print '<h2 class="title">'. $title .'</h2>'; } else { print '<h1 class="title">'. $title .'</h1>'; } endif; ?>
   <?php print render($title_suffix); ?>
   <div class="tabs"><?php print render($tabs); ?></div>
   <?php print render($page['help']); ?>
