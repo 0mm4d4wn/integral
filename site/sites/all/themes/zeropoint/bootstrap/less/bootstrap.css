@@ -6014,6 +6014,7 @@ body {
 }
 #head {
   height: 120px;
+  margin-bottom: 30px;
 }
 .brand {
   width: 247px;
@@ -6034,9 +6035,6 @@ body {
 }
 .language .btn-default {
   color: #999;
-}
-#main-container {
-  width: 1024px !important;
 }
 #menu {
   font-family: 'AltoProExCon-ExtraLight';
@@ -6061,7 +6059,7 @@ body {
   color: #005a84;
 }
 #menu li a:hover {
-  color: #0066FF;
+  color: #6694c1;
   text-decoration: none;
 }
 #contact-countries {
@@ -6228,29 +6226,54 @@ body {
   border: 1px solid black;
 }
 #main-container {
-  width: 67%;
+  width: 1024px;
+  border: 0;
   margin: auto;
-  padding: 10px;
-  border: 1px solid #e2e2e2;
+  overflow: auto;
 }
 .view-ultimos-proyectos .views-row {
-  background: #CCC;
   margin: 10px 0;
+  padding: 10px;
 }
 .view-ultimos-proyectos .views-row .views-field-title a {
-  color: #d3dded;
+  color: #6694c1;
+  font: 30px 'AltoProExCon-ExtraLight';
   margin-bottom: 10px;
 }
-.view-ultimos-proyectos .views-row .views-field-body {
-  color: white;
+.view-ultimos-proyectos .views-row .views-field-title a:hover {
+  color: #0d6ba0;
+  text-decoration: none;
 }
-.view-ultimos-proyectos .views-row .views-field-view-node {
-  float: left;
+.view-ultimos-proyectos .views-row .views-field-body {
+  color: #6b8187;
 }
 .view-ultimos-proyectos .views-row .views-field-field-imagen-pro {
   background: #e8e8e8;
 }
+.pane-title {
+  display: none;
+}
+.page-home h1.title,
+.page-integral h1.title,
+.page-proyectos h1.title,
+.page-propiedades h1.title,
+.page-servicios h1.title,
+.page-contacto h1.title {
+  display: none;
+}
 /* test */
+#integral-sidebar {
+  width: 19%;
+  height: 400px;
+  float: left;
+  border: 1px solid #e2e2e2;
+  margin-right: 30px;
+}
+#integral-in {
+  width: 78%;
+  float: right;
+  border: 1px solid #e2e2e2;
+}
 /* modification for 5 columns */
 @media (min-width: 768px) {
   .fivecolumns .col-2,

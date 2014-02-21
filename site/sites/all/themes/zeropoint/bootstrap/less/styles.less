@@ -13,6 +13,7 @@ body {
 }
 #head {
 	height: 120px;
+	margin-bottom: 30px;
 }
 .brand {
 	width: 247px;
@@ -35,9 +36,6 @@ body {
 	}
 }
 
-#main-container {
-	width: 1024px !important;
-}
 .container-bg-menu {
 
 }
@@ -59,7 +57,7 @@ body {
 			padding: 6px 20px;
 			color: #005a84;
 			&:hover {
-				color: #0066FF;
+				color: @blue5;
 				text-decoration: none;
 			}
 		}
@@ -230,35 +228,81 @@ body {
 	
 }
 #main-container { 
-	width: 67%;
+	width: 1024px;
+	border:0;
 	margin: auto;
-	padding: 10px;
-	border: 1px solid #e2e2e2;
+	overflow: auto;
 }
 
 
 .view-ultimos-proyectos {
 	.views-row {
-		background: #CCC;
 		margin: 10px 0;
+		padding: 10px;
 		.views-field-title {
 			a {
-			color: @blue3;
-			margin-bottom: 10px;	
+			color: @blue5;
+			font: 30px @font2;
+			margin-bottom: 10px;
+			&:hover {
+				color: @blue4;
+				text-decoration: none;
+				}	
 			}
 		}
 		.views-field-body {
-			color: white;
+			color: @gray3;
 		}
 		.views-field-view-node {
-			float: left;
+			
 		}
 		.views-field-field-imagen-pro {
 			background: #e8e8e8;
 		}
 	}
 }
+.pane-title {
+	display: none;
+}
+.page-home, 
+.page-integral,
+.page-proyectos,
+.page-propiedades,
+.page-servicios,
+.page-contacto,
+	{
+	h1.title {
+		display: none;
+	}
+}
 
 
 
 /* test */
+
+
+
+
+#integral-sidebar {
+	width: 19%;
+	height: 400px;
+	float: left;
+	border: 1px solid #e2e2e2;
+	margin-right: 30px;
+}
+#integral-in {
+	width: 78%;
+	float: right;
+	border: 1px solid #e2e2e2;
+}
+
+
+
+
+
+
+
+
+
+
+

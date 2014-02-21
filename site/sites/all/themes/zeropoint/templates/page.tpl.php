@@ -52,6 +52,16 @@
   </div><!-- header -->
 </div><!-- contenedor -->
 <div id="main-container">
+  <div id="integral-sidebar">
+    <?php
+      /*$busqueda = module_invoke('views', 'block_view', 'busqueda-block');
+      print render($busqueda['content']);*/
+      $viewName = 'busqueda';
+      print views_embed_view($viewName);
+    ?>
+  </div>
+
+  <div id="integral-in">
   <?php if ($page['highlighted']): ?><div id="mission"><?php print render ($page['highlighted']); ?></div><?php endif; ?>
   <?php print render($title_prefix); ?>
   <?php if ($title): if ($is_front){ print '<h2 class="title">'. $title .'</h2>'; } else { print '<h1 class="title">'. $title .'</h1>'; } endif; ?>
@@ -62,6 +72,8 @@
   <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
   <?php if ($page['content']) : ?><?php print render ($page['content']); ?><?php endif; ?>
   <?php print $feed_icons; ?>
+</div>
+
 </div>
 <div id="contact-countries" class="contenedor">
   <div class="contenedor2">
