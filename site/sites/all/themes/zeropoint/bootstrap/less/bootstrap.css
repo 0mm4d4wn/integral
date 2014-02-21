@@ -6264,10 +6264,14 @@ body {
 /* test */
 #integral-sidebar {
   width: 19%;
-  height: 400px;
+  padding: 20px 10px;
   float: left;
   border: 1px solid #e2e2e2;
   margin-right: 30px;
+}
+#integral-sidebar .view-busqueda .view-content,
+#integral-sidebar .view-busqueda .item-list {
+  display: none;
 }
 #integral-in {
   width: 78%;
