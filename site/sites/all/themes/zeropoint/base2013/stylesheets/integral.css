@@ -1,0 +1,15 @@
+.sidebar {
+  margin-top: 20px;
+}
+.sidebar .view-busqueda .view-content,
+.sidebar .view-busqueda .pager {
+  display: none;
+}
+.page-home h1,
+.page-integral h1,
+.page-proyectos h1,
+.page-propiedades h1,
+.page-servicios h1,
+.page-contacto h1 {
+  display: none;
+}
