@@ -31,7 +31,6 @@
     </div>  
   </div>
 </nav>
-
 <!-- ######################## Header (featured posts) ######################## -->
 <!--   
 <header>
@@ -73,85 +72,74 @@
 <!-- ######################## Section ######################## -->
 <section>
   <div class="section_main">
-      <div class="row">
-        <section class="three columns">
-             <div class="sidebar">
-              <h3>Buscador</h3>
-              <?php
-              /*$busqueda = module_invoke('views', 'block_view', 'busqueda-block');
-              print render($busqueda['content']);*/
-              $viewName = 'busqueda';
-              print views_embed_view($viewName);
-              ?>          
-             </div>
-          </section>
-          <section class="nine columns">
-
-
-
-              <?php if ($page['highlighted']): ?><div id="mission"><?php print render ($page['highlighted']); ?></div><?php endif; ?>
-              <?php print render($title_prefix); ?>
-              <?php if ($title): if ($is_front){ print '<h2 class="titlex">'. $title .'</h2>'; } else { print '<h1 class="">'. $title .'</h1>'; } endif; ?>
-              <?php print render($title_suffix); ?>
-              <div class="tabs"><?php print render($tabs); ?></div>
-              <?php print render($page['help']); ?>
-              <?php print $messages ?>
-              <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
-              <?php if ($page['content']) : ?><?php print render ($page['content']); ?><?php endif; ?>
-              <?php print $feed_icons; ?>
-
-
-
-          
-          <!--
-          <h2>Latest</h2>
-          
-          <article class="blog_post">
-          
-             <div class="three columns">
-             <a href="#" class="th"><img src="images/thumb1.jpg" alt="desc" /></a>
-             </div>
-             <div class="nine columns">
-              <a href="#"><h3>Lorem Ipsum</h3></a>
-              <p> Vivamus tortor tellus, rutrum sit amet mollis vel, imperdiet consectetur orci. Mauris pharetra congue enim, et sagittis lectus congue ut. Cum sociis natoque penatibus.</p>
-              </div>
-              
-          </article>
-          
-          <article class="blog_post">
-          
-             <div class="three columns">
-             <a href="#" class="th"><img src="images/thumb2.jpg" alt="desc" /></a>
-             </div>
-             <div class="nine columns">
-              <a href="#"><h3>Lorem Ipsum</h3></a>
-              <p> Vivamus tortor tellus, rutrum sit amet mollis vel, imperdiet consectetur orci. Mauris pharetra congue enim, et sagittis lectus congue ut. Cum sociis natoque penatibus.</p>
-              </div>
-              
-          </article>
-          
-          
-          <article class="blog_post">
-          
-             <div class="three columns">
-             <a href="#" class="th"><img src="images/pin2.jpg" alt="desc" /></a>
-             </div>
-             <div class="nine columns">
-              <a href="#"><h3>Lorem Ipsum</h3></a>
-              <p> Vivamus tortor tellus, rutrum sit amet mollis vel, imperdiet consectetur orci. Mauris pharetra congue enim, et sagittis lectus congue ut. Cum sociis natoque penatibus. Vivamus tortor tellus, rutrum sit amet mollis vel, imperdiet consectetur orci. Mauris pharetra congue enim, et sagittis lectus congue ut. Cum sociis natoque penatibus.</p>
-              </div>
-              
-          </article> -->
-
-
-          
-          </section>
-          
-          
-          
-      </div>
-      
+    <div class="row">
+      <section class="three columns">
+        <div class="sidebar">
+          <h3>Filtra tu búsqueda</h3>
+          <?php
+          /*$busqueda = module_invoke('views', 'block_view', 'busqueda-block');
+          print render($busqueda['content']);*/
+          $viewName = 'busqueda';
+          print views_embed_view($viewName);
+          ?>          
+        </div>
+      </section>
+      <section class="nine columns">
+        <?php if ($page['highlighted']): ?><div id="mission"><?php print render ($page['highlighted']); ?></div><?php endif; ?>
+        <?php print render($title_prefix); ?>
+        <?php if ($title): if ($is_front){ print '<h2 class="title">'. $title .'</h2>'; } else { print '<h1 class="section-title">'. $title .'</h1>'; } endif; ?>
+        <?php print render($title_suffix); ?>
+        <div class="tabs"><?php print render($tabs); ?></div>
+        <?php print render($page['help']); ?>
+        <?php print $messages ?>
+        <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
+        <?php if ($page['content']) : ?><?php print render ($page['content']); ?><?php endif; ?>
+        <?php print $feed_icons; ?>
+<!--
+<h2>Latest</h2>
+<article class="blog_post">
+  <div class="three columns">
+    <a href="#" class="th">
+      <img src="images/thumb1.jpg" alt="desc" />
+    </a>
+  </div>
+  <div class="nine columns">
+    <a href="#">
+      <h3>Lorem Ipsum</h3>
+    </a>
+    <p> Vivamus tortor tellus, rutrum sit amet mollis vel, imperdiet consectetur orci. Mauris pharetra congue enim, et sagittis lectus congue ut. Cum sociis natoque penatibus.</p>
+  </div>
+</article>
+<article class="blog_post">
+  <div class="three columns">
+    <a href="#" class="th">
+      <img src="images/thumb2.jpg" alt="desc" />
+    </a>
+  </div>
+  <div class="nine columns">
+    <a href="#">
+      <h3>Lorem Ipsum</h3>
+    </a>
+    <p> Vivamus tortor tellus, rutrum sit amet mollis vel, imperdiet consectetur orci. Mauris pharetra congue enim, et sagittis lectus congue ut. Cum sociis natoque penatibus.</p>
+  </div>
+</article>
+<article class="blog_post">
+  <div class="three columns">
+    <a href="#" class="th">
+      <img src="images/pin2.jpg" alt="desc" />
+    </a>
+  </div>
+  <div class="nine columns">
+    <a href="#">
+      <h3>Lorem Ipsum</h3>
+    </a>
+    <p> Vivamus tortor tellus, rutrum sit amet mollis vel, imperdiet consectetur orci. Mauris pharetra congue enim, et sagittis lectus congue ut. Cum sociis natoque penatibus. Vivamus tortor tellus, rutrum sit amet mollis vel, imperdiet consectetur orci. Mauris pharetra congue enim, et sagittis lectus congue ut. Cum sociis natoque penatibus.</p>
+  </div>
+</article>
+-->  
+      </section>  
     </div>
+  </div>
 </section>
 <!-- ######################## Section Countries ######################## -->
 <section class="contact-countries">
@@ -203,19 +191,19 @@
 <!-- ######################## Footer ######################## -->  
 <footer>
   <div class="row">
-    <div class="three columns social-icons">
+    <div class="five-cols columns social-icons">
       <a href="" class="lsf-icon" title="facebook"></a>
       <a href="" class="lsf-icon" title="twitter"></a>
       <a href="" class="lsf-icon" title="instagram"></a>
     </div>
-    <div class="six columns branding">
+    <div class="col-60 columns branding">
       <p>Copyright © 2013, Integral Property Management SA, todos los derechos reservados.
 Panamá, Ciudad de Panamá. Calle 73 Edificio Rosely, Ofc. PB 1A San Francisco.
 cel: (507) 6612-7847</p>
       <p>Diseño y programación por...</p>
     </div>
-    <div class="three columns legal-note">
-      <p>Nota legal</p>
+    <div class="five-cols columns legal-note">
+      <a>Nota legal</a>
     </div>
   </div>
 </footer>
@@ -255,5 +243,4 @@ cel: (507) 6612-7847</p>
       </div>
     </li>
   </ul>
---> 
-
+-->

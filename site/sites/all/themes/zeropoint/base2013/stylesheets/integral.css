@@ -1,5 +1,5 @@
 /***************************************/
-/*************** MIXINS END ************/
+/*************** gradients END ************/
 /***************************************/
 /******************/
 /* header */
@@ -36,11 +36,23 @@ a:hover {
 section {
   margin-top: 20px;
 }
+section p,
+section a {
+  font-family: 'AltoPro-Light';
+}
+section h1,
+section h2,
+section h3 {
+  color: #565656;
+}
 .page-home h1,
 .page-proyectos h1,
 .page-propiedades h1,
 .page-servicios h1,
-.page-contacto h1,
+.page-contacto h1 {
+  padding-right: 10px;
+  text-align: right;
+}
 .page-home h2,
 .page-proyectos h2,
 .page-propiedades h2,
@@ -51,6 +63,20 @@ section {
 .page-propiedades .pane-title,
 .page-servicios .pane-title,
 .page-contacto .pane-title {
+  display: none;
+}
+.page-integral h1 {
+  text-align: center;
+  border-bottom: 1px dotted #d3dded;
+  padding-bottom: 10px;
+}
+.page-integral p {
+  font-size: 18px;
+  color: #6b8187;
+  text-align: center;
+}
+.page-integral .section-title,
+.page-integral h2.pane-title {
   display: none;
 }
 .views-row {
@@ -71,13 +97,11 @@ section {
 }
 .views-row .views-field-body p {
   color: #565656;
-  font-family: 'AltoPro-Light';
   font-size: 13px;
   margin: 0;
 }
 .views-row .views-field-view-node a {
   color: #0d6ba0;
-  font-family: 'AltoPro-Light';
   font-size: 13px;
 }
 .views-row .views-field-field-imagen-pro,
@@ -135,7 +159,6 @@ section {
 /******************/
 /* footer */
 footer {
-  height: 200px;
   padding: 20px 0;
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#d3dded), to(#ffffff));
   background-image: -webkit-linear-gradient(top, #d3dded, 0%, #ffffff, 100%);
@@ -145,10 +168,13 @@ footer {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd3dded', endColorstr='#ffffffff', GradientType=0);
   margin: 20px 0 0;
 }
+footer .social-icons {
+  height: 100px;
+}
 footer .social-icons a.lsf-icon {
   font-size: 20px;
   margin-right: 15px;
-  color: #6b8187;
+  color: #afafaf;
 }
 footer .social-icons a.lsf-icon:hover {
   color: #6694c1;
@@ -156,8 +182,15 @@ footer .social-icons a.lsf-icon:hover {
 footer .social-icons a.lsf-icon:last-child {
   margin: 0;
 }
+footer .branding {
+  height: 100px;
+}
+footer .legal-note {
+  height: 100px;
+}
 footer .branding p,
-footer .legal-note p {
+footer .legal-note a {
   font-family: 'AltoProExCon-LightItalic';
   color: #6b8187;
+  line-height: 1.6;
 }

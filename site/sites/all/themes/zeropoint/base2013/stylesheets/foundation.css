@@ -1116,6 +1116,10 @@ form.custom div.custom.dropdown.open a.selector:after {
 .row .five-cols {
   width: 20%;
 }
+.col-60,
+.row .col-60 {
+  width: 60%;
+}
 .three,
 .row .three {
   width: 25%;
