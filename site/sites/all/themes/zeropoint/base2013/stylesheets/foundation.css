@@ -61,23 +61,23 @@ html {
 }
 body {
   background: white;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: 'AltoPro-Light';
   font-size: 14px;
   line-height: 1;
-  color: #222222;
+  color: #6b8187;
   position: relative;
   -webkit-font-smoothing: antialiased;
 }
 a {
-  color: #2ba6cb;
+  color: #6694c1;
   text-decoration: none;
   line-height: inherit;
 }
 a:hover {
-  color: #2795b6;
+  color: #d3dded;
 }
 a:focus {
-  color: #2ba6cb;
+  color: #d3dded;
   outline: none;
 }
 p a,
@@ -1111,6 +1111,10 @@ form.custom div.custom.dropdown.open a.selector:after {
 .two,
 .row .two {
   width: 16.66667%;
+}
+.five-cols,
+.row .five-cols {
+  width: 20%;
 }
 .three,
 .row .three {

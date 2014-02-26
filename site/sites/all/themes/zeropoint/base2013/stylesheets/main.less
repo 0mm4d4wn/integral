@@ -1,3 +1,22 @@
+@blue1: #2386C9;
+@blue2: #0D3474;
+@blue3: #D3DDED;
+@blue4: #0D6BA0;
+@blue5: #6694C1;
+
+@gray1: #EFEFEF;
+@gray2: #AFAFAF;
+@gray3: #6B8187;
+@gray4: #6D6D6D;
+@gray5: #565656;
+
+// fonts
+@font1: 'Open Sans Condensed';
+@font2: 'AltoProExCon-ExtraLight';
+@font3: 'AltoPro-Thin';
+@font4: 'AltoProExCon-LightItalic';
+@font5: 'AltoPro-Light';
+
 @font-face {
     font-family: 'LigatureSymbols';
     src: url('LigatureSymbols-2.05.eot');
@@ -8,6 +27,7 @@
     src: url('LigatureSymbols-2.05.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+
 }
 .lsf {
     font-family: 'LigatureSymbols';
@@ -142,12 +162,11 @@ h1,h2,h3,h4 {
     margin: 20px 0;
 }
 .section_light {
-    background: #FFF;
-    border-top: 1px dotted #999;
-    border-bottom: 1px dotted #999;
+    background: @gray1;
     padding: 20px 0;
     clear:both;
-    h1 {
+    h2 {
+        color: @blue5;
         text-align: center;
         border-bottom: 1px dotted #999;
         padding-bottom: 20px;

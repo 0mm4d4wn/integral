@@ -1,3 +1,22 @@
+@blue1: #2386C9;
+@blue2: #0D3474;
+@blue3: #D3DDED;
+@blue4: #0D6BA0;
+@blue5: #6694C1;
+
+@gray1: #EFEFEF;
+@gray2: #AFAFAF;
+@gray3: #6B8187;
+@gray4: #6D6D6D;
+@gray5: #565656;
+
+// fonts
+@font1: 'Open Sans Condensed';
+@font2: 'AltoProExCon-ExtraLight';
+@font3: 'AltoPro-Thin';
+@font4: 'AltoProExCon-LightItalic';
+@font5: 'AltoPro-Light';
+
 .c-1, .c-2, .c-3, .c-4, .c-5, .c-6, .c-7, .c-8, .c-9, .c-10, .c-11, .c-12 {
     float: left;
     position: relative;
@@ -51,23 +70,23 @@ html {
 }
 body {
     background: white;
-    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: @font5;
     font-size: 14px;
     line-height: 1;
-    color: #222222;
+    color: @gray3;
     position: relative;
     -webkit-font-smoothing: antialiased;
 }
 a {
-    color: #2ba6cb;
+    color: @blue5;
     text-decoration: none;
     line-height: inherit;
 }
 a:hover {
-    color: #2795b6;
+    color: @blue3;
 }
 a:focus {
-    color: #2ba6cb;
+    color: @blue3;
     outline: none;
 }
 p a, p a:visited {
@@ -737,6 +756,8 @@ form.custom div.custom.dropdown:hover a.selector:after, form.custom div.custom.d
 .one, .row .one { width: 8.33333%; }
 
 .two, .row .two { width: 16.66667%; }
+
+.five-cols, .row .five-cols { width: 20%; }
 
 .three, .row .three { width: 25%; }
 

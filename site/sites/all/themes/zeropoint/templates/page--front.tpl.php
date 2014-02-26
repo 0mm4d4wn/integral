@@ -1,23 +1,13 @@
-
 <?php
   global $base_url;
   $ruta = "/sites/all/themes/zeropoint/images/";
-?> 
-
-
-
-
+?>
 <!-- ######################## Main Menu ######################## -->
- 
 <nav>
-
-     <div class="twelve columns header_nav">
-     <div class="row">
-      
-
- 
+  <div class="twelve columns header_nav">
+    <div class="row">
       <?php if ($main_menu || $page['dropdown']): ?>
-        <div id="" class="<?php print menupos() ?> pull-right">
+      <div id="" class="<?php print menupos() ?> pull-right">
         <?php if (!empty($page['dropdown'])) { ?><?php print render($page['dropdown']); ?><?php } ?>
         <?php if (empty($page['dropdown'])) { ?>
         <?php print theme('links__system_main_menu', array(
@@ -31,23 +21,16 @@
                     'level' => 'h2',
                     'class' => array('element-invisible'),
                   ),*/)); ?><?php } ?>
-        </div>
-      <?php endif;  ?>
-
-
-        
-        <script type="text/javascript">
-         //<![CDATA[
-         $('ul#menu-header').nav-bar();
-          //]]>
-        </script>
-        
-      </div>  
       </div>
-      
+      <?php endif;  ?>        
+      <script type="text/javascript">
+       //<![CDATA[
+       $('ul#menu-header').nav-bar();
+        //]]>
+      </script>
+    </div>  
+  </div>    
 </nav>
-      
-      
 <!-- ######################## Header ######################## -->
         
         <header>
@@ -82,43 +65,53 @@
         
     </section>
 
-<!-- ######################## Section ######################## -->
-
-   <section  class="section_dark">
-   
-      <div class="row"> 
-      
-      <h2>Latest Photos by Our Members</h2>
-      
-          <div class="two columns">
-          <a href="#" class="th"><img src="images/thumb1.jpg" width="100" height="100" alt="desc" /></a>
-          </div>
-          
-          <div class="two columns">
-          <a href="#" class="th"><img src="images/thumb2.jpg" width="100" height="100"  alt="desc" /></a>
-          </div>
-          
-          <div class="two columns">
-          <a href="#" class="th"><img src="images/thumb3.jpg" width="100" height="100"  alt="desc" /></a>
-          </div>
-          
-          <div class="two columns">
-          <a href="#" class="th"><img src="images/thumb4.jpg" width="100" height="100"  alt="desc" /></a>
-          </div>
-          
-          <div class="two columns">
-          <a href="#" class="th"><img src="images/thumb5.jpg" width="100" height="100"  alt="desc" /></a>
-          </div>
-          
-          <div class="two columns">
-          <a href="#" class="th"><img src="images/thumb6.jpg" width="100" height="100"  alt="desc" /></a>
-          </div>
-
-      
+<!-- ######################## Section Countries ######################## -->
+<section class="contact-countries">
+  <div>
+    <div class="row"> 
+      <div class="five-cols columns">
+        <div class="pnm-icon country-icons">
+          <h3>Panamá</h3>
+          <p>Ciudad de Panamá</p>
+          <p>Calle 73 Edificio Rosely Ofc. PB 1A San Francisco</p>
+          <p>(507) 6612-7847</p>
+        </div>
       </div>
-      
-    </section>
-      
+      <div class="five-cols columns">
+        <div class="vnz-icon country-icons">
+          <h3>Venezuela</h3>
+          <p>Caracas</p>
+          <p>dirección</p>
+          <p>(58) 414-990 4047</p>
+        </div>
+      </div>
+      <div class="five-cols columns">
+        <div class="col-icon country-icons">
+          <h3>Colombia</h3>
+          <p>Bogotá</p>
+          <p>dirección</p>
+          <p>teléfono</p>
+        </div>
+      </div>
+      <div class="five-cols columns">
+        <div class="usa-icon country-icons">
+          <h3>Estados Unidos</h3>
+          <p>Miami</p>
+          <p>Dirección</p>
+          <p>teléfono</p>
+        </div>
+      </div>
+      <div class="five-cols columns">
+        <div class="eur-icon country-icons">
+          <h3>Unión Europea</h3>
+          <p>(Ciudad)</p>
+          <p>Dirección</p>
+          <p>teléfono</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <!-- ######################## Section ######################## -->
 
 <section class="section_main">
@@ -151,20 +144,7 @@
 
 <!-- ######################## Footer ######################## -->  
       
-<footer>
-
-      <div class="row">
-      
-          <div class="twelve columns footer">
-              <a href="http://twitter.com/dieterarno" class="lsf-icon" style="font-size:16px; margin-right:15px" title="twitter">Twitter</a> 
-              <a href="http://csstemplateheaven.com/csstemplateheaven" class="lsf-icon" style="font-size:16px; margin-right:15px" title="facebook">Facebook</a>
-              <a href="http://csstemplateheaven.com/csstemplateheaven" class="lsf-icon" style="font-size:16px; margin-right:15px" title="pinterest">Pinterest</a>
-              <a href="http://twitter.com/dieterarno" class="lsf-icon" style="font-size:16px" title="instagram">Instagram</a>
-          </div>
-          
-      </div>
-
-</footer>     
+   
 
 <!-- ######################## Scripts ######################## --> 
 

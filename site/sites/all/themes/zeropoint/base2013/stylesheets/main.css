@@ -140,13 +140,12 @@ h4 {
   margin: 20px 0;
 }
 .section_light {
-  background: #FFF;
-  border-top: 1px dotted #999;
-  border-bottom: 1px dotted #999;
+  background: #efefef;
   padding: 20px 0;
   clear: both;
 }
-.section_light h1 {
+.section_light h2 {
+  color: #6694c1;
   text-align: center;
   border-bottom: 1px dotted #999;
   padding-bottom: 20px;
