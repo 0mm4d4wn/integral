@@ -34,12 +34,17 @@
 /*********************************************/
 .sidebar {
   padding: 0;
+  margin-top: 40px;
 }
 .sidebar h3 {
   margin: 0 0 20px;
 }
 .sidebar .view-busqueda .view-content,
 .sidebar .view-busqueda .pager {
+  display: none;
+}
+/* content filters */
+.content .view-filters {
   display: none;
 }
 /*********************************************/
@@ -64,7 +69,8 @@ section h3 {
 .page-proyectos h1,
 .page-propiedades h1,
 .page-servicios h1,
-.page-contacto h1 {
+.page-contacto h1,
+.page-busqueda h1 {
   padding-right: 10px;
   text-align: right;
   border-bottom: 1px dotted #d3dded;
@@ -74,11 +80,13 @@ section h3 {
 .page-propiedades h2,
 .page-servicios h2,
 .page-contacto h2,
+.page-busqueda h2,
 .page-home .pane-title,
 .page-proyectos .pane-title,
 .page-propiedades .pane-title,
 .page-servicios .pane-title,
-.page-contacto .pane-title {
+.page-contacto .pane-title,
+.page-busqueda .pane-title {
   display: none;
 }
 /***************** Page INTEGRAL *****************/
@@ -117,7 +125,7 @@ section h3 {
 }
 .views-row > div {
   padding: 0 20px 10px;
-  background-color: #efefef;
+  background-color: #f5f5f5;
 }
 .views-row > div:first-child {
   padding-top: 10px;
