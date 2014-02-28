@@ -35,8 +35,6 @@
 <!-- ######################## Section ######################## -->
 <section>
   <div class="section_main">
-    <div class="row">
-      <section class="twelve columns">
         <?php if ($page['highlighted']): ?><div id=""><?php print render ($page['highlighted']); ?></div><?php endif; ?>
         <?php print render($title_prefix); ?>
         <?php if ($title): if ($is_front){ print '<h2 class="title">'. $title .'</h2>'; } else { print '<h1 class="section-title">'. $title .'</h1>'; } endif; ?>
@@ -47,8 +45,6 @@
         <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
         <?php if ($page['content']) : ?><?php print render ($page['content']); ?><?php endif; ?>
         <?php print $feed_icons; ?>
-      </section>  
-    </div>
   </div>
 </section>
 <!-- ######################## Section Countries ######################## -->

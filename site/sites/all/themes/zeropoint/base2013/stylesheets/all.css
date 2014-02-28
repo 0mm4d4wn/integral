@@ -4103,7 +4103,7 @@ header {
   background: #fafafa;
   padding: 15px 0 0;
   box-shadow: 0 1px 6px rgba(34, 25, 25, 0.6);
-  z-index: 999;
+  z-index: 100;
 }
 .header_nav_fullwidth {
   background: #fafafa;
@@ -4776,8 +4776,21 @@ ul.flyout li a:hover,
 /***************************************/
 /*************** gradients END ************/
 /***************************************/
-/******************/
-/* header */
+/***************************************/
+/**********  GENERAL *******************/
+.panels-flexible-region-1-center,
+.panels-flexible-region-2-center,
+.panels-flexible-region-3-center,
+.panels-flexible-region-3-region_medium,
+.panels-flexible-region-3-region_bottom,
+.panels-flexible-region-4-center,
+.panels-flexible-region-5-center,
+.panels-flexible-region-6-center {
+  width: 100%;
+}
+/*********************************************/
+/******************* HEADER ******************/
+/*********************************************/
 .nav-bar > li.active:hover,
 .nav-bar > li.active > a:hover {
   color: white;
@@ -4791,8 +4804,9 @@ ul.flyout li a:hover,
 #menu-header li.active a {
   background-color: #6694c1;
 }
-/******************/
-/* sidebar*/
+/*********************************************/
+/******************* SIDEBAR *****************/
+/*********************************************/
 .sidebar {
   padding: 0;
 }
@@ -4803,8 +4817,9 @@ ul.flyout li a:hover,
 .sidebar .view-busqueda .pager {
   display: none;
 }
-/******************/
-/* content */
+/*********************************************/
+/***************** CONTENT *******************/
+/*********************************************/
 a:hover {
   text-decoration: none;
 }
@@ -4827,6 +4842,7 @@ section h3 {
 .page-contacto h1 {
   padding-right: 10px;
   text-align: right;
+  border-bottom: 1px dotted #d3dded;
 }
 .page-home h2,
 .page-proyectos h2,
@@ -4840,20 +4856,36 @@ section h3 {
 .page-contacto .pane-title {
   display: none;
 }
-.page-integral h1 {
-  text-align: center;
-  border-bottom: 1px dotted #d3dded;
-  padding-bottom: 10px;
+/***************** Page INTEGRAL *****************/
+.page-integral h2.pane-title,
+.page-integral h1.section-title {
+  display: none;
 }
 .page-integral p {
   font-size: 18px;
   color: #6b8187;
   text-align: center;
 }
-.page-integral .section-title,
-.page-integral h2.pane-title {
-  display: none;
+.page-integral h1 {
+  text-align: center;
+  border-bottom: 1px dotted #d3dded;
+  padding: 0 0 10px;
+  margin: 20px 0;
 }
+.page-integral .glow {
+  height: 315px;
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#fafafa), to(#ebf0f7));
+  background-image: -webkit-linear-gradient(top, #fafafa, 0%, #ebf0f7, 100%);
+  background-image: -moz-linear-gradient(top, #fafafa 0%, #ebf0f7 100%);
+  background-image: linear-gradient(to bottom, #fafafa 0%, #ebf0f7 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffafafa', endColorstr='#ffebf0f7', GradientType=0);
+}
+.page-integral .bg-integral_pm {
+  background: url(../images/bg-integral_buildings.png) no-repeat bottom center;
+  height: 315px;
+}
+/***************** PROYECTOS Y PROPIEDADES *******/
 .views-row {
   margin: 0 0 20px;
   padding: 0;
@@ -4885,8 +4917,9 @@ section h3 {
 }
 /******************/
 /* pager */
-/******************/
-/* contact countries */
+/*******************************************/
+/******** CONTACT COUNTRIES SECTION ********/
+/*******************************************/
 .contact-countries div.columns {
   padding: 0;
   border-right: 1px dotted #d3dded;
@@ -4912,6 +4945,7 @@ section h3 {
   color: #afafaf;
   margin: 0;
   line-height: 20px;
+  text-align: left;
 }
 .contact-countries .country-icons p:first-of-type {
   color: #565656;
@@ -4931,8 +4965,9 @@ section h3 {
 .contact-countries .eur-icon {
   background: url(../images/eur-flag.png) no-repeat 6px 2px;
 }
-/******************/
-/* footer */
+/*********************************************/
+/******************* FOOTER ******************/
+/*********************************************/
 footer {
   padding: 20px 0;
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#d3dded), to(#ffffff));
@@ -4947,9 +4982,11 @@ footer .social-icons {
   height: 100px;
 }
 footer .social-icons a.lsf-icon {
-  font-size: 20px;
+  color: #6b8187;
+  font-size: 32px;
+  line-height: 0.9;
   margin-right: 15px;
-  color: #afafaf;
+  text-align: center;
 }
 footer .social-icons a.lsf-icon:hover {
   color: #6694c1;
@@ -4966,6 +5003,9 @@ footer .legal-note {
 footer .branding p,
 footer .legal-note a {
   font-family: 'AltoProExCon-LightItalic';
+  font-size: 14px;
   color: #6b8187;
   line-height: 1.6;
+  text-align: left;
+  margin: 0 0 5px;
 }
