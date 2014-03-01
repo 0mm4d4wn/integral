@@ -6,30 +6,31 @@
 <nav>
   <div class="twelve columns header_nav">
     <div class="row">
+      <a href="#" id="brand" class=""></a>
       <?php if ($main_menu || $page['dropdown']): ?>
-      <div id="" class="<?php print menupos() ?> pull-left">
+      <div id="menu" class="<?php //print menupos() ?>">
         <?php if (!empty($page['dropdown'])) { ?><?php print render($page['dropdown']); ?><?php } ?>
         <?php if (empty($page['dropdown'])) { ?>
         <?php print theme('links__system_main_menu', array(
-            'links' => $main_menu,
-            'attributes' => array(
-              'id' => 'menu-header',
-              'class' => array('nav-bar horizontal',  'clearfix'),
-            ),
-            /*'heading' => array(
-              'text' => t('Main menu'),
-              'level' => 'h2',
-              'class' => array('element-invisible'),
-            ),*/)); ?><?php } ?>
+          'links' => $main_menu,
+          'attributes' => array(
+            'id' => 'menu-header',
+            'class' => array('nav-bar horizontal',  'clearfix'),
+        ),
+        /*'heading' => array(
+          'text' => t('Main menu'),
+          'level' => 'h2',
+          'class' => array('element-invisible'),
+        ),*/)); ?><?php } ?>
       </div>
-      <?php endif;  ?>
+      <?php endif;  ?>        
       <script type="text/javascript">
-           //<![CDATA[
-           $('ul#menu-header').nav-bar();
-            //]]>
+        //<![CDATA[
+          $('ul#menu-header').nav-bar();
+        //]]>
       </script>
     </div>  
-  </div>
+  </div>    
 </nav>
 <!-- ######################## Header (featured posts) ######################## -->
 <!--   
@@ -74,8 +75,8 @@
   <div class="section_main">
     <div class="row">
       <section class="three columns">
-        <div class="sidebar">
-          <h3>Filtra tu búsqueda</h3>
+        <h3>Filtra tu búsqueda</h3>
+        <div class="sidebar blog_post">
           <?php
           /*$busqueda = module_invoke('views', 'block_view', 'busqueda-block');
           print render($busqueda['content']);*/

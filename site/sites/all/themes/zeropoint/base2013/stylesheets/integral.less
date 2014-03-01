@@ -113,7 +113,26 @@
 .nav-bar > li.active > a:hover {
 	color: white;
 }
+#brand {
+	background: url('../images/integral_logo.png') no-repeat 0 0;
+	width: 167px;
+	height: 53px;
+	display: block;
+	float: left;
+	margin-top: -3px;
+}
+.header_nav {
+	.row {
+		overflow: hidden;
+	}
+}
+#menu {
+	float: right;
+}
 #menu-header {
+	li a {
+		text-transform: capitalize;
+	}
 	li.active {
 		background-color: @blue5;
 		&:hover {
@@ -129,16 +148,38 @@
 /******************* SIDEBAR *****************/
 /*********************************************/
 .sidebar {
-	padding: 0;
+	background-color: @gray6;
 	margin-top: 40px;
-	h3 {
-		margin: 0 0 20px;
-	}
+	padding: 0 10px 15px;
 	.view-busqueda {
 		.view-content,
 		.pager {
 			display: none;
 		}
+	}
+	.views-exposed-form .views-exposed-widget {
+		float: none;
+		padding: 0;
+	}
+	label {
+		color: @blue5;
+		font-family: @font5;
+		font-weight: normal;
+		margin-top: 15px;
+	}
+	select {
+		-webkit-appearance: none !important;
+		background-color: ;
+		background-repeat: no-repeat;
+		background-position: center right 3%;
+		background-image: url('../images/select-arrow.png');
+		border: 1px solid #cccccc;
+		color: @gray5;
+		padding: 5px;
+		font-size: 12px;
+		-webkit-border-radius: 0;
+		border-radius: 0;
+		margin-bottom: 15px;
 	}
 }
 /* content filters */
@@ -157,7 +198,6 @@ a:hover {
 	text-decoration: none;
 }
 section {
-	margin-top: 20px;
   p,
   a {
     font-family: @font5;

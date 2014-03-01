@@ -6,26 +6,27 @@
 <nav>
   <div class="twelve columns header_nav">
     <div class="row">
+      <a href="#" id="brand" class=""></a>
       <?php if ($main_menu || $page['dropdown']): ?>
-      <div id="" class="<?php print menupos() ?> pull-right">
+      <div id="menu" class="<?php //print menupos() ?>">
         <?php if (!empty($page['dropdown'])) { ?><?php print render($page['dropdown']); ?><?php } ?>
         <?php if (empty($page['dropdown'])) { ?>
         <?php print theme('links__system_main_menu', array(
-                  'links' => $main_menu,
-                  'attributes' => array(
-                    'id' => 'menu-header',
-                    'class' => array('nav-bar horizontal',  'clearfix'),
-                  ),
-                  /*'heading' => array(
-                    'text' => t('Main menu'),
-                    'level' => 'h2',
-                    'class' => array('element-invisible'),
-                  ),*/)); ?><?php } ?>
+          'links' => $main_menu,
+          'attributes' => array(
+            'id' => 'menu-header',
+            'class' => array('nav-bar horizontal',  'clearfix'),
+        ),
+        /*'heading' => array(
+          'text' => t('Main menu'),
+          'level' => 'h2',
+          'class' => array('element-invisible'),
+        ),*/)); ?><?php } ?>
       </div>
       <?php endif;  ?>        
       <script type="text/javascript">
-       //<![CDATA[
-       $('ul#menu-header').nav-bar();
+        //<![CDATA[
+          $('ul#menu-header').nav-bar();
         //]]>
       </script>
     </div>  
