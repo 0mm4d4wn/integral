@@ -1,7 +1,7 @@
 <?php
   global $base_url;
   $ruta = "/sites/all/themes/zeropoint/images/";
-?>
+?> 
 <!-- ######################## Main Menu ######################## -->
 <nav>
   <div class="twelve columns header_nav">
@@ -32,27 +32,21 @@
     </div>  
   </div>    
 </nav>
-<!-- ######################## Header ######################## --> 
-<header>
-  <h1 class="heading_supersize">BASE 2013</h1>
-  <h2 class="welcome_text">The future proof starting point for any website!</h2>    
-</header>        
-<!-- ######################## Section ######################## -->  
-<section class="section_light">   
-  <div class="row"> 
-    <div class="four columns">
-      <h3><span class="dropcap_red lsf-icon-dropcap" title="camera"></span> Photo Community</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra, lacus id interdum ultrices, elit metus semper tellus, vel lacinia libero purus vitae risus.</p>
-    </div>     
-    <div class="four columns">
-      <h3><span class="dropcap_black lsf-icon-dropcap" title="cloud"></span> Upload Photos</h3>
-      <p> Vivamus tortor tellus, rutrum sit amet mollis vel, imperdiet consectetur orci. Mauris pharetra congue enim, et sagittis lectus congue ut. Cum sociis natoque penatibus.</p>
-    </div>          
-    <div class="four columns">
-      <h3><span class="dropcap_black lsf-icon-dropcap" title="video"></span> Video Tutorials</h3>
-      <p>Sed vitae nisi leo. Nulla tincidunt, turpis non gravida pharetra, diam sapien posuere massa, non luctus leo mauris at sapien. Donec ut fermentum eros.</p>
-    </div>
-  </div>        
+<!-- ######################## Header (featured posts) ######################## -->
+<!-- ######################## Section ######################## -->
+<section>
+  <div class="section_main">
+        <?php if ($page['highlighted']): ?><div id=""><?php print render ($page['highlighted']); ?></div><?php endif; ?>
+        <?php print render($title_prefix); ?>
+        <?php if ($title): if ($is_front){ print '<h2 class="title">'. $title .'</h2>'; } else { print '<h1 class="section-title">'. $title .'</h1>'; } endif; ?>
+        <?php print render($title_suffix); ?>
+        <div class="tabs"><?php print render($tabs); ?></div>
+        <?php print render($page['help']); ?>
+        <?php print $messages ?>
+        <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
+        <?php if ($page['content']) : ?><?php print render ($page['content']); ?><?php endif; ?>
+        <?php print $feed_icons; ?>
+  </div>
 </section>
 <!-- ######################## Section Countries ######################## -->
 <section class="contact-countries">
@@ -101,35 +95,28 @@
     </div>
   </div>
 </section>
-<!-- ######################## Section ######################## -->
-<section class="section_main">
-  <h2 style="text-align:center">Discover Hidden Treasures</h2>      
-  <div class="row">
-    <article class="six columns">
-      <div class="panel">
-        <h3>Lorem Ipsum</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec cursus fermentum metus, id commodo sapien. Donec cursus fermentum metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec cursus fermentum metus, id commodo sapien. Donec cursus fermentum metus.</p>
-        <a href="#" class="button secondary small radius">Learn More &raquo;</a>
-      </div>
-    </article>         
-    <article class="six columns">
-      <div class="panel">
-        <h3>Lorem Ipsum</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec cursus fermentum metus, id commodo sapien. Donec cursus fermentum metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec cursus fermentum metus, id commodo sapien. Donec cursus fermentum metus.</p>
-        <a href="#" class="button secondary small radius">Learn More &raquo;</a>
-      </div>
-    </article>
-  </div>     
-</section>
-
 <!-- ######################## Footer ######################## -->  
-      
-   
-
+<footer>
+  <div class="row">
+    <div class="five-cols columns social-icons">
+      <a href="" class="lsf-icon" title="facebook"></a>
+      <a href="" class="lsf-icon" title="twitter"></a>
+      <a href="" class="lsf-icon" title="instagram"></a>
+    </div>
+    <div class="col-60 columns branding">
+      <p>Copyright © 2013, Integral Property Management SA, todos los derechos reservados.
+Panamá, Ciudad de Panamá. Calle 73 Edificio Rosely, Ofc. PB 1A San Francisco.
+cel: (507) 6612-7847</p>
+      <p>Diseño y programación por...</p>
+    </div>
+    <div class="five-cols columns legal-note">
+      <a>Nota legal</a>
+    </div>
+  </div>
+</footer>
 <!-- ######################## Scripts ######################## --> 
-
     <!-- Included JS Files (Compressed) -->
     <script src="javascripts/foundation.min.js" type="text/javascript"></script> 
     <!-- Initialize JS Plugins -->
      <script src="javascripts/app.js" type="text/javascript"></script>
-
+</div>

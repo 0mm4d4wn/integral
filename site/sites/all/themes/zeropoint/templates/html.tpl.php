@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="<?php print $base_url; ?>/sites/all/themes/zeropoint/base2013/stylesheets/app.css"> -->
     <link rel="stylesheet" href="<?php print $base_url; ?>/sites/all/themes/zeropoint/base2013/stylesheets/all.css">
     <script src="<?php print $base_url; ?>/sites/all/themes/zeropoint/base2013/javascripts/modernizr.foundation.js"></script>
+    <script src="<?php print $base_url; ?>/sites/all/themes/zeropoint/js/jquery.js"></script>
+    <script src="<?php print $base_url; ?>/sites/all/themes/zeropoint/js/integral.js"></script>
     <link rel="stylesheet" href="<?php print $base_url; ?>/sites/all/themes/zeropoint/base2013/ligature.css"> 
     <!-- Google fonts -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic' rel='stylesheet' type='text/css' />

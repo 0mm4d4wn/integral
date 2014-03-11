@@ -77,7 +77,7 @@
 @blue3: #D3DDED;
 @blue4: #0D6BA0;
 @blue5: #6694C1;
-@blue6: #EBF0F7;
+@blue6: #cbe9f2;
 
 @gray1: #EFEFEF;
 @gray2: #AFAFAF;
@@ -130,9 +130,6 @@
 	float: right;
 }
 #menu-header {
-	li a {
-		text-transform: capitalize;
-	}
 	li.active {
 		background-color: @blue5;
 		&:hover {
@@ -226,6 +223,9 @@ section {
 }
 /***************** Page INTEGRAL *****************/
 .page-integral {
+  .content {
+    margin-top: 100px;
+  }
   h2.pane-title,
   h1.section-title {
     display: none;
@@ -242,12 +242,36 @@ section {
     margin: 20px 0;
   }
   .glow {
-    height: 315px;
-    #gradient > .vertical(#fafafa, @blue6);
+    height: 363px;
+    #gradient > .vertical(#fafafa, @blue3);
   }
   .bg-integral_pm {
     background: url(../images/bg-integral_buildings.png) no-repeat bottom center;
-    height: 315px;
+    height: 363px;
+  }
+  .bg-mision {
+    background: url(../images/bg-integral_mision.png) no-repeat bottom center;
+    height: 363px;
+  }
+  .bg-vision {
+    background: url(../images/.png) no-repeat bottom center;
+    height: 363px;
+  }
+  .bg-lines {
+    background: url(../images/bg-lines.png) repeat top left;
+    height: 100px;
+    margin-bottom: 50px;
+  }
+  .panels-flexible-row {
+    padding: 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .pane-block-1 {
+    pane-content {
+      margin: 100px 0 0;
+    }
   }
 }
 /***************** PROYECTOS Y PROPIEDADES *******/
@@ -292,6 +316,22 @@ section {
 .item-list {
 
 }
+/******************/
+/***************** SERVICIOS ***************/
+
+.page-servicios {
+  .three {
+    h3 {
+    display: none;
+  }
+  .sidebar {
+    display: none;
+  }
+  }
+}
+
+
+
 /*******************************************/
 /******** CONTACT COUNTRIES SECTION ********/
 /*******************************************/
