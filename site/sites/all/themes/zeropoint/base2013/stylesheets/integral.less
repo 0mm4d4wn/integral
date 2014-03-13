@@ -145,7 +145,6 @@
 /******************* SIDEBAR *****************/
 /*********************************************/
 .sidebar {
-	background-color: @gray6;
 	margin-top: 40px;
 	padding: 0 10px 15px;
 	.view-busqueda {
@@ -280,7 +279,6 @@ section {
 	padding: 0;
 	& > div {
 		padding: 0 20px 10px;
-		background-color: @gray6;
 		&:first-child {
 			padding-top: 10px;
 		}
@@ -309,7 +307,6 @@ section {
 	.views-field-field-imagen {
 		padding: 0 0 10px;
 	}
-
 }
 /******************/
 /* pager */
@@ -320,13 +317,54 @@ section {
 /***************** SERVICIOS ***************/
 
 .page-servicios {
-  .three {
-    h3 {
-    display: none;
+  .panels-flexible-region-inside {
+    padding-left: 0;
   }
-  .sidebar {
-    display: none;
+  #menu-servicios {
+    &.locked {
+        position: fixed;
+        top: 10px;
+    }
   }
+  ul.side-nav {
+    padding: 20px 20px 0 0;
+    li {
+      padding: 10px 10px 10px 0;
+      border-bottom: 1px dotted @blue3;
+      margin: 0;
+      a {
+        padding-right: 20px;
+        color: @blue5;
+        &:hover {
+          color: @blue4;
+          background: url('../images/menu-servicios-arrow.png') no-repeat right center;
+        }
+        &:active {
+          background: url('../images/menu-servicios-arrow.png') no-repeat right center;
+        }
+      }
+    }
+  }
+  .panels-flexible-region-5-center {
+    width: 70%;
+    .views-row {
+      background: url('../images/bg-lines.png') repeat-x center bottom;
+      box-shadow: none;
+      padding: 10px 0 60px;
+      .views-field-title {
+        border-bottom: 1px dotted @blue5;
+        span {
+          color: @blue4;
+          font-family: @font1;
+          font-size: 25px;
+          padding: 0 0 20px;
+        }
+      }
+      p {
+        font-size: 16px;
+        margin-top: 15px;
+      }
+    }
   }
 }
 
