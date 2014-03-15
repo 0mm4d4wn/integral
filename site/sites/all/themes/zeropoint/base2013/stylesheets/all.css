@@ -4213,7 +4213,7 @@ h4 {
   float: left;
   font-size: 18px;
   line-height: 10px;
-  margin: 10px 28px 0 0;
+  margin: 10px 10px 0 0;
   text-align: center;
   width: 35px;
 }
@@ -4823,8 +4823,17 @@ ul.flyout li a:hover,
 /*********************************************/
 /******************* SIDEBAR *****************/
 /*********************************************/
+.page-proyectos .three h3,
+.page-propiedades .three h3,
+.page-busqueda .three h3,
+.page-node .three h3 {
+  border-bottom: 1px dotted #d3dded;
+  color: #a6c9ff;
+  font-size: 20px;
+  margin: 46px 0 0 0;
+}
 .sidebar {
-  margin-top: 40px;
+  margin-top: 20px;
   padding: 0 10px 15px;
 }
 .sidebar .view-busqueda .view-content,
@@ -4834,6 +4843,9 @@ ul.flyout li a:hover,
 .sidebar .views-exposed-form .views-exposed-widget {
   float: none;
   padding: 0;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #dcdcdc;
 }
 .sidebar label {
   color: #6694c1;
@@ -4841,19 +4853,38 @@ ul.flyout li a:hover,
   font-weight: normal;
   margin-top: 15px;
 }
+.sidebar .form-type-select {
+  border: 1px solid #dcdcdc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.sidebar .form-type-select:hover {
+  border-color: #a6c9ff;
+}
 .sidebar select {
   -webkit-appearance: none !important;
-  background-color: ;
   background-repeat: no-repeat;
   background-position: center right 3%;
   background-image: url('../images/select-arrow.png');
-  border: 1px solid #cccccc;
-  color: #565656;
+  border: 1px solid #fff;
+  color: #6b8187;
   padding: 5px;
   font-size: 12px;
   -webkit-border-radius: 0;
-  border-radius: 0;
-  margin-bottom: 15px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  margin: 0;
+  -webkit-box-shadow: inset 0px -6px 11px 6px rgba(232, 232, 232, 0.51);
+  -moz-box-shadow: inset 0px -6px 11px 6px rgba(232, 232, 232, 0.51);
+  box-shadow: inset 0px -6px 11px 6px rgba(232, 232, 232, 0.51);
+}
+.sidebar select:hover {
+  background-color: #fafafa;
+}
+.sidebar select option {
+  font-family: 'Open Sans Condensed';
 }
 /* content filters */
 .content .view-filters {
@@ -4938,11 +4969,6 @@ section h3 {
   background: url(../images/.png) no-repeat bottom center;
   height: 363px;
 }
-.page-integral .bg-lines {
-  background: url(../images/bg-lines.png) repeat top left;
-  height: 100px;
-  margin-bottom: 50px;
-}
 .page-integral .panels-flexible-row {
   padding: 0;
 }
@@ -4951,6 +4977,11 @@ section h3 {
 }
 .page-integral .pane-block-1 pane-content {
   margin: 100px 0 0;
+}
+.bg-lines {
+  background: url(../images/bg-lines.png) repeat top left;
+  height: 100px;
+  margin-bottom: 50px;
 }
 /***************** PROYECTOS Y PROPIEDADES *******/
 .views-row {
@@ -4963,19 +4994,31 @@ section h3 {
 .views-row > div:first-child {
   padding-top: 10px;
 }
+.views-row .views-field-title {
+  background-color: #ebf0fa;
+  margin-bottom: 8px;
+}
 .views-row .views-field-title a {
   color: #6694c1;
   font-family: 'Open Sans Condensed';
   font-size: 26px;
 }
+.views-row .views-field-title a:hover {
+  color: #0d6ba0;
+}
 .views-row .views-field-body p {
   color: #565656;
   font-size: 13px;
   margin: 0;
+  padding-bottom: 7px;
+  border-bottom: 1px dotted #d3dded;
 }
 .views-row .views-field-view-node a {
-  color: #0d6ba0;
+  color: #6694c1;
   font-size: 13px;
+}
+.views-row .views-field-view-node a:hover {
+  color: #0d6ba0;
 }
 .views-row .views-field-field-imagen-pro,
 .views-row .views-field-field-imagen {
@@ -4983,41 +5026,100 @@ section h3 {
 }
 /******************/
 /* pager */
+.item-list {
+  border-top: 1px dotted #d3dded;
+  border-bottom: 1px dotted #d3dded;
+  font-family: 'AltoPro-Thin';
+  padding: 10px 0;
+}
+.item-list .pager {
+  text-align: right;
+}
+.item-list .pager-current {
+  margin-left: 3px;
+  color: #cbe9f2;
+}
+.item-list .pager-previous,
+.item-list .pager-next,
+.item-list .pager-item,
+.item-list .last {
+  color: #6694c1;
+  margin-left: 3px;
+}
+.item-list .pager-previous a,
+.item-list .pager-next a,
+.item-list .pager-item a,
+.item-list .last a {
+  color: #6694c1;
+}
+.item-list .pager-previous a:hover,
+.item-list .pager-next a:hover,
+.item-list .pager-item a:hover,
+.item-list .last a:hover {
+  color: #0d6ba0;
+}
 /******************/
 /***************** SERVICIOS ***************/
-.page-servicios .panels-flexible-region-inside {
-  padding-left: 0;
+.page-servicios {
+  /* #menu-servicios {
+    &.locked {
+        position: fixed;
+        top: 10px;
+    }
+  } */
+
 }
-.page-servicios #menu-servicios.locked {
+.page-servicios .views-field-title {
+  background-color: transparent;
+}
+.page-servicios .panel-flexible-inside {
+  position: relative;
+}
+.page-servicios .panels-flexible-region-5-menu_servicios {
   position: fixed;
-  top: 10px;
+  width: 240px;
 }
 .page-servicios ul.side-nav {
-  padding: 20px 20px 0 0;
+  padding: 15px;
+  background-color: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 .page-servicios ul.side-nav li {
-  padding: 10px 10px 10px 0;
+  padding: 10px 0px;
   border-bottom: 1px dotted #d3dded;
   margin: 0;
 }
 .page-servicios ul.side-nav li a {
   padding-right: 20px;
   color: #6694c1;
+  line-height: 16px;
 }
 .page-servicios ul.side-nav li a:hover {
   color: #0d6ba0;
   background: url('../images/menu-servicios-arrow.png') no-repeat right center;
 }
-.page-servicios ul.side-nav li a:active {
-  background: url('../images/menu-servicios-arrow.png') no-repeat right center;
+.page-servicios ul.side-nav li a span.lsf-icon-dropcap:before {
+  font-size: 28px;
+  margin-right: 10px;
+  float: left;
+  height: 30px;
+  padding-top: 4px;
 }
 .page-servicios .panels-flexible-region-5-center {
+  position: relative;
+  top: 0;
+  left: 30%;
   width: 70%;
 }
 .page-servicios .panels-flexible-region-5-center .views-row {
   background: url('../images/bg-lines.png') repeat-x center bottom;
   box-shadow: none;
-  padding: 10px 0 60px;
+  padding: 40px 0 60px;
+}
+.page-servicios .panels-flexible-region-5-center .views-row .views-field-title-1 a {
+  display: none;
 }
 .page-servicios .panels-flexible-region-5-center .views-row .views-field-title {
   border-bottom: 1px dotted #6694c1;
@@ -5036,13 +5138,14 @@ section h3 {
 /******** CONTACT COUNTRIES SECTION ********/
 /*******************************************/
 .contact-countries div.columns {
-  padding: 0;
+  padding: 5px;
   border-right: 1px dotted #d3dded;
 }
 .contact-countries div.columns:last-child {
   border: 0;
 }
 .contact-countries .country-icons {
+  height: 140px;
   padding: 6px 10px 0 60px;
 }
 .contact-countries .country-icons:last-child {

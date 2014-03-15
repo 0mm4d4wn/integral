@@ -51,6 +51,7 @@
   </div>
 </section>
 <!-- ######################## Section Countries ######################## -->
+<div class="bg-lines"></div>
 <section class="contact-countries">
   <div>
     <div class="row"> 

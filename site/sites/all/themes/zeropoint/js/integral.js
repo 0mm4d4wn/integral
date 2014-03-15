@@ -5,7 +5,7 @@ $( document ).ready(function() {
     $(".page-servicios .views-row-4").attr('id','admin');
     $(".page-servicios .views-row-5").attr('id','ventas');
     $(".page-servicios .views-row-6").attr('id','org-agendas');
-    $(".page-servicios .panels-flexible-region-5-menu_servicios").attr('id','menu-servicios');
+ /*   $(".page-servicios .panels-flexible-region-5-menu_servicios").attr('id','menu-servicios');
      $("#menu-servicios").scrollspy({
                         min: $('#menu-servicios').offset().top-40,
                         max: 9999999,
@@ -15,5 +15,13 @@ $( document ).ready(function() {
                         onLeave: function(element, position) {
                             $('#menu-servicios').removeClass('locked');
                         }
-                    });
+                    });  */
+      $('ul.side-nav a').smoothScroll();
+      $('p.subnav a').click(function(event) {
+        event.preventDefault();
+        var link = this;
+        $.smoothScroll({
+          scrollTarget: link.hash
+        });
+      });
 });

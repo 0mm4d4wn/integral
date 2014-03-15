@@ -78,8 +78,11 @@
 @blue4: #0D6BA0;
 @blue5: #6694C1;
 @blue6: #cbe9f2;
+@blue7: #EBF0FA;
+@blue8: #A6C9FF;
 
 @gray1: #EFEFEF;
+@gray1-2: #DCDCDC;
 @gray2: #AFAFAF;
 @gray3: #6B8187;
 @gray4: #6D6D6D;
@@ -144,8 +147,20 @@
 /*********************************************/
 /******************* SIDEBAR *****************/
 /*********************************************/
+
+.page-proyectos,
+.page-propiedades,
+.page-busqueda,
+.page-node {
+  .three h3 {
+    border-bottom: 1px dotted @blue3;
+    color: @blue8;
+    font-size: 20px;
+    margin: 46px 0 0 0;
+  }
+}
 .sidebar {
-	margin-top: 40px;
+	margin-top: 20px;
 	padding: 0 10px 15px;
 	.view-busqueda {
 		.view-content,
@@ -156,6 +171,9 @@
 	.views-exposed-form .views-exposed-widget {
 		float: none;
 		padding: 0;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid @gray1-2;
 	}
 	label {
 		color: @blue5;
@@ -163,19 +181,38 @@
 		font-weight: normal;
 		margin-top: 15px;
 	}
+  .form-type-select {
+    border: 1px solid @gray1-2;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+     &:hover {
+      border-color: @blue8;
+    }
+  }
 	select {
 		-webkit-appearance: none !important;
-		background-color: ;
 		background-repeat: no-repeat;
 		background-position: center right 3%;
 		background-image: url('../images/select-arrow.png');
-		border: 1px solid #cccccc;
-		color: @gray5;
+		border: 1px solid #fff;
+		color: @gray3;
 		padding: 5px;
 		font-size: 12px;
 		-webkit-border-radius: 0;
-		border-radius: 0;
-		margin-bottom: 15px;
+		-webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin: 0;
+    -webkit-box-shadow: inset 0px -6px 11px 6px rgba(232,232,232,0.51);
+    -moz-box-shadow: inset 0px -6px 11px 6px rgba(232,232,232,0.51);
+    box-shadow: inset 0px -6px 11px 6px rgba(232,232,232,0.51);
+    &:hover {
+      background-color: #fafafa;
+    }
+    option {
+      font-family: @font1;
+    }
 	}
 }
 /* content filters */
@@ -256,11 +293,6 @@ section {
     background: url(../images/.png) no-repeat bottom center;
     height: 363px;
   }
-  .bg-lines {
-    background: url(../images/bg-lines.png) repeat top left;
-    height: 100px;
-    margin-bottom: 50px;
-  }
   .panels-flexible-row {
     padding: 0;
     &:last-child {
@@ -273,6 +305,11 @@ section {
     }
   }
 }
+.bg-lines {
+    background: url(../images/bg-lines.png) repeat top left;
+    height: 100px;
+    margin-bottom: 50px;
+  }
 /***************** PROYECTOS Y PROPIEDADES *******/
 .views-row {
 	margin: 0 0 20px;
@@ -284,10 +321,15 @@ section {
 		}
 	}
 	.views-field-title {
+    background-color: @blue7;
+    margin-bottom: 8px;
 		a {
 			color: @blue5;
 			font-family: @font1;
 			font-size: 26px;
+      &:hover {
+        color: @blue4;
+      }
 		}
 	}
 	.views-field-body {
@@ -295,12 +337,17 @@ section {
 			color: @gray5;
 			font-size: 13px;
 			margin: 0;
+      padding-bottom: 7px;
+      border-bottom: 1px dotted @blue3;
 		}
 	}
 	.views-field-view-node {
 		a {
-			color: @blue4;
+			color: @blue5;
 			font-size: 13px;
+      &:hover {
+        color: @blue4;
+      }
 		}
 	}
 	.views-field-field-imagen-pro,
@@ -311,47 +358,93 @@ section {
 /******************/
 /* pager */
 .item-list {
-
+  border-top: 1px dotted @blue3;
+  border-bottom: 1px dotted @blue3;
+  font-family: @font3;
+  padding: 10px 0;
+  .pager {
+    text-align: right;    
+  }
+  .pager-current {
+    margin-left: 3px;
+    color: @blue6;
+  }
+  .pager-previous,
+  .pager-next,
+  .pager-item,
+  .last {
+    color: @blue5;
+    margin-left: 3px;
+    a {
+    color: @blue5;
+    &:hover {
+      color: @blue4;
+      }
+    }
+  }
 }
 /******************/
 /***************** SERVICIOS ***************/
 
 .page-servicios {
-  .panels-flexible-region-inside {
-    padding-left: 0;
-  }
-  #menu-servicios {
+  /* #menu-servicios {
     &.locked {
         position: fixed;
         top: 10px;
     }
+  } */
+  .views-field-title {
+    background-color: transparent;
+  }
+  .panel-flexible-inside {
+    position: relative;
+  }
+  .panels-flexible-region-5-menu_servicios {
+    position: fixed;
+    width: 240px;
   }
   ul.side-nav {
-    padding: 20px 20px 0 0;
+    padding: 15px;
+    background-color: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
     li {
-      padding: 10px 10px 10px 0;
+      padding: 10px 0px;
       border-bottom: 1px dotted @blue3;
       margin: 0;
       a {
         padding-right: 20px;
         color: @blue5;
+        line-height: 16px;
         &:hover {
           color: @blue4;
           background: url('../images/menu-servicios-arrow.png') no-repeat right center;
         }
-        &:active {
-          background: url('../images/menu-servicios-arrow.png') no-repeat right center;
+        span.lsf-icon-dropcap:before {
+        font-size: 28px;
+        margin-right: 10px;
+        float: left;
+        height: 30px;
+        padding-top: 4px;
         }
       }
     }
   }
   .panels-flexible-region-5-center {
-  
+    position: relative;
+    top: 0;
+    left: 30%;
     width: 70%;
     .views-row {
       background: url('../images/bg-lines.png') repeat-x center bottom;
       box-shadow: none;
-      padding: 10px 0 60px;
+      padding: 40px 0 60px;
+      .views-field-title-1 {
+        a {
+          display: none;
+        }
+      }
       .views-field-title {
         border-bottom: 1px dotted @blue5;
         span {
@@ -376,13 +469,14 @@ section {
 /*******************************************/
 .contact-countries {
 	div.columns {
-		padding: 0;
+		padding: 5px;
 		border-right: 1px dotted @blue3;
 		&:last-child {
 			border: 0;
 		}
 	}
 	.country-icons {
+    height: 140px;
 		padding: 6px 10px 0 60px;
 		&:last-child {
 			border-right: 0;
