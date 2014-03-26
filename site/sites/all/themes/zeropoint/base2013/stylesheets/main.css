@@ -238,17 +238,16 @@ dl.tabs dd.active a {
   padding: 0 25px;
 }
 .nav-bar > li > a {
-  color: #4d4d4d;
+  color: #6694c1;
 }
 .nav-bar > li > a:hover {
-  color: #000;
+  color: #0d6ba0;
 }
 .nav-bar > li:last-child {
   border: 0;
   box-shadow: none;
 }
 .nav-bar > li.active:hover {
-  background: #000;
   cursor: default;
 }
 .nav-bar > li:hover {
@@ -284,7 +283,6 @@ dl.tabs dd.active a {
 }
 .active a {
   background: #F06B48;
-  color: #FFF;
 }
 .flyout {
   background: #FAFAFA;
@@ -753,3 +751,7 @@ ul.flyout li a:hover,
     display: none;
   }
 }
+/* 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+    
+}*/

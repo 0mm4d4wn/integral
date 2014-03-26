@@ -112,10 +112,19 @@
 /*********************************************/
 /******************* HEADER ******************/
 /*********************************************/
-.nav-bar > li.active:hover,
-.nav-bar > li.active > a:hover {
-	color: white;
+  
+.nav-bar > li,
+.nav-bar > li.active,
+.nav-bar > li a {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+   border-radius: 3px;
 }
+.nav-bar > li.active a { background-color: @blue5; }
+.nav-bar > li.active > a:hover {
+  color: white;
+}
+
 #brand {
 	background: url('../images/integral_logo.png') no-repeat 0 0;
 	width: 167px;
@@ -123,6 +132,7 @@
 	display: block;
 	float: left;
 	margin-top: -3px;
+  margin-left: 35px;
 }
 .header_nav {
   background: url('../images/bg-header2.png') repeat-x 0 0;
@@ -134,17 +144,6 @@
 #menu {
 	float: right;
 }
-#menu-header {
-	li.active {
-		background-color: @blue5;
-		&:hover {
-			background: white;
-		}
-		a {
-			background-color: @blue5;
-		}
-	}
-}
 
 /*********************************************/
 /******************* SIDEBAR *****************/
@@ -153,7 +152,8 @@
 .page-proyectos,
 .page-propiedades,
 .page-busqueda,
-.page-node {
+.page-node,
+.page-contact {
   .three h3 {
     border-bottom: 1px dotted @blue3;
     color: @blue8;
@@ -162,6 +162,7 @@
   }
 }
 .sidebar {
+  overflow: hidden;
 	margin-top: 20px;
 	padding: 0 10px 15px;
 	.view-busqueda {
@@ -195,7 +196,7 @@
 	select {
 		-webkit-appearance: none !important;
 		background-repeat: no-repeat;
-		background-position: center right 3%;
+		background-position: 95% center;
 		background-image: url('../images/select-arrow.png');
 		border: 1px solid #fff;
 		color: @gray3;
@@ -315,12 +316,6 @@ section {
     margin-bottom: 50px;
   }
 /***************** PROYECTOS Y PROPIEDADES *******/
-/*.page-proyectos h1 {
-  background: url('../images/bg-proyectos.png') repeat-x 0 0px;
-}
-.page-propiedades h1 {
-  background: url('../images/bg-propiedades.png') repeat-x 0 10px;
-}*/
 .views-row {
 	margin: 0 0 20px;
 	padding: 0;
@@ -411,6 +406,8 @@ section {
   .panels-flexible-region-5-menu_servicios {
     position: fixed;
     width: 240px;
+    z-index: 300;
+    height: 600px;
   }
   ul.side-nav {
     padding: 15px;
@@ -418,6 +415,7 @@ section {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
+
     li {
       padding: 10px 0px;
       border-bottom: 1px dotted @blue3;
@@ -470,6 +468,34 @@ section {
     }
   }
 }
+/************** DETALLE ********************/
+
+.node-type-proyectos,
+.node-type-propiedades {
+  section.three {
+    display: none;
+  }
+  section.nine {
+    width: 100%;
+    float: none;
+  }
+  h1 {
+    color: @blue5;
+    border-bottom: 1px dotted @blue3;
+  }
+  p {
+    color: @gray3;
+  }
+  .left {
+    width: 30%;
+  }
+  .right {
+    width: 70%;
+  }
+}
+
+
+
 /*******************************************/
 /******** CONTACT COUNTRIES SECTION ********/
 /*******************************************/
