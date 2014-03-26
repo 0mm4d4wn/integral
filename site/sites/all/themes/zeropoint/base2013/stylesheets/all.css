@@ -4805,6 +4805,10 @@ ul.flyout li a:hover,
   float: left;
   margin-top: -3px;
 }
+.header_nav {
+  background: url('../images/bg-header2.png') repeat-x 0 0;
+  padding: 50px 0 10px 0;
+}
 .header_nav .row {
   overflow: hidden;
 }
@@ -4910,10 +4914,12 @@ section h3 {
 .page-propiedades h1,
 .page-servicios h1,
 .page-contacto h1,
-.page-busqueda h1 {
+.page-busqueda h1,
+.page-contact h1 {
+  background: url('../images/bg-proyectos.png') repeat-x 0 0px;
+  overflow: hidden;
   padding-right: 10px;
   text-align: right;
-  border-bottom: 1px dotted #d3dded;
 }
 .page-home h2,
 .page-proyectos h2,
@@ -4921,12 +4927,14 @@ section h3 {
 .page-servicios h2,
 .page-contacto h2,
 .page-busqueda h2,
+.page-contact h2,
 .page-home .pane-title,
 .page-proyectos .pane-title,
 .page-propiedades .pane-title,
 .page-servicios .pane-title,
 .page-contacto .pane-title,
-.page-busqueda .pane-title {
+.page-busqueda .pane-title,
+.page-contact .pane-title {
   display: none;
 }
 /***************** Page INTEGRAL *****************/
@@ -4958,15 +4966,15 @@ section h3 {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffafafa', endColorstr='#ffd3dded', GradientType=0);
 }
 .page-integral .bg-integral_pm {
-  background: url(../images/bg-integral_buildings.png) no-repeat bottom center;
+  background: url('../images/bg-integral_buildings.png') no-repeat bottom center;
   height: 363px;
 }
 .page-integral .bg-mision {
-  background: url(../images/bg-integral_mision.png) no-repeat bottom center;
+  background: url('../images/bg-integral_mision.png') no-repeat bottom center;
   height: 363px;
 }
 .page-integral .bg-vision {
-  background: url(../images/.png) no-repeat bottom center;
+  background: url('../images/.png') no-repeat bottom center;
   height: 363px;
 }
 .page-integral .panels-flexible-row {
@@ -4979,11 +4987,17 @@ section h3 {
   margin: 100px 0 0;
 }
 .bg-lines {
-  background: url(../images/bg-lines.png) repeat top left;
+  background: url('../images/bg-lines.png') repeat top left;
   height: 100px;
   margin-bottom: 50px;
 }
 /***************** PROYECTOS Y PROPIEDADES *******/
+/*.page-proyectos h1 {
+  background: url('../images/bg-proyectos.png') repeat-x 0 0px;
+}
+.page-propiedades h1 {
+  background: url('../images/bg-propiedades.png') repeat-x 0 10px;
+}*/
 .views-row {
   margin: 0 0 20px;
   padding: 0;
@@ -4995,7 +5009,6 @@ section h3 {
   padding-top: 10px;
 }
 .views-row .views-field-title {
-  background-color: #ebf0fa;
   margin-bottom: 8px;
 }
 .views-row .views-field-title a {
@@ -5169,19 +5182,19 @@ section h3 {
   color: #565656;
 }
 .contact-countries .pnm-icon {
-  background: url(../images/pnm-flag.png) no-repeat 6px 2px;
+  background: url('../images/pnm-flag.png') no-repeat 6px 2px;
 }
 .contact-countries .vnz-icon {
-  background: url(../images/vnz-flag.png) no-repeat 6px 2px;
+  background: url('../images/vnz-flag.png') no-repeat 6px 2px;
 }
 .contact-countries .col-icon {
-  background: url(../images/col-flag.png) no-repeat 6px 2px;
+  background: url('../images/col-flag.png') no-repeat 6px 2px;
 }
 .contact-countries .usa-icon {
-  background: url(../images/usa-flag.png) no-repeat 6px 2px;
+  background: url('../images/usa-flag.png') no-repeat 6px 2px;
 }
 .contact-countries .eur-icon {
-  background: url(../images/eur-flag.png) no-repeat 6px 2px;
+  background: url('../images/eur-flag.png') no-repeat 6px 2px;
 }
 /*********************************************/
 /******************* FOOTER ******************/
