@@ -1,7 +1,7 @@
 <?php
   global $base_url;
-  $ruta = "/sites/all/themes/zeropoint/images/";
-?> 
+  $ruta = $base_url . "/sites/all/themes/zeropoint/images/";
+?>
 <!-- ######################## Main Menu ######################## -->
 <nav>
   <div class="twelve columns header_nav">

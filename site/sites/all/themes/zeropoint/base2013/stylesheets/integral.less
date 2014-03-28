@@ -311,7 +311,7 @@ section {
   }
 }
 .bg-lines {
-    background: url('../images/bg-lines.png') repeat top left;
+    background: url('../images/bg-lines.png') repeat;
     height: 100px;
     margin-bottom: 50px;
   }
@@ -475,23 +475,88 @@ section {
   section.three {
     display: none;
   }
+  .content {
+    position: relative;
+    h1.title {
+      color: @blue5;
+      border-bottom: 1px dotted @blue3;
+      font-family: @font2;
+      margin: 30px 0 7px;
+      .inmobi-logo {
+      float: right;
+      height: 50px;
+      }
+    }
+    .img-first img {
+    width: 100%;
+    height: 360px;
+    margin-bottom: 10px;
+    }
+    h4 {
+      margin: 0 0 10px 0;
+      float: left;
+      p {
+        color: @gray2;
+        display: inline-block;
+        font-family: @font4;
+        font-size: 26px;
+        margin: 0;
+      }
+    }
+  }
   section.nine {
     width: 100%;
     float: none;
   }
-  h1 {
-    color: @blue5;
-    border-bottom: 1px dotted @blue3;
-  }
-  p {
-    color: @gray3;
+  h1.section-title {
+    display: none;
   }
   .left {
     width: 30%;
+    background: url('../images/bg-lines.png') repeat-x 0 bottom @gray6;
+    padding: 17px 20px 70px;
+    > div {
+      margin: 0 0 15px 0;
+      padding: 0 0 15px 0;
+    }
+    .field-name-body {
+      margin: 15px 0 0;
+      p {
+        color: @blue5;
+      }
+    }
+    ul {
+      padding: 0;
+      list-style: none;
+      li {
+        border-bottom: 1px dotted @blue3;
+        font-size: 18px;
+        font-family: @font4;
+        &:before {
+            content: "» ";
+            color: @blue1; /* or whatever color you prefer */
+            margin-right: 10px;
+          
+        }
+        &:last-child {
+          border-bottom: 1px solid @blue3;
+        }
+        b {
+          color: @gray5;
+          font-family: @font2;
+          float: right;
+        }
+      }
+    }
   }
   .right {
-    width: 70%;
+    width: 68%;
+    padding: 0;
+    img {
+      margin-bottom: 18px;
+    }
   }
+
 }
 
 
