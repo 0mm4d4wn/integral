@@ -135,7 +135,7 @@
   margin-left: 35px;
 }
 .header_nav {
-  background: url('../images/bg-header2.png') repeat-x 0 0;
+  background: url('../images/bg-header2.png') repeat-x;
   padding: 50px 0 10px 0;
 	.row {
 		overflow: hidden;
@@ -262,8 +262,55 @@ section {
 		display: none;
 	}
 }
+/***************** Page FRONT *****************/
+
+.page-home {
+  .bx-wrapper {
+    padding: 0 10px 10px 0;
+    .bx-viewport {
+      border: 1px solid @gray1-2;
+    }
+  }
+  .bxslider {
+    li {
+      list-style: none;
+      background-color: @gray6;
+      height: 200px;
+      position: relative;
+      h4 {
+        color: @blue5;
+        margin: 20px;
+      }
+      p {
+        margin: 20px;
+      }
+    }
+  }
+  .section_main {
+    .nine {
+      padding-left: 0;
+      .eight,
+      .four {
+        float: left;
+        .twelve {
+          div {
+            height: 370px;
+          }
+        }
+        article {
+          float: left;
+          padding: 0 10px 10px 0;
+          div {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
 /***************** Page INTEGRAL *****************/
-.page-integral {
+.page-integral-property {
   .content {
     margin-top: 100px;
   }

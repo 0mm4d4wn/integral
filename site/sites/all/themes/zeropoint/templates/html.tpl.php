@@ -24,6 +24,9 @@
     <link rel="stylesheet" href="<?php print $base_url; ?>/sites/all/themes/zeropoint/base2013/stylesheets/app.css"> -->
     <link rel="stylesheet" href="<?php print $base_url; ?>/sites/all/themes/zeropoint/base2013/stylesheets/all.css">
     <script src="<?php print $base_url; ?>/sites/all/themes/zeropoint/js/jquery.js"></script>
+    <script src="<?php print $base_url; ?>/sites/all/themes/zeropoint/js/jquery.bxslider/jquery.bxslider.min.js"></script>
+    <link href="<?php print $base_url; ?>/sites/all/themes/zeropoint/js/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />
+    <script src="<?php print $base_url; ?>/sites/all/themes/zeropoint/js/jquery.bxslider/plugins/jquery.easing.1.3.js"></script>
     <script src="<?php print $base_url; ?>/sites/all/themes/zeropoint/base2013/javascripts/modernizr.foundation.js"></script>
     <script src="<?php print $base_url; ?>/sites/all/themes/zeropoint/js/jquery.smooth-scroll.js"></script>
     <script src="<?php print $base_url; ?>/sites/all/themes/zeropoint/js/jquery-scrollspy.js"></script>
