@@ -1,0 +1,128 @@
+<?php
+
+/**
+ * Implementation of hook_init()
+ */
+function properties_init() {
+  if(arg(0) != 'admin')
+  drupal_add_js(drupal_get_path('module', 'properties') .'/properties.js', 'file');
+}
+
+/**
+ * Implementation of hook_form_alter()
+ */
+function properties_form_views_exposed_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id == 'views_exposed_form' and arg(0) != 'admin') {
+    if(drupal_is_front_page() == TRUE) {
+      //Unset and hide unnecesary filter fields for front page
+      unset($form['#info']['filter-term_node_tid_depth']);
+      unset($form['#info']['filter-field_precio_de_venta_value']);
+      unset($form['#info']['filter-field_precio_de_alquiler_value']);
+      unset($form['#info']['filter-field_habitaciones_value']);
+      unset($form['#info']['filter-field_banos_value']);
+      unset($form['#info']['filter-field_espacio_value']);
+      unset($form['#info']['filter-field_estacionamiento_value']);
+      $form['location']['#access'] = FALSE;
+      $form['sale']['#access'] = FALSE;
+      $form['rent']['#access'] = FALSE;
+      $form['rooms']['#access'] = FALSE;
+      $form['bath']['#access'] = FALSE;
+      $form['space']['#access'] = FALSE;
+      $form['parking']['#access'] = FALSE;
+    }
+    else {
+      //Change the name of every sale field
+      $form['sale']['min'] = array(
+        '#type' => 'textfield',
+        '#title' => t('From $')
+      );
+      $form['sale']['max'] = array(
+        '#type' => 'textfield',
+        '#title' => t('To $')
+      );
+
+      //Message sale back button
+      $form['sale']['msg'] = array(
+        '#type' => 'item',
+        '#markup' => '<span id="back-sale" style="display:none;">'. t('Back to list').'</span>',
+        '#weight' => -20
+      );
+
+      //Add a dropdown to the sale field
+      $form['sale']['drop'] = array(
+        '#type' => 'select',
+        '#options' => array(
+          0 => t('- Any -'),
+          '200000-400000' => '$200.000 a $400.000',
+          '400001-600000' => '$400.001 a $600.000',
+          '600001-800000' => '$600.001 a $800.000',
+          '800001-1000000' => '$800.001 a $1.000.000',
+          '1000001-9999999' => 'Superior a $1.000.000'
+        ),
+        '#attributes' => array(
+          'id' => array(
+            'drop-sale',
+          ),
+        ),
+        '#default_value' => 0,
+        '#weight' => -20
+      );
+
+      //Change the name of every rent field
+      $form['rent']['min'] = array(
+        '#type' => 'textfield',
+        '#title' => t('From $')
+      );
+      $form['rent']['max'] = array(
+        '#type' => 'textfield',
+        '#title' => t('To $')
+      );
+
+      //Message rent back button
+      $form['rent']['msg'] = array(
+        '#type' => 'item',
+        '#markup' => '<span id="back-rent" style="display:none;">'. t('Back to list').'</span>',
+        '#weight' => -20
+      );
+
+      //Add a dropdown to the rent field
+      $form['rent']['drop'] = array(
+        '#type' => 'select',
+        '#options' => array(
+          0 => t('- Any -'),
+          '1000-1500' => '$1.000 a $1.500',
+          '1500-2000' => '$1.500 a $2.000',
+          '2000-2500' => '$2.000 a $2.500',
+          '2501-3000' => '$2.501 a $3.000',
+          '3001-3500' => '$3.001 a $3.500',
+          '3501-4000' => '$3.501 a $4.000',
+          '4001-5000' => '$4.001 a $5.000',
+          '5001-9999' => '$5.001 en adelante'
+        ),
+        '#attributes' => array(
+          'id' => array(
+            'drop-rent',
+          ),
+        ),
+        '#default_value' => 0,
+        '#weight' => -20
+      );
+
+      //Get contract id for rent or sale option
+      /*if(isset($_GET['contract'])) {
+        $contract =  intval($_GET['contract']);
+
+        if($contract == 15) {
+          //Hide rent filter field
+          unset($form['#info']['filter-field_precio_de_alquiler_value']);
+          $form['rent']['#access'] = FALSE;
+        }
+        elseif($contract == 14 || $contract == 17) {
+          //Hide Sale filter field
+          unset($form['#info']['filter-field_precio_de_venta_value']);
+          $form['sale']['#access'] = FALSE;
+        }
+      }*/
+    }
+  }
+}

@@ -1,0 +1,3 @@
+name = "Properties additional filters"
+description = "Displays some filters of the search in a different way."
+core = "7.x"
