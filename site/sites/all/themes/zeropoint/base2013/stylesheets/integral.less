@@ -107,6 +107,7 @@
 .panels-flexible-region-5-center,
 .panels-flexible-region-6-center {
   width: 100%;
+
 }
 
 /*********************************************/
@@ -126,34 +127,34 @@
 }
 
 #brand {
-	background: url('../images/integral_logo.png') no-repeat 0 0;
-	width: 167px;
-	height: 53px;
-	display: block;
-	float: left;
-	margin-top: -3px;
+  background: url('../images/integral_logo.png') no-repeat 0 0;
+  width: 167px;
+  height: 53px;
+  display: block;
+  float: left;
+  margin-top: -3px;
   margin-left: 35px;
 }
 .header_nav {
   background: url('../images/bg-header2.png') repeat-x;
   padding: 50px 0 10px 0;
-	.row {
-		overflow: hidden;
-	}
+  .row {
+    overflow: hidden;
+  }
 }
 #menu {
-	float: right;
+  float: right;
 }
 
 /*********************************************/
-/******************* SIDEBAR *****************/
+/******************* BUSQUEDA *****************/
 /*********************************************/
-
 .page-proyectos,
 .page-propiedades,
 .page-busqueda,
 .page-node,
-.page-contact {
+.page-contact,
+.page-inicio {
   .three h3 {
     border-bottom: 1px dotted @blue3;
     color: @blue8;
@@ -161,8 +162,9 @@
     margin: 46px 0 0 0;
   }
 }
-.sidebar {
-  overflow: hidden;
+#min-search,
+.page-inicio {
+  
 	margin-top: 20px;
 	padding: 0 10px 15px;
 	.view-busqueda {
@@ -264,7 +266,7 @@ section {
 }
 /***************** Page FRONT *****************/
 
-.page-home {
+.page-inicio {
   .bx-wrapper {
     padding: 0 10px 10px 0;
     .bx-viewport {
@@ -307,6 +309,19 @@ section {
       }
     }
   }
+}
+.front .view-id-busqueda {
+  overflow: hidden;
+}
+#min-search .views-exposed-form .views-exposed-widget {
+  width: 25%;
+  float: left;
+}
+
+/* VIEWS */
+.view-home {}
+.view-home .views-row {
+
 }
 
 /***************** Page INTEGRAL *****************/
@@ -700,14 +715,43 @@ footer {
 	}
 }
 
+/**/
 
+#min-search {
 
+  margin-bottom: 20px;
 
+}
 
+/**/
 
+.jcarousel-skin-default .jcarousel-container-horizontal {
+  width: 100%!important;
+}
 
+.jcarousel-skin-default .jcarousel-clip-horizontal {
+  width: 96%!important;
+}
+.jcarousel-list-horizontal {
+  width: 200%!important;;
+  height: 170px;
+  overflow: hidden;
+}
 
+.jcarousel-skin-default .jcarousel-item-horizontal .views-field-field-imagen{
+  width: 160px!important;
+}
 
+.destacados .jcarousel-skin-default .jcarousel-clip-horizontal  {
+  width: 97%!important;
+}
+
+.galleria-container {
+
+background: white!important;
+margin-bottom: 100px;
+
+}
 
 
 

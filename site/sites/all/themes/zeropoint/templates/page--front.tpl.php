@@ -36,19 +36,22 @@
 <section>
   <div class="section_main">
     <div class="row">
-      <section class="three columns">
-        <h3>Filtra tu búsqueda</h3>
-        <div class="sidebar blog_post">
-          <?php
+      <section class="">
+
+
+      <div id="min-search">
+        <?php 
           /*$busqueda = module_invoke('views', 'block_view', 'busqueda-block');
           print render($busqueda['content']);*/
           $viewName = 'busqueda';
           print views_embed_view($viewName);
-          ?>          
-        </div>
-      </section>
-      <section class="nine columns">
-        <!--<?php /* if ($page['highlighted']): ?><div id="mission"><?php print render ($page['highlighted']); ?></div><?php endif; ?>
+          ?> 
+      
+      </div>
+
+
+
+        <?php if ($page['highlighted']): ?><div id="mission"><?php print render ($page['highlighted']); ?></div><?php endif; ?>
         <?php print render($title_prefix); ?>
         <?php if ($title): if ($is_front){ print '<h2 class="title">'. $title .'</h2>'; } else { print '<h1 class="section-title">'. $title .'</h1>'; } endif; ?>
         <?php print render($title_suffix); ?>
@@ -57,45 +60,12 @@
         <?php print $messages ?>
         <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
         <?php if ($page['content']) : ?><?php print render ($page['content']); ?><?php endif; ?>
-        <?php print $feed_icons; */ ?>-->
-
-          <section>
-            <article class="twelve">
-              <h3>Slider de Proyectos</h3>
-
-              <ul class="bxslider">
-                <li>
-                  <h4>Proyecto 1</h4>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </li>
-                <li>
-                  <h4>Proyecto 2</h4>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </li>
-                <li>
-                  <h4>Proyecto 3</h4>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </li>
-                <li>
-                  <h4>Proyecto 4</h4>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </li>
-                <li>
-                  <h4>Proyecto 5</h4>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </li>
-                <li>
-                  <h4>Proyecto 6</h4>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </li>
-              </ul>
-
-            </article>
-          </section>
+        <?php print $feed_icons; ?>
 
 
 
 
+<!--
 
           <h3>Últimas cinco propiedades</h3>
 
@@ -140,6 +110,10 @@
     </div>
   </div>
 </section>
+-->
+
+
+
 <!-- ######################## Section Countries ######################## -->
 <div class="bg-lines"></div>
 <section class="contact-countries">
