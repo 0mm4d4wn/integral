@@ -110,51 +110,47 @@
   margin-top: 32px;
 }
 #min-search .view-busqueda .view-content,
-.page-propiedades .view-busqueda .view-content,
 .page-contact .view-busqueda .view-content,
 #min-search .view-busqueda .pager,
-.page-propiedades .view-busqueda .pager,
 .page-contact .view-busqueda .pager {
   display: none;
 }
-#min-search .views-exposed-form .views-exposed-widget,
+.page-inicio .views-exposed-form .views-exposed-widget {
+  border: 2px blue;
+}
+.page-propiedades .three h3,
+.page-inicio .three h3 {
+  margin-bottom: 18px;
+  border: 0;
+}
 .page-propiedades .views-exposed-form .views-exposed-widget,
-.page-contact .views-exposed-form .views-exposed-widget {
+.page-inicio .views-exposed-form .views-exposed-widget {
   float: none;
   padding: 0;
   margin: 12px;
   padding-bottom: 12px;
   border-bottom: 1px solid #dcdcdc;
 }
-#min-search .page-inicio .views-exposed-form .views-exposed-widget,
-.page-propiedades .page-inicio .views-exposed-form .views-exposed-widget,
-.page-contact .page-inicio .views-exposed-form .views-exposed-widget {
-  border: 2px blue;
-}
-#min-search label,
 .page-propiedades label,
-.page-contact label {
+.page-inicio label {
   color: #6694c1;
   font-family: 'AltoPro-Light';
   font-weight: normal;
   margin-top: 15px;
 }
-#min-search .form-type-select,
 .page-propiedades .form-type-select,
-.page-contact .form-type-select {
+.page-inicio .form-type-select {
   border: 1px solid #dcdcdc;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
-#min-search .form-type-select:hover,
 .page-propiedades .form-type-select:hover,
-.page-contact .form-type-select:hover {
+.page-inicio .form-type-select:hover {
   border-color: #a6c9ff;
 }
-#min-search select,
 .page-propiedades select,
-.page-contact select {
+.page-inicio select {
   -webkit-appearance: none !important;
   background-repeat: no-repeat;
   background-position: 95% center;
@@ -172,19 +168,16 @@
   -moz-box-shadow: inset 0px -6px 11px 6px rgba(232, 232, 232, 0.51);
   box-shadow: inset 0px -6px 11px 6px rgba(232, 232, 232, 0.51);
 }
-#min-search select:hover,
 .page-propiedades select:hover,
-.page-contact select:hover {
+.page-inicio select:hover {
   background-color: #fafafa;
 }
-#min-search select option,
 .page-propiedades select option,
-.page-contact select option {
+.page-inicio select option {
   font-family: 'Open Sans Condensed';
 }
-#min-search .views-submit-button input,
 .page-propiedades .views-submit-button input,
-.page-contact .views-submit-button input {
+.page-inicio .views-submit-button input {
   border-radius: 3px;
   webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -192,22 +185,18 @@
   font-weight: normal;
   width: 100%;
 }
-#min-search #edit-sale-msg,
 .page-propiedades #edit-sale-msg,
-.page-contact #edit-sale-msg,
-#min-search #edit-rent-msg,
+.page-inicio #edit-sale-msg,
 .page-propiedades #edit-rent-msg,
-.page-contact #edit-rent-msg {
+.page-inicio #edit-rent-msg {
   cursor: pointer;
   padding: 6px;
   color: #afafaf;
 }
-#min-search #edit-sale-msg:hover,
 .page-propiedades #edit-sale-msg:hover,
-.page-contact #edit-sale-msg:hover,
-#min-search #edit-rent-msg:hover,
+.page-inicio #edit-sale-msg:hover,
 .page-propiedades #edit-rent-msg:hover,
-.page-contact #edit-rent-msg:hover {
+.page-inicio #edit-rent-msg:hover {
   color: #6b8187;
 }
 .boton {
