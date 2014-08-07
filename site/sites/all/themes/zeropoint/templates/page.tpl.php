@@ -6,7 +6,7 @@
 <nav>
   <div class="twelve columns header_nav">
     <div class="row header">
-      <a href="#" id="brand" class=""></a>
+      <a href="<?php print $base_path ?>" title="<?php print t('Inicio') ?>" id="brand" class=""></a>
       <?php if ($main_menu || $page['dropdown']): ?>
       <div id="menu" class="<?php //print menupos() ?>">
         <?php if (!empty($page['dropdown'])) { ?><?php print render($page['dropdown']); ?><?php } ?>
@@ -32,7 +32,7 @@
     </div>  
   </div>    
 </nav>
-<!-- ######################## Header (featured posts) ######################## -->
+<!-- ######################## Header ######################## -->
 <section>
   <div class="section_main">
     <div class="row">
@@ -114,9 +114,9 @@
 <footer>
   <div class="row">
     <div class="five-cols columns social-icons">
-      <a href="" class="lsf-icon" title="facebook"></a>
-      <a href="" class="lsf-icon" title="twitter"></a>
-      <a href="" class="lsf-icon" title="instagram"></a>
+      <a href="https://www.facebook.com/IntegralPropertyManagementSA" target="blank" class="lsf-icon" title="facebook"></a>
+      <a href="https://twitter.com/INTEGRALPM" target="blank" class="lsf-icon" title="twitter"></a>
+      <a href="http://i.instagram.com/integralproperty/" target="blank" class="lsf-icon" title="instagram"></a>
     </div>
     <div class="col-60 columns branding">
       <p>Copyright © 2013, Integral Property Management SA, todos los derechos reservados.

@@ -149,6 +149,46 @@
 /*********************************************/
 /******************* BUSQUEDA *****************/
 /*********************************************/
+.page-user {
+  a:hover {
+    color: @blue5;
+  }
+  section.three {
+    display: none;
+  }
+  section.nine {
+    width: 100%;
+  }
+  input[type='submit'] {
+    -moz-box-shadow:inset 0px 1px 0px 0px #88afd4;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #88afd4;
+  box-shadow:inset 0px 1px 0px 0px #88afd4;
+  background-color:#6694c1;
+  -webkit-border-top-left-radius:6px;
+  -moz-border-radius-topleft:6px;
+  border-top-left-radius:6px;
+  -webkit-border-top-right-radius:6px;
+  -moz-border-radius-topright:6px;
+  border-top-right-radius:6px;
+  -webkit-border-bottom-right-radius:6px;
+  -moz-border-radius-bottomright:6px;
+  border-bottom-right-radius:6px;
+  -webkit-border-bottom-left-radius:6px;
+  -moz-border-radius-bottomleft:6px;
+  border-bottom-left-radius:6px;
+  border:1px solid #6694c1;
+
+  display:inline-block;
+  color:#ffffff;
+  font-weight:bold;
+  font-style:normal;
+  text-shadow:1px 1px 0px #3470a8;
+  cursor: pointer;
+  &:hover {
+      background-color: #81abd1;
+    }
+  }
+}
 .page-proyectos,
 .page-propiedades,
 .page-busqueda,
@@ -162,11 +202,21 @@
     margin: 46px 0 0 0;
   }
 }
+.page-inicio #min-search {
+  .views-exposed-form .views-exposed-widget {
+    width: 22%;
+    #edit-submit-busqueda {
+      border-radius: 3px;
+        webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+      padding: 7px 0 5px;
+      margin-top: 32px;
+    }
+  }
+}
 #min-search,
-.page-inicio {
-  
-	margin-top: 20px;
-	padding: 0 10px 15px;
+.page-propiedades,
+.page-contact {
 	.view-busqueda {
 		.view-content,
 		.pager {
@@ -176,10 +226,13 @@
 	.views-exposed-form .views-exposed-widget {
 		float: none;
 		padding: 0;
-    margin-bottom: 12px;
+    margin: 12px;
     padding-bottom: 12px;
     border-bottom: 1px solid @gray1-2;
 	}
+  .page-inicio .views-exposed-form .views-exposed-widget {
+  border: 2px blue;
+}
 	label {
 		color: @blue5;
 		font-family: @font5;
@@ -219,6 +272,51 @@
       font-family: @font1;
     }
 	}
+  .views-submit-button input {
+    border-radius: 3px;
+        webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+    font-family: @font3;
+    font-weight: normal;
+    width: 100%;
+  }
+  #edit-sale-msg,
+  #edit-rent-msg {
+    cursor: pointer;
+    padding: 6px;
+    color: @gray2;
+    &:hover {
+      color: @gray3;
+    }
+  }
+}
+.boton {
+  -moz-box-shadow:inset 0px 1px 0px 0px #88afd4;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #88afd4;
+  box-shadow:inset 0px 1px 0px 0px #88afd4;
+  background-color:#6694c1;
+  -webkit-border-top-left-radius:6px;
+  -moz-border-radius-topleft:6px;
+  border-top-left-radius:6px;
+  -webkit-border-top-right-radius:6px;
+  -moz-border-radius-topright:6px;
+  border-top-right-radius:6px;
+  -webkit-border-bottom-right-radius:6px;
+  -moz-border-radius-bottomright:6px;
+  border-bottom-right-radius:6px;
+  -webkit-border-bottom-left-radius:6px;
+  -moz-border-radius-bottomleft:6px;
+  border-bottom-left-radius:6px;
+  border:1px solid #6694c1;
+  display:inline-block;
+  color:#ffffff;
+  font-weight:bold;
+  font-style:normal;
+  text-shadow:1px 1px 0px #3470a8;
+  cursor: pointer;
+  &:hover {
+    background-color: #81abd1;
+  }
 }
 /* content filters */
 .content {
@@ -226,9 +324,6 @@
 		display: none;
 	}
 }
-
-
-
 /*********************************************/
 /***************** CONTENT *******************/
 /*********************************************/
@@ -267,6 +362,54 @@ section {
 /***************** Page FRONT *****************/
 
 .page-inicio {
+  .views-field-title {
+    position: relative;
+    a {
+      
+    }
+  }
+  .jcarousel li {
+      height: 200px;
+    }
+  h2.title {
+    display: none;
+  }
+  h2.pane-title {
+    font-size: 22px;
+    padding: 0;
+    margin:0<;
+  }
+  form {
+    margin: 0;
+  }
+  .views-row {
+    background-color: transparent;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    div {
+      padding:0;
+      overflow: hidden;
+    }
+  }
+  .views-slideshow-controls-bottom {
+  }
+  .active .views-field-nid {
+    background-color: #6694c1;
+    color: #6694c1;
+  }
+  .views-field-nid {
+    cursor: pointer;
+    float: left;
+    margin: 0 8px 8px 0;
+    background-color: #81abd1;
+    color: #81abd1;
+    width: 40px;
+    height: 10px;
+  }
+  .views-content-nid {
+    display: none;
+  }
   .bx-wrapper {
     padding: 0 10px 10px 0;
     .bx-viewport {
@@ -287,6 +430,9 @@ section {
         margin: 20px;
       }
     }
+  }
+  .jcarousel-skin-default {
+    height: 200px;
   }
   .section_main {
     .nine {
@@ -316,13 +462,57 @@ section {
 #min-search .views-exposed-form .views-exposed-widget {
   width: 25%;
   float: left;
+  border: none;
+}
+.views-exposed-widgets {
+  border-bottom: 1px solid @blue3;
 }
 
 /* VIEWS */
-.view-home {}
-.view-home .views-row {
+.jcarousel-skin-default .jcarousel-container-horizontal {
+  padding: 0;
+  .jcarousel-item {
+    background-color: transparent;
+    border: 0;
+  }
+}
+
+#min-search {
+  margin-bottom: 20px;
+}
+.jcarousel {
+  height: 200px!important;
+}
+/**/
+.jcarousel-skin-default {
+  .jcarousel-container-horizontal {
+    width: 100%!important;
+  }
+  .jcarousel-clip-horizontal {
+    width: 96%!important;
+  }
+}
+
+.jcarousel-list-horizontal {
+  width: 200%!important;
+  height: 170px;
+  overflow: hidden;
+}
+
+.destacados .jcarousel-skin-default .jcarousel-clip-horizontal  {
+  width: 97%!important;
+}
+
+.galleria-container {
+
+background: white!important;
+margin-bottom: 100px;
 
 }
+.views-field-title {
+  
+}
+
 
 /***************** Page INTEGRAL *****************/
 .page-integral-property {
@@ -415,10 +605,6 @@ section {
         color: @blue4;
       }
 		}
-	}
-	.views-field-field-imagen-pro,
-	.views-field-field-imagen {
-		padding: 0 0 10px;
 	}
 }
 /******************/
@@ -713,44 +899,6 @@ footer {
     text-align: left;
     margin: 0 0 5px;
 	}
-}
-
-/**/
-
-#min-search {
-
-  margin-bottom: 20px;
-
-}
-
-/**/
-
-.jcarousel-skin-default .jcarousel-container-horizontal {
-  width: 100%!important;
-}
-
-.jcarousel-skin-default .jcarousel-clip-horizontal {
-  width: 96%!important;
-}
-.jcarousel-list-horizontal {
-  width: 200%!important;;
-  height: 170px;
-  overflow: hidden;
-}
-
-.jcarousel-skin-default .jcarousel-item-horizontal .views-field-field-imagen{
-  width: 160px!important;
-}
-
-.destacados .jcarousel-skin-default .jcarousel-clip-horizontal  {
-  width: 97%!important;
-}
-
-.galleria-container {
-
-background: white!important;
-margin-bottom: 100px;
-
 }
 
 

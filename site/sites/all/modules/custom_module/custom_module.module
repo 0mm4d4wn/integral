@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * Implements hook_jcarousel_skin_info().
+ */
+function custom_module_jcarousel_skin_info() {
+  $skins = array();
+ 
+  $skins['skin1'] = array(
+    'title' => t('Skin 1 Title'),
+    'file' => 'skins/skin1/jcarousel-skin1.css',
+  );
+  $skins['skin2'] = array(
+    'title' => t('Skin 2 Title'),
+    'file' => 'skins/skin2/jcarousel-skin2.css',
+  );
+ 
+  return $skins;
+}
