@@ -109,10 +109,18 @@
   padding: 7px 0 5px;
   margin-top: 32px;
 }
-#min-search .view-busqueda .view-content,
-.page-contact .view-busqueda .view-content,
-#min-search .view-busqueda .pager,
-.page-contact .view-busqueda .pager {
+#min-search .sidebar .boton,
+.page-contact .sidebar .boton,
+.page-propiedades .sidebar .boton {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#min-search .sidebar .view-content,
+.page-contact .sidebar .view-content,
+.page-propiedades .sidebar .view-content,
+#min-search .sidebar .pager,
+.page-contact .sidebar .pager,
+.page-propiedades .sidebar .pager {
   display: none;
 }
 .page-inicio .views-exposed-form .views-exposed-widget {
@@ -120,7 +128,7 @@
 }
 .page-propiedades .three h3,
 .page-inicio .three h3 {
-  margin-bottom: 18px;
+  margin-bottom: 20px;
   border: 0;
 }
 .page-propiedades .views-exposed-form .views-exposed-widget,
@@ -459,6 +467,41 @@ section h3 {
   margin-bottom: 50px;
 }
 /***************** PROYECTOS Y PROPIEDADES *******/
+.page-propiedades .views-row .views-field-field-precio-de-alquiler,
+.page-propiedades .views-row .views-field-field-precio-de-venta {
+  float: left;
+}
+.page-propiedades .views-row .views-field-field-precio-de-alquiler .views-label,
+.page-propiedades .views-row .views-field-field-precio-de-venta .views-label,
+.page-propiedades .views-row .views-field-field-precio-de-alquiler .field-content,
+.page-propiedades .views-row .views-field-field-precio-de-venta .field-content {
+  float: left;
+  font-size: 18px;
+  margin-right: 10px;
+}
+.page-propiedades .views-row .views-field-field-precio-de-alquiler .views-label,
+.page-propiedades .views-row .views-field-field-precio-de-venta .views-label {
+  font-family: 'AltoProExCon-LightItalic';
+}
+.page-propiedades .views-row .views-field-field-ciudad,
+.page-propiedades .views-row .views-field-field-ubicacion {
+  float: right;
+  padding-left: 5px;
+}
+.page-propiedades .views-row .views-field-field-ciudad a,
+.page-propiedades .views-row .views-field-field-ubicacion a {
+  font-family: 'AltoProExCon-LightItalic';
+  font-size: 18px;
+}
+.page-propiedades .views-row .views-field-field-ubicacion {
+  padding-right: 5px;
+}
+.page-propiedades .views-row .views-field-field-ciudad a {
+  color: #6b8187;
+}
+.page-propiedades .views-row .views-field-field-ciudad a:hover {
+  color: #565656;
+}
 .views-row {
   margin: 0 0 20px;
   padding: 0;

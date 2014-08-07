@@ -215,8 +215,13 @@
   }
 }
 #min-search,
-.page-contact {
-	.view-busqueda {
+.page-contact,
+.page-propiedades {
+	.sidebar {
+    .boton {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
 		.view-content,
 		.pager {
 			display: none;
@@ -229,7 +234,7 @@
 .page-propiedades,
 .page-inicio {
   .three h3 {
-    margin-bottom: 18px;
+    margin-bottom: 20px;
     border: 0;
   }
   .views-exposed-form .views-exposed-widget {
@@ -574,6 +579,41 @@ margin-bottom: 100px;
     margin-bottom: 50px;
   }
 /***************** PROYECTOS Y PROPIEDADES *******/
+.page-propiedades {
+  .views-row {
+    .views-field-field-precio-de-alquiler,
+    .views-field-field-precio-de-venta {
+      float: left;
+      .views-label,
+      .field-content {
+        float: left;
+        font-size: 18px;
+        margin-right: 10px;
+      }
+      .views-label {
+        font-family: @font4;
+      }
+    }
+    .views-field-field-ciudad,
+    .views-field-field-ubicacion {
+      float: right;
+      padding-left: 5px;
+      a {
+        font-family: @font4;
+        font-size: 18px;
+      }
+    }
+    .views-field-field-ubicacion {
+      padding-right: 5px;
+    }
+    .views-field-field-ciudad a {
+      color: @gray3;
+      &:hover {
+        color: @gray5;
+      }
+    }
+  }
+}
 .views-row {
 	margin: 0 0 20px;
 	padding: 0;
