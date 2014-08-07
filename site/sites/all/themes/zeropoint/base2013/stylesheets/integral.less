@@ -149,7 +149,19 @@
 /*********************************************/
 /******************* BUSQUEDA *****************/
 /*********************************************/
-.page-user {
+.page-user,
+.page-contact {
+  label {
+    color: @blue5;
+  }
+  input,
+  textarea {
+    border: 1px solid @blue3;
+  }
+  .form-type-checkbox {
+    display: none;
+
+  }
   a:hover {
     color: @blue5;
   }
@@ -177,13 +189,13 @@
   -moz-border-radius-bottomleft:6px;
   border-bottom-left-radius:6px;
   border:1px solid #6694c1;
-
   display:inline-block;
-  color:#ffffff;
-  font-weight:bold;
-  font-style:normal;
+  color:#fff;
+  font-family: @font3;
+  font-size: 12px;
   text-shadow:1px 1px 0px #3470a8;
   cursor: pointer;
+  -webkit-font-smoothing: antialiased;
   &:hover {
       background-color: #81abd1;
     }
@@ -215,7 +227,6 @@
   }
 }
 #min-search,
-.page-contact,
 .page-propiedades {
 	.sidebar {
     .boton {
@@ -373,14 +384,19 @@ section {
 /***************** Page FRONT *****************/
 
 .page-inicio {
+  .view-busqueda .view-content{
+    display: none;
+  }
   .views-field-title {
     position: relative;
-    a {
-      
-    }
   }
   .jcarousel li {
-      height: 200px;
+    height: auto;
+      .views-field {
+        span {
+          
+        }
+      }
     }
   h2.title {
     display: none;

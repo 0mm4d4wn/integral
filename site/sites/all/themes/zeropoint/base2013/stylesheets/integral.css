@@ -51,16 +51,34 @@
 /*********************************************/
 /******************* BUSQUEDA *****************/
 /*********************************************/
-.page-user a:hover {
+.page-user label,
+.page-contact label {
   color: #6694c1;
 }
-.page-user section.three {
+.page-user input,
+.page-contact input,
+.page-user textarea,
+.page-contact textarea {
+  border: 1px solid #d3dded;
+}
+.page-user .form-type-checkbox,
+.page-contact .form-type-checkbox {
   display: none;
 }
-.page-user section.nine {
+.page-user a:hover,
+.page-contact a:hover {
+  color: #6694c1;
+}
+.page-user section.three,
+.page-contact section.three {
+  display: none;
+}
+.page-user section.nine,
+.page-contact section.nine {
   width: 100%;
 }
-.page-user input[type='submit'] {
+.page-user input[type='submit'],
+.page-contact input[type='submit'] {
   -moz-box-shadow: inset 0px 1px 0px 0px #88afd4;
   -webkit-box-shadow: inset 0px 1px 0px 0px #88afd4;
   box-shadow: inset 0px 1px 0px 0px #88afd4;
@@ -79,13 +97,15 @@
   border-bottom-left-radius: 6px;
   border: 1px solid #6694c1;
   display: inline-block;
-  color: #ffffff;
-  font-weight: bold;
-  font-style: normal;
+  color: #fff;
+  font-family: 'AltoPro-Thin';
+  font-size: 12px;
   text-shadow: 1px 1px 0px #3470a8;
   cursor: pointer;
+  -webkit-font-smoothing: antialiased;
 }
-.page-user input[type='submit']:hover {
+.page-user input[type='submit']:hover,
+.page-contact input[type='submit']:hover {
   background-color: #81abd1;
 }
 .page-proyectos .three h3,
@@ -110,16 +130,13 @@
   margin-top: 32px;
 }
 #min-search .sidebar .boton,
-.page-contact .sidebar .boton,
 .page-propiedades .sidebar .boton {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 #min-search .sidebar .view-content,
-.page-contact .sidebar .view-content,
 .page-propiedades .sidebar .view-content,
 #min-search .sidebar .pager,
-.page-contact .sidebar .pager,
 .page-propiedades .sidebar .pager {
   display: none;
 }
@@ -283,11 +300,14 @@ section h3 {
   display: none;
 }
 /***************** Page FRONT *****************/
+.page-inicio .view-busqueda .view-content {
+  display: none;
+}
 .page-inicio .views-field-title {
   position: relative;
 }
 .page-inicio .jcarousel li {
-  height: 200px;
+  height: auto;
 }
 .page-inicio h2.title {
   display: none;
