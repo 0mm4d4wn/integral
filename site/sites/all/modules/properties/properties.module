@@ -34,11 +34,11 @@ function properties_form_views_exposed_form_alter(&$form, &$form_state, $form_id
       //Change the name of every sale field
       $form['sale']['min'] = array(
         '#type' => 'textfield',
-        '#title' => t('From $')
+        '#title' => t('Desde $')
       );
       $form['sale']['max'] = array(
         '#type' => 'textfield',
-        '#title' => t('To $')
+        '#title' => t('Hasta $')
       );
 
       //Message sale back button
@@ -71,11 +71,11 @@ function properties_form_views_exposed_form_alter(&$form, &$form_state, $form_id
       //Change the name of every rent field
       $form['rent']['min'] = array(
         '#type' => 'textfield',
-        '#title' => t('From $')
+        '#title' => t('Desde $')
       );
       $form['rent']['max'] = array(
         '#type' => 'textfield',
-        '#title' => t('To $')
+        '#title' => t('Hasta $')
       );
 
       //Message rent back button

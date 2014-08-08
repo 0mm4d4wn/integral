@@ -404,7 +404,7 @@ section {
   h2.pane-title {
     font-size: 22px;
     padding: 0;
-    margin:0<;
+    margin:0px;
   }
   form {
     margin: 0;
@@ -459,7 +459,7 @@ section {
     }
   }
   .jcarousel-skin-default {
-    height: 200px;
+    min-height: 200px;
   }
   .section_main {
     .nine {
@@ -483,6 +483,9 @@ section {
     }
   }
 }
+  .jcarousel-view--home--block-2 {
+    overflow: visible!important;
+  }
 .front .view-id-busqueda {
   overflow: hidden;
 }
@@ -496,33 +499,35 @@ section {
 }
 
 /* VIEWS */
-.jcarousel-skin-default .jcarousel-container-horizontal {
-  padding: 0;
-  .jcarousel-item {
-    background-color: transparent;
-    border: 0;
-  }
-}
 
 #min-search {
   margin-bottom: 20px;
 }
 .jcarousel {
-  height: 200px!important;
+  
 }
 /**/
 .jcarousel-skin-default {
   .jcarousel-container-horizontal {
+    margin: 30px 0;
     width: 100%!important;
+    overflow: visible;
+    padding: 0;
+    height: auto!important;
+    .jcarousel-item {
+      background-color: transparent;
+      border: 0;
+    }
   }
   .jcarousel-clip-horizontal {
     width: 96%!important;
+    text-align: left;
   }
 }
 
 .jcarousel-list-horizontal {
   width: 200%!important;
-  height: 170px;
+
   overflow: hidden;
 }
 
@@ -600,6 +605,7 @@ margin-bottom: 100px;
     .views-field-field-precio-de-alquiler,
     .views-field-field-precio-de-venta {
       float: left;
+      padding-right: 0;
       .views-label,
       .field-content {
         float: left;
@@ -610,12 +616,25 @@ margin-bottom: 100px;
         font-family: @font4;
       }
     }
-    .views-field-field-ciudad,
+    .views-field-field-precio-de-venta .field-content {
+    margin-right: 7px;
+    }
+    .views-field-field-ciudad {
+      float: right;
+      padding-left: 5px;
+      .field-content {
+
+        font-family: @font4;
+        font-size: 20px;
+        line-height: 18px;
+      }
+    }
     .views-field-field-ubicacion {
       float: right;
       padding-left: 5px;
-      a {
-        font-family: @font4;
+      .field-content {
+        color: @blue5;
+        font-family: @font5;
         font-size: 18px;
       }
     }
@@ -631,14 +650,7 @@ margin-bottom: 100px;
   }
 }
 .views-row {
-	margin: 0 0 20px;
-	padding: 0;
-	& > div {
-		padding: 0 20px 10px;
-		&:first-child {
-			padding-top: 10px;
-		}
-	}
+    padding: 20px;
 	.views-field-title {
     margin-bottom: 8px;
 		a {
@@ -655,10 +667,11 @@ margin-bottom: 100px;
 			color: @gray5;
 			font-size: 13px;
 			margin: 0;
-      padding-bottom: 7px;
-      border-bottom: 1px dotted @blue3;
 		}
 	}
+  .views-field-field-imagen {
+    margin: 10px 0;
+  }
 	.views-field-view-node {
 		a {
 			color: @blue5;

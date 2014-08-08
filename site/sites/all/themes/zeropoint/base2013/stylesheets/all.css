@@ -5094,7 +5094,7 @@ section h3 {
 .page-inicio h2.pane-title {
   font-size: 22px;
   padding: 0;
-  margin: 0<;
+  margin: 0px;
 }
 .page-inicio form {
   margin: 0;
@@ -5145,7 +5145,7 @@ section h3 {
   margin: 20px;
 }
 .page-inicio .jcarousel-skin-default {
-  height: 200px;
+  min-height: 200px;
 }
 .page-inicio .section_main .nine {
   padding-left: 0;
@@ -5167,6 +5167,9 @@ section h3 {
 .page-inicio .section_main .nine .four article div {
   margin: 0;
 }
+.jcarousel-view--home--block-2 {
+  overflow: visible!important;
+}
 .front .view-id-busqueda {
   overflow: hidden;
 }
@@ -5179,29 +5182,27 @@ section h3 {
   border-bottom: 1px solid #d3dded;
 }
 /* VIEWS */
+#min-search {
+  margin-bottom: 20px;
+}
+/**/
 .jcarousel-skin-default .jcarousel-container-horizontal {
+  margin: 30px 0;
+  width: 100%!important;
+  overflow: visible;
   padding: 0;
+  height: auto!important;
 }
 .jcarousel-skin-default .jcarousel-container-horizontal .jcarousel-item {
   background-color: transparent;
   border: 0;
 }
-#min-search {
-  margin-bottom: 20px;
-}
-.jcarousel {
-  height: 200px!important;
-}
-/**/
-.jcarousel-skin-default .jcarousel-container-horizontal {
-  width: 100%!important;
-}
 .jcarousel-skin-default .jcarousel-clip-horizontal {
   width: 96%!important;
+  text-align: left;
 }
 .jcarousel-list-horizontal {
   width: 200%!important;
-  height: 170px;
   overflow: hidden;
 }
 .destacados .jcarousel-skin-default .jcarousel-clip-horizontal {
@@ -5269,6 +5270,7 @@ section h3 {
 .page-propiedades .views-row .views-field-field-precio-de-alquiler,
 .page-propiedades .views-row .views-field-field-precio-de-venta {
   float: left;
+  padding-right: 0;
 }
 .page-propiedades .views-row .views-field-field-precio-de-alquiler .views-label,
 .page-propiedades .views-row .views-field-field-precio-de-venta .views-label,
@@ -5282,14 +5284,25 @@ section h3 {
 .page-propiedades .views-row .views-field-field-precio-de-venta .views-label {
   font-family: 'AltoProExCon-LightItalic';
 }
-.page-propiedades .views-row .views-field-field-ciudad,
+.page-propiedades .views-row .views-field-field-precio-de-venta .field-content {
+  margin-right: 7px;
+}
+.page-propiedades .views-row .views-field-field-ciudad {
+  float: right;
+  padding-left: 5px;
+}
+.page-propiedades .views-row .views-field-field-ciudad .field-content {
+  font-family: 'AltoProExCon-LightItalic';
+  font-size: 20px;
+  line-height: 18px;
+}
 .page-propiedades .views-row .views-field-field-ubicacion {
   float: right;
   padding-left: 5px;
 }
-.page-propiedades .views-row .views-field-field-ciudad a,
-.page-propiedades .views-row .views-field-field-ubicacion a {
-  font-family: 'AltoProExCon-LightItalic';
+.page-propiedades .views-row .views-field-field-ubicacion .field-content {
+  color: #6694c1;
+  font-family: 'AltoPro-Light';
   font-size: 18px;
 }
 .page-propiedades .views-row .views-field-field-ubicacion {
@@ -5302,14 +5315,7 @@ section h3 {
   color: #565656;
 }
 .views-row {
-  margin: 0 0 20px;
-  padding: 0;
-}
-.views-row > div {
-  padding: 0 20px 10px;
-}
-.views-row > div:first-child {
-  padding-top: 10px;
+  padding: 20px;
 }
 .views-row .views-field-title {
   margin-bottom: 8px;
@@ -5326,8 +5332,9 @@ section h3 {
   color: #565656;
   font-size: 13px;
   margin: 0;
-  padding-bottom: 7px;
-  border-bottom: 1px dotted #d3dded;
+}
+.views-row .views-field-field-imagen {
+  margin: 10px 0;
 }
 .views-row .views-field-view-node a {
   color: #6694c1;
