@@ -9,14 +9,14 @@
 
   <?php print render($title_prefix); ?>
   <?php if (!$page): ?>
-  <h2 class="title"<?php print $title_attributes; ?>><a href="<?php print $node_url ?>" title="<?php print $title ?>"><?php print $title ?></a></h2>
+  <!--<h2 class="title"<?php print $title_attributes; ?>><a href="<?php print $node_url ?>" title="<?php print $title ?>"><?php print $title ?></a></h2>-->
   <?php endif; ?>
   <?php print render($title_suffix); ?>
 
   
 
   <div class="content"<?php print $content_attributes; ?>>
-    <h1 class="title"><?php print $title ?><img class="inmobi-logo" src="<?php print $ruta; ?>inmobi-logo.png"></h1>
+    <h1 class="title"><?php // print $title ?><img class="inmobi-logo" src="<?php print $ruta; ?>inmobi-logo.png"></h1>
   
     
       <h4>Apartamento en venta, <p>San francisco - Altos del Golf</p></h4>

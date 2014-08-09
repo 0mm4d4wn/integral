@@ -1,4 +1,13 @@
 $( document ).ready(function() {
+    /* $(window).scroll(function() {
+       if($(window).scrollTop()) {
+           $('.page-servicios .panels-flexible-region-5-menu_servicios').removeClass('.end').addClass('start');
+       }
+       if($(window).scrollTop() + $(window).height() == $(document).height()) {
+           $('.page-servicios .panels-flexible-region-5-menu_servicios').removeClass('start').addClass('end');
+       }
+    }); */
+
     $('.bxslider').bxSlider({
       mode: 'fade',
       useCSS: false,
@@ -35,4 +44,6 @@ $( document ).ready(function() {
         scrollTarget: link.hash
     });
   });
+
+
 });
