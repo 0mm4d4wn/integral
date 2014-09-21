@@ -25,6 +25,10 @@ $( document ).ready(function() {
     $(".page-servicios .views-row-6").attr('id','org-agendas');
     $("#edit-submit-busqueda").attr('class','boton');
     $("#edit-submit").attr('class','button');
+
+    //
+    //$('.field-name-body').appendTo( ".field-name-field-mapa" );
+
     /*   $(".page-servicios .panels-flexible-region-5-menu_servicios").attr('id','menu-servicios');
      $("#menu-servicios").scrollspy({
                         min: $('#menu-servicios').offset().top-40,
@@ -44,6 +48,4 @@ $( document ).ready(function() {
         scrollTarget: link.hash
     });
   });
-
-
 });

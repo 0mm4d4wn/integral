@@ -5623,6 +5623,28 @@ section h3 {
 .node-type-propiedades .right img {
   margin-bottom: 18px;
 }
+.node-proyectos .field-name-field-logo {
+  float: left;
+  margin-right: 15px;
+}
+.node-proyectos .field-name-field-telefono div,
+.node-proyectos .field-name-field-email div,
+.node-proyectos .field-name-field-website div,
+.node-proyectos .field-name-field-locacion div {
+  font-size: 20px!important;
+  margin-bottom: 5px;
+}
+.node-proyectos .field-name-field-imagen {
+  clear: both;
+  margin-top: 10px;
+}
+.node-proyectos .galleria-container {
+  background: white!important;
+  margin-bottom: 20px;
+}
+.node-proyectos .field-name-field-mapa .field-items {
+  float: left;
+}
 /*******************************************/
 /******** CONTACT COUNTRIES SECTION ********/
 /*******************************************/
