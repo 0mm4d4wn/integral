@@ -4793,6 +4793,9 @@ ul.flyout li a:hover,
 .panels-flexible-region-6-center {
   width: 100%;
 }
+.not-logged-in .three {
+  display: none;
+}
 /*********************************************/
 /******************* HEADER ******************/
 /*********************************************/
@@ -5230,17 +5233,17 @@ section h3 {
   margin-bottom: 5px;
 }
 .jcarousel-skin-default .ubicacion {
-  color: #6694c1;
+  color: #2f8dd3;
 }
 .jcarousel-skin-default .precio-venta,
 .jcarousel-skin-default .precio-alquiler {
   font-family: 'AltoProExCon-LightItalic';
-  color: #6694c1;
+  color: #2f8dd3;
   font-size: 16px;
 }
 .jcarousel-skin-default .ciudad {
   font-family: 'AltoProExCon-LightItalic';
-  color: #6694c1;
+  color: #2f8dd3;
   font-size: 16px;
 }
 .jcarousel-skin-default .jcarousel-container-horizontal {
