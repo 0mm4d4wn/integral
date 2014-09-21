@@ -396,8 +396,9 @@ section {
   }
   .view-display-id-block_4 {
   margin-bottom: 40px;
-  background: url('../images/bg-lines.png') repeat center bottom;
+  overflow: hidden;
   .views-field-field-imagen {
+    overflow: hidden;
     margin: 0;
     }
   }
@@ -418,10 +419,10 @@ section {
   }
   .jcarousel li {
     height: auto;
-      .views-field {
-        span {
-          
-        }
+      .views-field-field-tipo-de-inmueble,
+      .views-field-field-ciudad,
+      .views-field-field-ubicacion {
+
       }
     }
   h2.title {
@@ -447,7 +448,7 @@ section {
   }
   .views-slideshow-controls-bottom {
     position: relative;
-    top: -46px;
+    top: -36px;
     z-index: 200;
     left: 25px;
   }
@@ -493,6 +494,9 @@ section {
   }
   .jcarousel-skin-default {
     min-height: 200px;
+    .jcarousel-item-horizontal {
+      margin: 0 8px;
+    }
   }
   .section_main {
     .nine {
@@ -518,6 +522,7 @@ section {
 }
   .jcarousel-view--home--block-2 {
     overflow: visible!important;
+
   }
 .front .view-id-busqueda {
   overflow: hidden;
@@ -536,11 +541,28 @@ section {
 #min-search {
   margin-bottom: 20px;
 }
-.jcarousel {
-  
-}
-/**/
+
+/* JCAROUSEL */
 .jcarousel-skin-default {
+  .views-field-field-imagen {
+    border-bottom: 1px dotted @blue3;
+    margin-bottom: 5px;
+  }
+  .ubicacion {
+    color: @blue5;
+  }
+  .precio-venta,
+  .precio-alquiler {
+    color: @blue5;
+    font-family: @font4;
+    color: @blue5;
+    font-size: 16px;
+  }
+  .ciudad {
+    font-family: @font4;
+    color: @blue5;
+    font-size: 16px;
+  }
   .jcarousel-container-horizontal {
     margin: 16px 0 30px 0;
     width: 100%!important;
@@ -551,17 +573,41 @@ section {
       background-color: transparent;
       border: 0;
     }
+    .jcarousel-prev,
+    .jcarousel-next {
+      height: 37px;
+      width: 53px;
+    }
+    .jcarousel-prev-horizontal {
+      position: absolute;
+      top: 56px;
+      left: -8px;
+      background-position: 0 0;
+      &:hover {
+        background-position: -53px 0;
+      }
+    }
+    .jcarousel-next-horizontal {
+      position: absolute;
+      top: 56px;
+      right: -8px;
+      background-position: 0 -37px;
+      &:hover {
+        background-position: -53px -37px;
+      }
+    }
   }
   .jcarousel-clip-horizontal {
-    width: 98%!important;
-    margin: 0 auto;
+    padding-top: 18px;
+    padding-bottom: 15px;
     text-align: left;
+    margin: 0 auto;
+    width: 98%!important;
   }
 }
 
 .jcarousel-list-horizontal {
   width: 200%!important;
-
   overflow: hidden;
 }
 
@@ -570,7 +616,7 @@ section {
   ul {
     li {
       &:first-child {
-        margin-left: 0;
+        
       }
     }
   }
@@ -660,48 +706,18 @@ margin-bottom: 100px;
     .views-field-field-precio-de-venta .field-content {
     margin-right: 7px;
     }
-    .views-field-field-ciudad {
-      float: right;
-      padding-left: 5px;
-      .field-content {
-
-        font-family: @font4;
-        font-size: 20px;
-        line-height: 18px;
-      }
-    }
-    .views-field-field-ubicacion {
-      float: right;
-      padding-left: 5px;
-      .field-content {
-        color: @blue5;
-        font-family: @font5;
-        font-size: 18px;
-      }
-    }
-    .views-field-field-ubicacion {
-      padding-right: 5px;
-    }
-    .views-field-field-ciudad a {
-      color: @gray3;
-      &:hover {
-        color: @gray5;
-      }
-    }
   }
 }
 .views-row {
     padding: 20px;
-	.views-field-title {
+	.views-field-field-tipo-de-inmueble,
+  .views-field-field-ciudad,
+  .views-field-field-ubicacion {
     margin-bottom: 8px;
-		a {
-			color: @blue5;
-			font-family: @font1;
-			font-size: 26px;
-      &:hover {
-        color: @blue4;
-      }
-		}
+		color: @blue5;
+		font-family: @font1;
+		font-size: 50px;
+		
 	}
 	.views-field-body {
 		p {
@@ -842,7 +858,6 @@ margin-bottom: 100px;
   }
 }
 /************** DETALLE ********************/
-
 .node-type-proyectos,
 .node-type-propiedades {
   section.three {

@@ -16,10 +16,10 @@
   
 
   <div class="content"<?php print $content_attributes; ?>>
-    <h1 class="title"><?php // print $title ?><img class="inmobi-logo" src="<?php print $ruta; ?>inmobi-logo.png"></h1>
+    <h1 class="title"><?php // print $title ?></h1>
   
     
-      <h4>Apartamento en venta, <p>San francisco - Altos del Golf</p></h4>
+      <h4><?php print render($content['field_ciudad']) ?></h4>
       <div class="img-first"> 
         <?php print render($content['field_imagen'][0]) ?>
       </div>
@@ -27,8 +27,7 @@
   </div>
   <div class="left columns">
     <ul>
-      <li>precio venta: <b>$ 125,000.00</b></li>
-      <li>precio alquiler: <b>$ 1,200.00</b></li>
+      <li><?php print render($content['field_precio_de_venta'][0]) ?><b>$ 125,000.00</b></li>
       <li>precio alquiler: <b>$ 1,200.00</b></li>
     </ul>
     <?php print render($content[body]) ?>

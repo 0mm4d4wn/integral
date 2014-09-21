@@ -311,9 +311,10 @@ section h3 {
 }
 .page-inicio .view-display-id-block_4 {
   margin-bottom: 40px;
-  background: url('../images/bg-lines.png') repeat center bottom;
+  overflow: hidden;
 }
 .page-inicio .view-display-id-block_4 .views-field-field-imagen {
+  overflow: hidden;
   margin: 0;
 }
 .page-inicio .views-slideshow-cycle-main-frame-row-item {
@@ -357,7 +358,7 @@ section h3 {
 }
 .page-inicio .views-slideshow-controls-bottom {
   position: relative;
-  top: -46px;
+  top: -36px;
   z-index: 200;
   left: 25px;
 }
@@ -402,6 +403,9 @@ section h3 {
 .page-inicio .jcarousel-skin-default {
   min-height: 200px;
 }
+.page-inicio .jcarousel-skin-default .jcarousel-item-horizontal {
+  margin: 0 8px;
+}
 .page-inicio .section_main .nine {
   padding-left: 0;
 }
@@ -440,7 +444,25 @@ section h3 {
 #min-search {
   margin-bottom: 20px;
 }
-/**/
+/* JCAROUSEL */
+.jcarousel-skin-default .views-field-field-imagen {
+  border-bottom: 1px dotted #d3dded;
+  margin-bottom: 5px;
+}
+.jcarousel-skin-default .ubicacion {
+  color: #6694c1;
+}
+.jcarousel-skin-default .precio-venta,
+.jcarousel-skin-default .precio-alquiler {
+  font-family: 'AltoProExCon-LightItalic';
+  color: #6694c1;
+  font-size: 16px;
+}
+.jcarousel-skin-default .ciudad {
+  font-family: 'AltoProExCon-LightItalic';
+  color: #6694c1;
+  font-size: 16px;
+}
 .jcarousel-skin-default .jcarousel-container-horizontal {
   margin: 16px 0 30px 0;
   width: 100%!important;
@@ -452,10 +474,35 @@ section h3 {
   background-color: transparent;
   border: 0;
 }
+.jcarousel-skin-default .jcarousel-container-horizontal .jcarousel-prev,
+.jcarousel-skin-default .jcarousel-container-horizontal .jcarousel-next {
+  height: 37px;
+  width: 53px;
+}
+.jcarousel-skin-default .jcarousel-container-horizontal .jcarousel-prev-horizontal {
+  position: absolute;
+  top: 56px;
+  left: -8px;
+  background-position: 0 0;
+}
+.jcarousel-skin-default .jcarousel-container-horizontal .jcarousel-prev-horizontal:hover {
+  background-position: -53px 0;
+}
+.jcarousel-skin-default .jcarousel-container-horizontal .jcarousel-next-horizontal {
+  position: absolute;
+  top: 56px;
+  right: -8px;
+  background-position: 0 -37px;
+}
+.jcarousel-skin-default .jcarousel-container-horizontal .jcarousel-next-horizontal:hover {
+  background-position: -53px -37px;
+}
 .jcarousel-skin-default .jcarousel-clip-horizontal {
-  width: 98%!important;
-  margin: 0 auto;
+  padding-top: 18px;
+  padding-bottom: 15px;
   text-align: left;
+  margin: 0 auto;
+  width: 98%!important;
 }
 .jcarousel-list-horizontal {
   width: 200%!important;
@@ -463,9 +510,6 @@ section h3 {
 }
 .destacados .jcarousel-skin-default .jcarousel-clip-horizontal {
   margin: 0 auto;
-}
-.destacados .jcarousel-skin-default .jcarousel-clip-horizontal ul li:first-child {
-  margin-left: 0;
 }
 .galleria-container {
   background: white!important;
@@ -546,46 +590,16 @@ section h3 {
 .page-propiedades .views-row .views-field-field-precio-de-venta .field-content {
   margin-right: 7px;
 }
-.page-propiedades .views-row .views-field-field-ciudad {
-  float: right;
-  padding-left: 5px;
-}
-.page-propiedades .views-row .views-field-field-ciudad .field-content {
-  font-family: 'AltoProExCon-LightItalic';
-  font-size: 20px;
-  line-height: 18px;
-}
-.page-propiedades .views-row .views-field-field-ubicacion {
-  float: right;
-  padding-left: 5px;
-}
-.page-propiedades .views-row .views-field-field-ubicacion .field-content {
-  color: #6694c1;
-  font-family: 'AltoPro-Light';
-  font-size: 18px;
-}
-.page-propiedades .views-row .views-field-field-ubicacion {
-  padding-right: 5px;
-}
-.page-propiedades .views-row .views-field-field-ciudad a {
-  color: #6b8187;
-}
-.page-propiedades .views-row .views-field-field-ciudad a:hover {
-  color: #565656;
-}
 .views-row {
   padding: 20px;
 }
-.views-row .views-field-title {
+.views-row .views-field-field-tipo-de-inmueble,
+.views-row .views-field-field-ciudad,
+.views-row .views-field-field-ubicacion {
   margin-bottom: 8px;
-}
-.views-row .views-field-title a {
   color: #6694c1;
   font-family: 'Open Sans Condensed';
-  font-size: 26px;
-}
-.views-row .views-field-title a:hover {
-  color: #0d6ba0;
+  font-size: 50px;
 }
 .views-row .views-field-body p {
   color: #565656;
