@@ -38,6 +38,7 @@
     	if($content['field_imagen'][1] != null) {
     		print render($content['field_imagen'][1]);
     	}
+      
     	if($content['field_imagen'][2] != null) {
     		print render($content['field_imagen'][2]);
     	}
