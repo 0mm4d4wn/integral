@@ -5683,8 +5683,55 @@ section h3 {
   background: white!important;
   margin-bottom: 20px;
 }
-.node-proyectos .field-name-field-mapa .field-items {
-  float: left;
+.node-proyectos .field-type-google-map-field {
+  border-color: #999;
+  border-image: none;
+  border-style: dotted;
+  border-width: 1px 0 0;
+  padding-top: 30px;
+  margin-top: 30px;
+}
+/* Propiedades */
+#content-in {
+  width: 100%;
+}
+.node-type-propiedades b {
+  float: none!important;
+}
+.node-type-propiedades .google_map_field_display {
+  width: 630px!important;
+  margin-top: 10px;
+}
+.node-type-propiedades .propiedad-sidebar span {
+  display: inline-block;
+  margin-right: 5px;
+}
+.node-type-propiedades .galleria-container {
+  background: white!important;
+  margin-bottom: 20px;
+}
+.node-proyectos ul#social,
+.node-type-propiedades ul#social {
+  clear: both;
+  padding: 0;
+  float: right;
+  position: relative;
+  list-style: none;
+}
+.node-proyectos ul#social li,
+.node-type-propiedades ul#social li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.node-proyectos ul#social li.tw,
+.node-type-propiedades ul#social li.tw {
+  position: relative;
+  top: 7px;
+  margin-right: 0;
+}
+.node-proyectos ul#social li.tw iframe,
+.node-type-propiedades ul#social li.tw iframe {
+  width: 91px!important;
 }
 /*******************************************/
 /******** CONTACT COUNTRIES SECTION ********/
