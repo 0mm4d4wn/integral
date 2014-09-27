@@ -4802,12 +4802,13 @@ ul.flyout li a:hover,
 .nav-bar > li,
 .nav-bar > li.active,
 .nav-bar > li a {
+  color: #2f8dd3;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
 .nav-bar > li.active a {
-  background-color: #6694c1;
+  background-color: #2f8dd3;
 }
 .nav-bar > li.active > a:hover {
   color: white;
@@ -4865,7 +4866,7 @@ ul.flyout li a:hover,
   -moz-box-shadow: inset 0px 1px 0px 0px #88afd4;
   -webkit-box-shadow: inset 0px 1px 0px 0px #88afd4;
   box-shadow: inset 0px 1px 0px 0px #88afd4;
-  background-color: #6694c1;
+  background-color: #2f8dd3;
   -webkit-border-top-left-radius: 6px;
   -moz-border-radius-topleft: 6px;
   border-top-left-radius: 6px;
@@ -4878,7 +4879,7 @@ ul.flyout li a:hover,
   -webkit-border-bottom-left-radius: 6px;
   -moz-border-radius-bottomleft: 6px;
   border-bottom-left-radius: 6px;
-  border: 1px solid #6694c1;
+  border: 1px solid #2f8dd3;
   display: inline-block;
   color: #fff;
   font-family: 'AltoPro-Thin';
@@ -4889,7 +4890,7 @@ ul.flyout li a:hover,
 }
 .page-user input[type='submit']:hover,
 .page-contact input[type='submit']:hover {
-  background-color: #81abd1;
+  background-color: #6694c1;
 }
 .page-proyectos .three h3,
 .page-propiedades .three h3,
@@ -4911,11 +4912,14 @@ ul.flyout li a:hover,
   -moz-border-radius: 3px;
   padding: 7px 0 5px;
   margin-top: 32px;
+  background-color: #2f8dd3;
+  border-color: #2f8dd3;
 }
 #min-search .sidebar .boton,
 .page-propiedades .sidebar .boton {
   padding-top: 10px;
   padding-bottom: 10px;
+  background-color: #2f8dd3;
 }
 #min-search .sidebar .view-content,
 .page-propiedades .sidebar .view-content,
@@ -5024,7 +5028,7 @@ ul.flyout li a:hover,
   -webkit-border-bottom-left-radius: 6px;
   -moz-border-radius-bottomleft: 6px;
   border-bottom-left-radius: 6px;
-  border: 1px solid #6694c1;
+  border: 1px solid #2f8dd3;
   display: inline-block;
   color: #ffffff;
   font-weight: bold;
@@ -5033,7 +5037,7 @@ ul.flyout li a:hover,
   cursor: pointer;
 }
 .boton:hover {
-  background-color: #81abd1;
+  background-color: #6694c1;
 }
 /* content filters */
 .content .view-filters {
@@ -5231,6 +5235,9 @@ section h3 {
 .jcarousel-skin-default .ubicacion {
   color: #2f8dd3;
 }
+.jcarousel-skin-default .views-field-field-tipo-de-inmueble {
+  margin-bottom: 5px;
+}
 .jcarousel-skin-default .views-field-field-tipo-de-inmueble .field-content {
   font-family: 'Open Sans Condensed';
   color: #0d6ba0;
@@ -5337,7 +5344,7 @@ section h3 {
   height: 363px;
 }
 .page-integral-property .bg-vision {
-  background: url('../images/.png') no-repeat bottom center;
+  background: url('../images/bg-integral_vision.png') no-repeat bottom center;
   height: 363px;
 }
 .page-integral-property .panels-flexible-row {
@@ -5691,7 +5698,7 @@ section h3 {
   padding-top: 30px;
   margin-top: 30px;
 }
-/* Propiedades */
+/* Propiedad detalle */
 #content-in {
   width: 100%;
 }
@@ -5710,7 +5717,20 @@ section h3 {
   background: white!important;
   margin-bottom: 20px;
 }
-.node-proyectos ul#social,
+.node-type-proyectos section.nine,
+.node-type-propiedades section.nine {
+  padding: 0;
+}
+.node-type-proyectos h1.section-title,
+.node-type-propiedades h1.section-title {
+  color: #2f8dd3;
+  border-bottom: 1px dotted #d3dded;
+}
+.node-type-proyectos .content h1.title,
+.node-type-propiedades .content h1.title {
+  border: 0;
+}
+.node-type-proyectos ul#social,
 .node-type-propiedades ul#social {
   clear: both;
   padding: 0;
@@ -5718,20 +5738,58 @@ section h3 {
   position: relative;
   list-style: none;
 }
-.node-proyectos ul#social li,
+.node-type-proyectos ul#social li,
 .node-type-propiedades ul#social li {
   display: inline-block;
   margin-right: 20px;
 }
-.node-proyectos ul#social li.tw,
+.node-type-proyectos ul#social li.tw,
 .node-type-propiedades ul#social li.tw {
   position: relative;
   top: 7px;
   margin-right: 0;
 }
-.node-proyectos ul#social li.tw iframe,
+.node-type-proyectos ul#social li.tw iframe,
 .node-type-propiedades ul#social li.tw iframe {
   width: 91px!important;
+}
+.node-type-proyectos .galleria-stage,
+.node-type-propiedades .galleria-stage {
+  width: 100%!important;
+  left: 0;
+  right: 0;
+}
+.node-type-proyectos .galleria-stage img,
+.node-type-propiedades .galleria-stage img {
+  top: 0!important;
+}
+.node-type-proyectos .field-name-field-imagen,
+.node-type-propiedades .field-name-field-imagen {
+  width: 100%;
+}
+.node-type-proyectos .field-name-field-imagen .galleria-container,
+.node-type-propiedades .field-name-field-imagen .galleria-container {
+  width: 100%;
+  background-color: transparent!important;
+}
+.node-type-proyectos .field-name-field-imagen .galleria-container .galleria-stage,
+.node-type-propiedades .field-name-field-imagen .galleria-container .galleria-stage {
+  width: 100%!important;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.node-type-proyectos .field-name-field-imagen .galleria-container .galleria-stage img,
+.node-type-propiedades .field-name-field-imagen .galleria-container .galleria-stage img {
+  top: 0;
+}
+.node-type-proyectos .google_map_field_display,
+.node-type-propiedades .google_map_field_display {
+  width: 960px;
+}
+.node-type-proyectos ul.links,
+.node-type-propiedades ul.links {
+  display: none;
 }
 /*******************************************/
 /******** CONTACT COUNTRIES SECTION ********/

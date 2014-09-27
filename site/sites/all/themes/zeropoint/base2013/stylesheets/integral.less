@@ -121,11 +121,12 @@ display: none;
 .nav-bar > li,
 .nav-bar > li.active,
 .nav-bar > li a {
+  color: @blue9;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
    border-radius: 3px;
 }
-.nav-bar > li.active a { background-color: @blue5; }
+.nav-bar > li.active a { background-color: @blue9; }
 .nav-bar > li.active > a:hover {
   color: white;
 }
@@ -179,7 +180,7 @@ display: none;
     -moz-box-shadow:inset 0px 1px 0px 0px #88afd4;
   -webkit-box-shadow:inset 0px 1px 0px 0px #88afd4;
   box-shadow:inset 0px 1px 0px 0px #88afd4;
-  background-color:#6694c1;
+  background-color:@blue9;
   -webkit-border-top-left-radius:6px;
   -moz-border-radius-topleft:6px;
   border-top-left-radius:6px;
@@ -192,7 +193,7 @@ display: none;
   -webkit-border-bottom-left-radius:6px;
   -moz-border-radius-bottomleft:6px;
   border-bottom-left-radius:6px;
-  border:1px solid #6694c1;
+  border:1px solid @blue9;
   display:inline-block;
   color:#fff;
   font-family: @font3;
@@ -201,7 +202,7 @@ display: none;
   cursor: pointer;
   -webkit-font-smoothing: antialiased;
   &:hover {
-      background-color: #81abd1;
+      background-color: @blue5;
     }
   }
 }
@@ -227,6 +228,8 @@ display: none;
         -moz-border-radius: 3px;
       padding: 7px 0 5px;
       margin-top: 32px;
+      background-color: @blue9;
+      border-color: @blue9;
     }
   }
 }
@@ -236,6 +239,7 @@ display: none;
     .boton {
       padding-top: 10px;
       padding-bottom: 10px;
+      background-color: @blue9;
     }
 		.view-content,
 		.pager {
@@ -333,7 +337,7 @@ display: none;
   -webkit-border-bottom-left-radius:6px;
   -moz-border-radius-bottomleft:6px;
   border-bottom-left-radius:6px;
-  border:1px solid #6694c1;
+  border:1px solid @blue9;
   display:inline-block;
   color:#ffffff;
   font-weight:bold;
@@ -341,7 +345,7 @@ display: none;
   text-shadow:1px 1px 0px #3470a8;
   cursor: pointer;
   &:hover {
-    background-color: #81abd1;
+    background-color: @blue5;
   }
 }
 /* content filters */
@@ -423,11 +427,6 @@ section {
   }
   .jcarousel li {
     height: auto;
-      .views-field-field-tipo-de-inmueble,
-      .views-field-field-ciudad,
-      .views-field-field-ubicacion {
-
-      }
     }
   h2.title {
     display: none;
@@ -549,11 +548,14 @@ section {
   .ubicacion {
     color: @blue9;
   }
-  .views-field-field-tipo-de-inmueble .field-content {
-    font-family: @font1;
-    color: @blue4;
-    font-size: 20px;
-    border-bottom: 1px dotted @blue3;
+  .views-field-field-tipo-de-inmueble {
+    margin-bottom: 5px;
+    .field-content {
+      font-family: @font1;
+      color: @blue4;
+      font-size: 20px;
+      border-bottom: 1px dotted @blue3;
+    }
   }
   .precio-venta,
   .precio-alquiler {
@@ -662,7 +664,7 @@ margin-bottom: 100px;
     height: 363px;
   }
   .bg-vision {
-    background: url('../images/.png') no-repeat bottom center;
+    background: url('../images/bg-integral_vision.png') no-repeat bottom center;
     height: 363px;
   }
   .panels-flexible-row {
@@ -690,19 +692,19 @@ margin-bottom: 100px;
       float: left;
       padding-right: 0;
       .field-content {
-        span {
-        font-family: @font4;
-        color: @gray5;
-        }
         color: @blue9;
         float: left;
         font-size: 18px;
         margin-right: 10px;
+          span {
+          font-family: @font4;
+          color: @gray5;
+          }
+        }
       }
-    }
-    .views-field-field-precio-de-venta .field-content {
-    margin-right: 7px;
-    }
+      .views-field-field-precio-de-venta .field-content {
+        margin-right: 7px;
+      }
     padding: 20px;
   .views-field-field-ciudad .field-content a {
     border-bottom: 1px dotted @blue3;
@@ -1017,7 +1019,7 @@ margin-bottom: 100px;
 
 }
 
-/* Propiedades */
+/* Propiedad detalle */
 #content-in {
   width: 100%;
 }
@@ -1039,8 +1041,18 @@ margin-bottom: 100px;
   }
 }
 
-.node-proyectos,
+.node-type-proyectos,
 .node-type-propiedades {
+  section.nine {
+    padding: 0;
+  }
+  h1.section-title {
+    color: @blue9;
+    border-bottom: 1px dotted @blue3;
+  }
+  .content h1.title {
+    border: 0;
+  }
   ul#social {
     clear: both;
     padding: 0;
@@ -1059,6 +1071,36 @@ margin-bottom: 100px;
         }
       }
     }
+  }
+  .galleria-stage {
+    width: 100%!important;
+    left: 0;
+    right: 0;
+    img {
+      top: 0!important;
+    }
+  }
+  .field-name-field-imagen {
+    width: 100%;
+    .galleria-container {
+      width: 100%;
+      background-color: transparent!important;
+      .galleria-stage {
+        width: 100%!important;
+        left: 0;
+        right: 0;
+        top: 0;
+        img {
+          top: 0;
+        }
+      }
+    }
+  }
+  .google_map_field_display {
+    width: 960px;
+  }
+  ul.links {
+    display: none;
   }
 }
 
