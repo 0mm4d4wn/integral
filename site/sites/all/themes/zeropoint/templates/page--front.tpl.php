@@ -37,6 +37,9 @@
   <div class="section_main">
     <div class="row">
       <section class="">
+        <div id="copy">
+          Bienvenido a <span>Integral Property Management<sup>®</sup></span>.<br>Encuentra las mejores opciones de inmuebles en venta y alquiler en Ciudad de Panamá, Miami, Caracas y Bogotá.
+        </div>
         <div id="min-search">
           <?php 
             /*$busqueda = module_invoke('views', 'block_view', 'busqueda-block');

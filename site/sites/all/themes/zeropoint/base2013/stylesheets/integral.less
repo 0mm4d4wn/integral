@@ -134,7 +134,7 @@ display: none;
 #brand {
   background: url('../images/integral_logo.png') no-repeat 0 0;
   width: 167px;
-  height: 53px;
+  height: 70px;
   display: block;
   float: left;
   margin-top: -3px;
@@ -395,7 +395,25 @@ section {
 }
 /***************** Page FRONT *****************/
 
+
 .page-inicio {
+  #copy {
+    margin: 30px 0 10px;
+    text-align: center;
+    font-family: @font1;
+    color: @gray3;
+    font-size: 22px;
+    line-height: 28px;
+    span {
+      color: @blue9;
+      sup {
+        font-size: 12px;
+      }
+    }
+  }
+  #views_slideshow_cycle_teaser_section_home-block_4 {
+    box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+  }
   .view-busqueda .view-content{
     display: none;
   }
@@ -403,8 +421,6 @@ section {
     margin-bottom: 10px;
   }
   .view-display-id-block_4 {
-  margin-bottom: 40px;
-  overflow: hidden;
   .views-field-field-imagen {
     overflow: hidden;
     margin: 0;
@@ -460,13 +476,12 @@ section {
     float: left;
     margin: 0 12px 12px 0;
     background-color: @blue3;
-    color: #81abd1;
     width: 15px;
     height: 15px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
-    border: 1px solid @blue9;
+    border: 1px solid @blue3;
   }
   .views-content-nid {
     display: none;
@@ -533,8 +548,35 @@ section {
   border: none;
 }
 .views-exposed-widgets {
+  background-color:white;
   border-bottom: 1px solid @blue3;
+  margin-top: 20px;
+  
+  -webkit-border-top-left-radius:6px;
+  -moz-border-radius-topleft:6px;
+  border-top-left-radius:6px;
+  -webkit-border-top-right-radius:6px;
+  -moz-border-radius-topright:6px;
+  border-top-right-radius:6px;
+  -webkit-border-bottom-right-radius:6px;
+  -moz-border-radius-bottomright:6px;
+  border-bottom-right-radius:6px;
+  -webkit-border-bottom-left-radius:6px;
+  -moz-border-radius-bottomleft:6px;
+  border-bottom-left-radius:6px;
+  border:1px solid @gray1;
+  color:#fff;
+  font-family: @font3;
 }
+
+
+.front #block-system-main .panel-1col .panel-panel > div .panel-pane .jcarousel-container {
+  padding-top: 10px;
+  .pane-title {
+    text-align: left;
+    margin:0px 10px 0px 17px; 
+  }
+} 
 
 /* VIEWS */
 
@@ -586,7 +628,7 @@ section {
     }
     .jcarousel-prev-horizontal {
       position: absolute;
-      top: 56px;
+      top: 91px;
       left: -8px;
       background-position: 0 0;
       &:hover {
@@ -595,7 +637,7 @@ section {
     }
     .jcarousel-next-horizontal {
       position: absolute;
-      top: 56px;
+      top: 91px;
       right: -8px;
       background-position: 0 -37px;
       &:hover {

@@ -36,7 +36,7 @@
 #brand {
   background: url('../images/integral_logo.png') no-repeat 0 0;
   width: 167px;
-  height: 53px;
+  height: 70px;
   display: block;
   float: left;
   margin-top: -3px;
@@ -310,15 +310,28 @@ section h3 {
   display: none;
 }
 /***************** Page FRONT *****************/
+.page-inicio #copy {
+  margin: 30px 0 10px;
+  text-align: center;
+  font-family: 'Open Sans Condensed';
+  color: #6b8187;
+  font-size: 22px;
+  line-height: 28px;
+}
+.page-inicio #copy span {
+  color: #2f8dd3;
+}
+.page-inicio #copy span sup {
+  font-size: 12px;
+}
+.page-inicio #views_slideshow_cycle_teaser_section_home-block_4 {
+  box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+}
 .page-inicio .view-busqueda .view-content {
   display: none;
 }
 .page-inicio .panel-1col h2.pane-title {
   margin-bottom: 10px;
-}
-.page-inicio .view-display-id-block_4 {
-  margin-bottom: 40px;
-  overflow: hidden;
 }
 .page-inicio .view-display-id-block_4 .views-field-field-imagen {
   overflow: hidden;
@@ -374,13 +387,12 @@ section h3 {
   float: left;
   margin: 0 12px 12px 0;
   background-color: #d3dded;
-  color: #81abd1;
   width: 15px;
   height: 15px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
-  border: 1px solid #2f8dd3;
+  border: 1px solid #d3dded;
 }
 .page-inicio .views-content-nid {
   display: none;
@@ -442,7 +454,31 @@ section h3 {
   border: none;
 }
 .views-exposed-widgets {
+  background-color: white;
   border-bottom: 1px solid #d3dded;
+  margin-top: 20px;
+  -webkit-border-top-left-radius: 6px;
+  -moz-border-radius-topleft: 6px;
+  border-top-left-radius: 6px;
+  -webkit-border-top-right-radius: 6px;
+  -moz-border-radius-topright: 6px;
+  border-top-right-radius: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+  -moz-border-radius-bottomright: 6px;
+  border-bottom-right-radius: 6px;
+  -webkit-border-bottom-left-radius: 6px;
+  -moz-border-radius-bottomleft: 6px;
+  border-bottom-left-radius: 6px;
+  border: 1px solid #efefef;
+  color: #fff;
+  font-family: 'AltoPro-Thin';
+}
+.front #block-system-main .panel-1col .panel-panel > div .panel-pane .jcarousel-container {
+  padding-top: 10px;
+}
+.front #block-system-main .panel-1col .panel-panel > div .panel-pane .jcarousel-container .pane-title {
+  text-align: left;
+  margin: 0px 10px 0px 17px;
 }
 /* VIEWS */
 #min-search {
@@ -493,7 +529,7 @@ section h3 {
 }
 .jcarousel-skin-default .jcarousel-container-horizontal .jcarousel-prev-horizontal {
   position: absolute;
-  top: 56px;
+  top: 91px;
   left: -8px;
   background-position: 0 0;
 }
@@ -502,7 +538,7 @@ section h3 {
 }
 .jcarousel-skin-default .jcarousel-container-horizontal .jcarousel-next-horizontal {
   position: absolute;
-  top: 56px;
+  top: 91px;
   right: -8px;
   background-position: 0 -37px;
 }
