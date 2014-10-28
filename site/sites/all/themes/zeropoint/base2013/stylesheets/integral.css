@@ -617,21 +617,45 @@ section h3 {
   padding: 20px;
 }
 .page-propiedades .views-row .views-field-field-precio-de-alquiler,
-.page-propiedades .views-row .views-field-field-precio-de-venta {
+.page-propiedades .views-row .views-field-field-precio-de-venta,
+.page-propiedades .views-row .views-field-field-espacio,
+.page-propiedades .views-row .views-field-field-habitaciones,
+.page-propiedades .views-row .views-field-field-administracion,
+.page-propiedades .views-row .views-field-field-estacionamiento {
   float: left;
   padding-right: 0;
+  margin-bottom: 8px;
 }
 .page-propiedades .views-row .views-field-field-precio-de-alquiler .field-content,
-.page-propiedades .views-row .views-field-field-precio-de-venta .field-content {
+.page-propiedades .views-row .views-field-field-precio-de-venta .field-content,
+.page-propiedades .views-row .views-field-field-espacio .field-content,
+.page-propiedades .views-row .views-field-field-habitaciones .field-content,
+.page-propiedades .views-row .views-field-field-administracion .field-content,
+.page-propiedades .views-row .views-field-field-estacionamiento .field-content {
   color: #2f8dd3;
   float: left;
   font-size: 18px;
   margin-right: 10px;
 }
 .page-propiedades .views-row .views-field-field-precio-de-alquiler .field-content span,
-.page-propiedades .views-row .views-field-field-precio-de-venta .field-content span {
+.page-propiedades .views-row .views-field-field-precio-de-venta .field-content span,
+.page-propiedades .views-row .views-field-field-espacio .field-content span,
+.page-propiedades .views-row .views-field-field-habitaciones .field-content span,
+.page-propiedades .views-row .views-field-field-administracion .field-content span,
+.page-propiedades .views-row .views-field-field-estacionamiento .field-content span {
   font-family: 'AltoProExCon-LightItalic';
   color: #565656;
+}
+.page-propiedades .views-row .views-field-field-precio-de-alquiler .field-content .divider,
+.page-propiedades .views-row .views-field-field-precio-de-venta .field-content .divider,
+.page-propiedades .views-row .views-field-field-espacio .field-content .divider,
+.page-propiedades .views-row .views-field-field-habitaciones .field-content .divider,
+.page-propiedades .views-row .views-field-field-administracion .field-content .divider,
+.page-propiedades .views-row .views-field-field-estacionamiento .field-content .divider {
+  color: #afafaf;
+}
+.page-propiedades .views-row .views-field-field-espacio {
+  clear: left;
 }
 .page-propiedades .views-row .views-field-field-precio-de-venta .field-content {
   margin-right: 7px;
@@ -922,6 +946,9 @@ section h3 {
 .node-type-propiedades .right img {
   margin-bottom: 18px;
 }
+.galleria-thumbnails-container {
+  padding: 0 30px;
+}
 .node-proyectos .field-name-field-logo {
   float: left;
   margin-right: 15px;
@@ -1134,4 +1161,7 @@ footer .legal-note a {
   line-height: 1.6;
   text-align: left;
   margin: 0 0 5px;
+}
+footer .branding p {
+  text-align: right;
 }

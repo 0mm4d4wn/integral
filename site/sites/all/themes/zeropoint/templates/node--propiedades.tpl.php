@@ -8,7 +8,6 @@
   $alias_url = $base_url.'/'.drupal_get_path_alias(); 
   //var_dump($alias_url); die; 
 ?>
-
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -18,33 +17,21 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-
-
-
-
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
-
   <?php print $user_picture; ?>
-
   <?php print render($title_prefix); ?>
   <?php if (!$page): ?>
   <!--<h2 class="title"<?php print $title_attributes; ?>><a href="<?php print $node_url ?>" title="<?php print $title ?>"><?php print $title ?></a></h2>-->
   <?php endif; ?>
   <?php print render($title_suffix); ?>
-
-  
-
   <div class="content"<?php print $content_attributes; ?>>
     <h1 class="title"><?php // print $title ?></h1>
-  
-      <div class="img-first"> 
-        <?php print render($content['field_imagen'][0]) ?>
-      </div>
-
+    <div class="img-first"> 
+      <?php print render($content['field_imagen'][0]) ?>
+    </div>
   </div>
   <div class="left columns propiedad-sidebar">
     <ul>
-
       <li><?php echo render($content['field_tipo_de_inmueble'][0]); ?></li>  
       <li><span>Tipo:</span> <b><?php echo render($content['field_tipo_de_contrato'][0]); ?></b></li> 
       <li><span>Ciudad:</span> <b><?php echo render($content['field_ciudad'][0]); ?></b></li>  
@@ -55,6 +42,9 @@
         }
         if ($content['field_precio_de_alquiler'][0] != '') {
           echo '<li><span>Alquiler:</span> <b>$'.render($content['field_precio_de_alquiler'][0]).'</b></li>';
+        }
+        if ($content['field_administracion'][0] != '') {
+          echo '<li><span>Administración:</span> <b>$'.render($content['field_administracion'][0]).'</b></li>';
         }
         if ($content['field_habitaciones'][0] != '') {
           echo '<li><span>Habitaciones:</span> <b>'.render($content['field_habitaciones'][0]).'</b></li>';
@@ -71,7 +61,6 @@
         ?>
     </ul>  
   </div>
-
   <div class="right columns">
     <div id="content-in">
       <?php print render($content[body]); ?>
@@ -87,8 +76,6 @@
         <a href="http://twitter.com/share" class="twitter-share-button" data-text="<?php print $title ?> " data-count="horizontal" data-via="" data-lang="es">Tweet</a>
       </li>
     </ul>
-
   </div>
-
 </div>
 <!-- /node-<?php print $node->nid; ?> -->

@@ -71,40 +71,36 @@
         <div class="pnm-icon country-icons">
           <h3>Panamá</h3>
           <p>Ciudad de Panamá</p>
-          <p>Calle 73 Edificio Rosely Ofc. PB 1A San Francisco</p>
-          <p>(507) 6612-7847</p>
+          <p>Calle 50 edil. embajador - of. 3b (frente a Panafoto)</p>
+          <p>Tel: (507) 6612-7847</p>
         </div>
       </div>
       <div class="five-cols columns">
         <div class="vnz-icon country-icons">
           <h3>Venezuela</h3>
           <p>Caracas</p>
-          <p>dirección</p>
-          <p>(58) 414-990 4047</p>
+          <p>Tel: (58) 414-990 4047</p>
         </div>
       </div>
       <div class="five-cols columns">
         <div class="col-icon country-icons">
           <h3>Colombia</h3>
           <p>Bogotá</p>
-          <p>dirección</p>
-          <p>teléfono</p>
+          <p>Tel: (57) 3125258338</p>
         </div>
       </div>
       <div class="five-cols columns">
         <div class="usa-icon country-icons">
           <h3>Estados Unidos</h3>
           <p>Miami</p>
-          <p>Dirección</p>
-          <p>teléfono</p>
+          <p>Tel: (1) 0012023165442</p>
         </div>
       </div>
       <div class="five-cols columns">
         <div class="eur-icon country-icons">
           <h3>Unión Europea</h3>
-          <p>(Ciudad)</p>
-          <p>Dirección</p>
-          <p>teléfono</p>
+          <p>Italia</p>
+          <p>Tel: (39) 3402953543</p>
         </div>
       </div>
     </div>
@@ -120,13 +116,13 @@
     </div>
     <div class="col-60 columns branding">
       <p>Copyright © 2013, Integral Property Management SA, todos los derechos reservados.
-Panamá, Ciudad de Panamá. Calle 73 Edificio Rosely, Ofc. PB 1A San Francisco.
+Panamá, Ciudad de Panamá.<br />Calle 50 edil. embajador - of. 3b (frente a Panafoto).
 cel: (507) 6612-7847</p>
-      <p>Diseño y programación por...</p>
+      <!--<p>Diseño y programación David Ar</p>-->
     </div>
-    <div class="five-cols columns legal-note">
+    <!--<div class="five-cols columns legal-note">
       <a>Nota legal</a>
-    </div>
+    </div>-->
   </div>
 </footer>
 <!-- ######################## Scripts ######################## --> 
