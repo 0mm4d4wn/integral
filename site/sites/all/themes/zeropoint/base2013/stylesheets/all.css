@@ -5122,7 +5122,8 @@ section h3 {
 .page-inicio #views_slideshow_cycle_teaser_section_home-block_4 {
   box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
 }
-.page-inicio .view-busqueda .view-content {
+.page-inicio .view-busqueda .view-content,
+.page-inicio .view-busqueda .item-list {
   display: none;
 }
 .page-inicio .panel-1col h2.pane-title {
@@ -5328,7 +5329,8 @@ section h3 {
   width: 98%!important;
 }
 .jcarousel-list-horizontal {
-  width: 200%!important;
+  /*width: 200%!important;*/
+
   overflow: hidden;
 }
 .destacados .jcarousel-skin-default .jcarousel-clip-horizontal {
@@ -5755,6 +5757,7 @@ section h3 {
   border-width: 1px 0 0;
   padding-top: 30px;
   margin-top: 30px;
+  margin-bottom: 20px;
 }
 /* Propiedad detalle */
 #content-in {
